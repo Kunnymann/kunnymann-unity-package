@@ -4,7 +4,7 @@ using System;
 namespace Kunnymann.Base.Debugger
 {
     /// <summary>
-    /// Hyper 에러 리스너
+    /// 에러 리스너
     /// </summary>
     public class ErrorListener
     {

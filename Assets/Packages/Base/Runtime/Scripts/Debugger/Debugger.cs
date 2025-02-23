@@ -58,7 +58,7 @@ namespace Kunnymann.Base.Debugger
                     throw new Exception("Invalid log level");
             }
 
-            _LogHelper.Log(LogLevel.Info, string.Format("HyperDebugger Initialized - Log level : {0}", logLevelWord));
+            _LogHelper.Log(LogLevel.Info, string.Format("Debugger Initialized - Log level : {0}", logLevelWord));
         }
 
         /// <summary>
