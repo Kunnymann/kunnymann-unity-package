@@ -28,7 +28,7 @@ namespace Kunnymann.Base.Debugger
                 /*
                 if (report)
                 {
-                    HyperDebugger.Error(query);
+                    리포트
                 }
                 */
                 throw error;
@@ -38,7 +38,7 @@ namespace Kunnymann.Base.Debugger
                 /*
                 if (report)
                 {
-                    LogNest.Instance.UploadLogToS3();
+                    리포트
                 }
                 */
                 Debugger.Error(query);

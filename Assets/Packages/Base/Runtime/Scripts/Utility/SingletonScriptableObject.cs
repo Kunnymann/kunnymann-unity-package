@@ -27,11 +27,13 @@ namespace Kunnymann.Utility
                     T[] asset = Resources.LoadAll<T>(string.Empty);
                     if (asset == null || asset.Length < 1)
                     {
-                        ErrorListener.Check(new Exception(), $"{nameof(T)}의 ScriptableObject를 Resource에서 찾을 수 없습니다.", needthrowerror: true);
+                        ErrorListener.Check(new Exception(), $"{nameof(T)}의 ScriptableObject를 Resource에서 찾을 수 없습니다.", needthrowerror: false);
+                        return null;
                     }
                     else if (asset.Length > 1)
                     {
                         ErrorListener.Check(new Exception(), $"중복된 ScriptableObject ({nameof(T)})가 있습니다.", needthrowerror: true);
+                        return null;
                     }
 
                     _Instance = asset[0];

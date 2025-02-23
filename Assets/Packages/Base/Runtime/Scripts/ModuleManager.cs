@@ -36,9 +36,9 @@ namespace Kunnymann.Base
 
                     if (instance == null)
                     {
-                        var moduleManager = GameObject.Find(ConstValue.ModuleManagerName);
+                        var moduleManager = GameObject.Find(ConstValue.MODULE_MANAGER_NAME);
                         if (moduleManager == null)
-                            instance = new GameObject(ConstValue.ModuleManagerName).AddComponent<ModuleManager>();
+                            instance = new GameObject(ConstValue.MODULE_MANAGER_NAME).AddComponent<ModuleManager>();
                         else
                             instance = moduleManager.AddComponent<ModuleManager>();
                     }

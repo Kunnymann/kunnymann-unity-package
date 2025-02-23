@@ -8,6 +8,6 @@ namespace Kunnymann.Base
         /// <summary>
         /// ModuleManager 게임 오브젝트 이름
         /// </summary>
-        public const string ModuleManagerName = "ModuleManager";
+        public const string MODULE_MANAGER_NAME = "ModuleManager";
     }
 }
