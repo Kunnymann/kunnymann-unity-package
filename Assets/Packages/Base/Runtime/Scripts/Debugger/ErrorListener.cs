@@ -19,7 +19,7 @@ namespace Kunnymann.Base.Debugger
         {
             StackTrace stackedFrame = new StackTrace(true);
 
-            string query = string.Format("{0} {1} {2}", description, Environment.NewLine, GetStackTraceInfo(stackedFrame));
+            string query = string.Format("{0} {1} {2} {3}", error.GetType(), description, Environment.NewLine, GetStackTraceInfo(stackedFrame));
 
             // 여기에 에러 리포트하는 로직 추가
 
@@ -31,7 +31,8 @@ namespace Kunnymann.Base.Debugger
                     리포트
                 }
                 */
-                throw error;
+
+                throw new Exception(query);
             }
             else
             {
