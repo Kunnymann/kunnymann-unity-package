@@ -1,0 +1,1421 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 0,
+          "linked":"[13,44,79]"
+        },
+        "geometry": {
+          "coordinates": [
+            -6.24,
+            -13.81
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 2,
+          "linked":"[42]",
+          "poi": "{
+            "dpName": "Vincent",
+            "type": "slack",
+            "src": "U0716J4DYB1",
+            "description": "Vincent is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -8.79,
+            -13.53
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 3,
+          "linked":"[46]",
+          "poi": "{
+            "dpName": "Lauren",
+            "type": "slack",
+            "src": "U04K14BFXPC",
+            "description": "Lauren is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -11.62,
+            -21.80
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 5,
+          "linked":"[57]",
+          "poi": "{
+            "dpName": "Ollie",
+            "type": "slack",
+            "src": "U02QHL2L8S0",
+            "description": "Ollie is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -10.20,
+            -14.65
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 7,
+          "linked":"[19,22,47]"
+        },
+        "geometry": {
+          "coordinates": [
+            -6.16,
+            -20.69
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 9,
+          "linked":"[46,58]"
+        },
+        "geometry": {
+          "coordinates": [
+            -13.09,
+            -20.70
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 10,
+          "linked":"[57]",
+          "poi": "{
+            "dpName": "Jun",
+            "type": "slack",
+            "src": "U04M8UPU3DL",
+            "description": "Jun is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -10.20,
+            -13.53
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 12,
+          "linked":"[44,23]"
+        },
+        "geometry": {
+          "coordinates": [
+            -7.03,
+            -15.53
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 13,
+          "linked":"[0,43]"
+        },
+        "geometry": {
+          "coordinates": [
+            -6.24,
+            -12.56
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 14,
+          "linked":"[48]",
+          "poi": "{
+            "dpName": "Whale",
+            "type": "slack",
+            "src": "U041D6HHRT3",
+            "description": "Whale is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -8.93,
+            -7.45
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 15,
+          "linked":"[35]",
+          "poi": "{
+            "dpName": "Liam",
+            "type": "slack",
+            "src": "U04JZF884SK",
+            "description": "Liam is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -10.12,
+            -18.76
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 16,
+          "linked":"[89]",
+          "poi": "{
+            "dpName": "Eugene",
+            "type": "slack",
+            "src": "UDDDTK2N5",
+            "description": "Eugene is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -10.74,
+            -16.87
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 17,
+          "linked":"[54,45,24,21]"
+        },
+        "geometry": {
+          "coordinates": [
+            -11.50,
+            -10.51
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 18,
+          "linked":"[41,33]"
+        },
+        "geometry": {
+          "coordinates": [
+            -8.24,
+            -10.51
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 19,
+          "linked":"[7,49,81]"
+        },
+        "geometry": {
+          "coordinates": [
+            -5.22,
+            -19.99
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 20,
+          "linked":"[82]",
+          "poi": "{
+            "dpName": "Blue",
+            "type": "slack",
+            "src": "U05GCG60Y8Z",
+            "description": "Blue is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -11.37,
+            -13.53
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 21,
+          "linked":"[30,72]"
+        },
+        "geometry": {
+          "coordinates": [
+            -12.65,
+            -10.51
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 22,
+          "linked":"[7,25,60,75]"
+        },
+        "geometry": {
+          "coordinates": [
+            -7.03,
+            -20.69
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 23,
+          "linked":"[12,55,75]"
+        },
+        "geometry": {
+          "coordinates": [
+            -7.03,
+            -17.43
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 24,
+          "linked":"[34,39,33,17]"
+        },
+        "geometry": {
+          "coordinates": [
+            -10.16,
+            -10.51
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 25,
+          "linked":"[22,47,70]"
+        },
+        "geometry": {
+          "coordinates": [
+            -7.40,
+            -21.81
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 26,
+          "linked":"[67]",
+          "poi": "{
+            "dpName": "Bona",
+            "type": "slack",
+            "src": "U03GE0S6DU5",
+            "description": "Bona is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -11.40,
+            -18.76
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 27,
+          "linked":"[28,52,59]"
+        },
+        "geometry": {
+          "coordinates": [
+            -11.86,
+            -6.80
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 28,
+          "linked":"[27,48,94]"
+        },
+        "geometry": {
+          "coordinates": [
+            -10.1,
+            -6.80
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 29,
+          "linked":"[74,80]"
+        },
+        "geometry": {
+          "coordinates": [
+            -5.22,
+            -8.45
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 30,
+          "linked":"[21]",
+          "poi": "{
+            "dpName": "Yoon",
+            "type": "slack",
+            "src": "U0767061GV9",
+            "description": "Yoon is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -12.65,
+            -11.24
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 31,
+          "linked":"[64,76,78]"
+        },
+        "geometry": {
+          "coordinates": [
+            -7.05,
+            -6.80
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 32,
+          "linked":"[35,55,71]"
+        },
+        "geometry": {
+          "coordinates": [
+            -9.49,
+            -17.43
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 33,
+          "linked":"[18,24,73]"
+        },
+        "geometry": {
+          "coordinates": [
+            -8.92,
+            -10.51
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 34,
+          "linked":"[24]",
+          "poi": "{
+            "dpName": "Wayne",
+            "type": "slack",
+            "src": "U06RQGM2KJB",
+            "description": "Wayne is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -10.16,
+            -10.01
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 35,
+          "linked":"[15,32,89]"
+        },
+        "geometry": {
+          "coordinates": [
+            -10.12,
+            -17.43
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 36,
+          "linked":"[67,91]"
+        },
+        "geometry": {
+          "coordinates": [
+            -13.34,
+            -17.43
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 37,
+          "linked":"[79,80]"
+        },
+        "geometry": {
+          "coordinates": [
+            -5.22,
+            -11.67
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 38,
+          "linked":"[68]"
+        },
+        "geometry": {
+          "coordinates": [
+            -10.12,
+            -20.12
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 39,
+          "linked":"[24]"
+        },
+        "geometry": {
+          "coordinates": [
+            -10.16,
+            -11.24
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 40,
+          "linked":"[66]",
+          "poi": "{
+            "dpName": "Jamie",
+            "type": "slack",
+            "src": "U070ABQP49F",
+            "description": "Jamie is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -12.50,
+            -13.53
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 41,
+          "linked":"[18,43,84]"
+        },
+        "geometry": {
+          "coordinates": [
+            -7.17,
+            -10.51
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 42,
+          "linked":"[2,44,57,77]"
+        },
+        "geometry": {
+          "coordinates": [
+            -8.79,
+            -14.03
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 43,
+          "linked":"[13,41,80]"
+        },
+        "geometry": {
+          "coordinates": [
+            -6.24,
+            -10.68
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 44,
+          "linked":"[0,12,42]"
+        },
+        "geometry": {
+          "coordinates": [
+            -7.03,
+            -14.03
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 45,
+          "linked":"[17]",
+          "poi": "{
+            "dpName": "Dwight",
+            "type": "slack",
+            "src": "U07779NN5FF",
+            "description": "Dwight is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -11.5,
+            -10.01
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 46,
+          "linked":"[3,9,63,68]"
+        },
+        "geometry": {
+          "coordinates": [
+            -11.62,
+            -20.70
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 47,
+          "linked":"[7,25,49]"
+        },
+        "geometry": {
+          "coordinates": [
+            -6.16,
+            -21.81
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 48,
+          "linked":"[14,76,28]"
+        },
+        "geometry": {
+          "coordinates": [
+            -8.93,
+            -6.80
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 49,
+          "linked":"[19,47,92]"
+        },
+        "geometry": {
+          "coordinates": [
+            -5.22,
+            -21.81
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 50,
+          "linked":"[66]",
+          "poi": "{
+            "dpName": "Woody",
+            "type": "slack",
+            "src": "U0595QXAFAM",
+            "description": "Woody is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -12.50,
+            -14.65
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 51,
+          "linked":"[68]"
+        },
+        "geometry": {
+          "coordinates": [
+            -10.12,
+            -21.80
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 52,
+          "linked":"[27]",
+          "poi": "{
+            "dpName": "Zoe",
+            "type": "slack",
+            "src": "U04DPFAQC58",
+            "description": "Zoe is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -11.86,
+            -7.49
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 53,
+          "linked":"[60]",
+          "poi": "{
+            "dpName": "Alex",
+            "type": "slack",
+            "src": "U0398BPR52P",
+            "description": "Alex is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -8.72,
+            -21.80
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 54,
+          "linked":"[17]",
+          "poi": "{
+            "dpName": "Luca",
+            "type": "slack",
+            "src": "U03A906D4F3",
+            "description": "Luca is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -11.50,
+            -11.24
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 55,
+          "linked":"[23,32]"
+        },
+        "geometry": {
+          "coordinates": [
+            -7.76,
+            -17.43
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 57,
+          "linked":"[5,10,42,82]"
+        },
+        "geometry": {
+          "coordinates": [
+            -10.20,
+            -14.03
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 58,
+          "linked":"[9]",
+          "poi": "{
+            "dpName": "Jake",
+            "type": "slack",
+            "src": "U7AM95Y76",
+            "description": "Jake is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -13.09,
+            -21.85
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 59,
+          "linked":"[27,95]"
+        },
+        "geometry": {
+          "coordinates": [
+            -13.56,
+            -6.80
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 60,
+          "linked":"[22,53,68]"
+        },
+        "geometry": {
+          "coordinates": [
+            -8.72,
+            -20.69
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 61,
+          "linked":"[79,81]"
+        },
+        "geometry": {
+          "coordinates": [
+            -5.22,
+            -15.99
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 62,
+          "linked":"[69,83]",
+          "poi": "{
+            "dpName": "Sally",
+            "type": "slack",
+            "src": "U02AMGU3S3G",
+            "description": "Sally is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -11.62,
+            -23.31
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 63,
+          "linked":"[46]"
+        },
+        "geometry": {
+          "coordinates": [
+            -11.62,
+            -20.12
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 64,
+          "linked":"[31,74]"
+        },
+        "geometry": {
+          "coordinates": [
+            -6.01,
+            -6.80
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 65,
+          "linked":"[70,83]"
+        },
+        "geometry": {
+          "coordinates": [
+            -8.72,
+            -23.31
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 66,
+          "linked":"[40,50,82]"
+        },
+        "geometry": {
+          "coordinates": [
+            -12.50,
+            -14.03
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 67,
+          "linked":"[26,36,89]"
+        },
+        "geometry": {
+          "coordinates": [
+            -11.40,
+            -17.43
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 68,
+          "linked":"[38,46,51,60]"
+        },
+        "geometry": {
+          "coordinates": [
+            -10.12,
+            -20.69
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 69,
+          "linked":"[62]"
+        },
+        "geometry": {
+          "coordinates": [
+            -13.34,
+            -23.31
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 70,
+          "linked":"[25,65]"
+        },
+        "geometry": {
+          "coordinates": [
+            -7.40,
+            -23.31
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 71,
+          "linked":"[32]",
+          "poi": "{
+            "dpName": "Leo",
+            "type": "slack",
+            "src": "U0629DH3LCB",
+            "description": "Leo is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -9.49,
+            -16.87
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 72,
+          "linked":"[21]",
+          "poi": "{
+            "dpName": "Donald",
+            "type": "slack",
+            "src": "U04HX2NK7N1",
+            "description": "Donald is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -12.65,
+            -10.01
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 73,
+          "linked":"[33]",
+          "poi": "{
+            "dpName": "Bella",
+            "type": "slack",
+            "src": "U05L67JJTH6",
+            "description": "Bella is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -8.92,
+            -10.01
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 74,
+          "linked":"[29,64,86,93]"
+        },
+        "geometry": {
+          "coordinates": [
+            -5.22,
+            -7.47
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 75,
+          "linked":"[22,23]"
+        },
+        "geometry": {
+          "coordinates": [
+            -7.03,
+            -19.01
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 76,
+          "linked":"[31,48,90]"
+        },
+        "geometry": {
+          "coordinates": [
+            -8.37,
+            -6.80
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 77,
+          "linked":"[42]",
+          "poi": "{
+            "dpName": "Robin",
+            "type": "slack",
+            "src": "U071M590UBU",
+            "description": "Robin is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -8.79,
+            -14.65
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 78,
+          "linked":"[31]"
+        },
+        "geometry": {
+          "coordinates": [
+            -7.05,
+            -7.44
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 79,
+          "linked":"[0,37,61]"
+        },
+        "geometry": {
+          "coordinates": [
+            -5.22,
+            -13.81
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 80,
+          "linked":"[29,37,43,88]"
+        },
+        "geometry": {
+          "coordinates": [
+            -5.22,
+            -10.68
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 81,
+          "linked":"[19,61]"
+        },
+        "geometry": {
+          "coordinates": [
+            -5.22,
+            -17.85
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 82,
+          "linked":"[20,57,66,85]"
+        },
+        "geometry": {
+          "coordinates": [
+            -11.37,
+            -14.03
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 83,
+          "linked":"[62,65]"
+        },
+        "geometry": {
+          "coordinates": [
+            -10.12,
+            -23.31
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 84,
+          "linked":"[41]",
+          "poi": "{
+            "dpName": "Victor",
+            "type": "slack",
+            "src": "U06QW290UN4",
+            "description": "Victor is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -7.17,
+            -10.01
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 85,
+          "linked":"[82]",
+          "poi": "{
+            "dpName": "Bran",
+            "type": "slack",
+            "src": "U0534K9862C",
+            "description": "Bran is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -11.37,
+            -14.65
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 86,
+          "linked":"[74,87]"
+        },
+        "geometry": {
+          "coordinates": [
+            -5.22,
+            -5.44
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 87,
+          "linked":"[86]"
+        },
+        "geometry": {
+          "coordinates": [
+            -5.22,
+            -3.77
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 88,
+          "linked":"[80]"
+        },
+        "geometry": {
+          "coordinates": [
+            -3.66,
+            -10.68
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 89,
+          "linked":"[16,35,67]"
+        },
+        "geometry": {
+          "coordinates": [
+            -10.74,
+            -17.43
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 90,
+          "linked":"[76]",
+          "poi": "{
+            "dpName": "Ralph",
+            "type": "slack",
+            "src": "U7817U01L",
+            "description": "Ralph is a very nice person"
+          }"
+        },
+        "geometry": {
+          "coordinates": [
+            -8.36,
+            -5.97
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 91,
+          "linked":"[36]"
+        },
+        "geometry": {
+          "coordinates": [
+            -13.34,
+            -18.60
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 92,
+          "linked":"[49]"
+        },
+        "geometry": {
+          "coordinates": [
+            -5.22,
+            -23.25
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 93,
+          "linked":"[74]"
+        },
+        "geometry": {
+          "coordinates": [
+            -4.23,
+            -7.47
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 94,
+          "linked":"[28]"
+        },
+        "geometry": {
+          "coordinates": [
+            -10.09,
+            -6.08
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "id": 95,
+          "linked":"[59]"
+        },
+        "geometry": {
+          "coordinates": [
+            -15.37,
+            -6.80
+          ],
+          "type": "Point"
+        }
+      }
+    ]
+  }
