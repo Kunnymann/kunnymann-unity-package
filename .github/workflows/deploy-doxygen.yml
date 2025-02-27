@@ -27,7 +27,7 @@ jobs:
         uses: mattnotmitt/doxygen-action@1.12.0
         with:
           doxyfile-path: "./Docs/Doxyfile"
-          working-directory: "."
+          working-directory: "./Docs"
       
       - name: Add .nojekyll
         run: sudo touch ./BuildedDocs/html/.nojekyll
