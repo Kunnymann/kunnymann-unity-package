@@ -29,10 +29,6 @@ jobs:
           doxyfile-path: "./Docs/Doxyfile"
           working-directory: "."
 
-      - name: Add .nojekyll
-        run: |
-          mkdir -p ./build_doc/html
-          sudo touch ./build_doc/html/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
