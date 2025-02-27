@@ -28,11 +28,15 @@ jobs:
         with:
           doxyfile-path: "./Docs/Doxyfile"
           working-directory: "."
-
+      
+      - name: Add Build Doc
+        run: |
+          mkdir -p ./build_doc/
+          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build_doc/html
+          path: ./build_doc
 
   # Deployment job
   deploy:
