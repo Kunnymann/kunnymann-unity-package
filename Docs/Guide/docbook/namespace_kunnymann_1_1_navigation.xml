@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_kunnymann_1_1_navigation" xml:lang="en-US">
+<title>Kunnymann.Navigation Namespace Reference</title>
+<indexterm><primary>Kunnymann.Navigation</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_kunnymann_1_1_navigation_1_1_a_star_node">AStarNode</link></para>
+
+<para>A* Node. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_kunnymann_1_1_navigation_1_1_a_star_path_generator">AStarPathGenerator</link></para>
+
+<para>A* <link linkend="_class_kunnymann_1_1_navigation_1_1_path">Path</link> Generator. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_kunnymann_1_1_navigation_1_1_current_point">CurrentPoint</link></para>
+</listitem>
+            <listitem><para>interface <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_link">ILink</link></para>
+
+<para>Link interface. </para>
+</listitem>
+            <listitem><para>interface <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler">INavigationEventHandler</link></para>
+
+<para><link linkend="_namespace_kunnymann_1_1_navigation">Navigation</link> event handler interface. </para>
+</listitem>
+            <listitem><para>interface <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link></para>
+
+<para>Node interface. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_kunnymann_1_1_navigation_1_1_navigation_behaviour">NavigationBehaviour</link></para>
+
+<para><link linkend="_namespace_kunnymann_1_1_navigation">Navigation</link> behaviour base class. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_kunnymann_1_1_navigation_1_1_navigation_config">NavigationConfig</link></para>
+
+<para><link linkend="_namespace_kunnymann_1_1_navigation">Navigation</link> configuration. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_kunnymann_1_1_navigation_1_1_navigation_const">NavigationConst</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_kunnymann_1_1_navigation_1_1_navigation_module">NavigationModule</link></para>
+
+<para><link linkend="_namespace_kunnymann_1_1_navigation">Navigation</link> module. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_kunnymann_1_1_navigation_1_1_path">Path</link></para>
+
+<para>Node와 Link로 구성된 <link linkend="_class_kunnymann_1_1_navigation_1_1_path">Path</link>. </para>
+</listitem>
+            <listitem><para>interface <link linkend="_interface_kunnymann_1_1_navigation_1_1_path_unit">PathUnit</link></para>
+
+<para>Units that make up the navigation path. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_kunnymann_1_1_navigation_1_1_vector3_utility">Vector3Utility</link></para>
+
+<para>Vector3 utility. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespace_kunnymann_1_1_navigation_1aa680eb42246bd5fdb3284061510a3e8a">NavigationState</link> { <?linebreak?><link linkend="_namespace_kunnymann_1_1_navigation_1aa680eb42246bd5fdb3284061510a3e8aa6adf97f83acf6453d4a6a4b1070f3754">None</link> = 0
+, <link linkend="_namespace_kunnymann_1_1_navigation_1aa680eb42246bd5fdb3284061510a3e8aae7d31fc0602fb2ede144d18cdffd816b">Ready</link>
+, <link linkend="_namespace_kunnymann_1_1_navigation_1aa680eb42246bd5fdb3284061510a3e8aa846495f9ceed11accf8879f555936a7d">Navigation</link>
+, <link linkend="_namespace_kunnymann_1_1_navigation_1aa680eb42246bd5fdb3284061510a3e8aa0f68101772bd5397ef8eb1b632798652">Wait</link>
+, <?linebreak?><link linkend="_namespace_kunnymann_1_1_navigation_1aa680eb42246bd5fdb3284061510a3e8aab35e5a1e003084f6f4268ed1c8abceb5">Wrong</link>
+, <link linkend="_namespace_kunnymann_1_1_navigation_1aa680eb42246bd5fdb3284061510a3e8aad8afbc541b39d23648c823057cffe3a5">Recovery</link>
+, <link linkend="_namespace_kunnymann_1_1_navigation_1aa680eb42246bd5fdb3284061510a3e8aa87557f11575c0ad78e4e28abedc13b6e">End</link>
+ }</para>
+
+<para>Navigation module state. </para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_kunnymann_1_1_navigation_1a640f798214a381ef59d8747f68fbca51">SessionEndType</link> { <link linkend="_namespace_kunnymann_1_1_navigation_1a640f798214a381ef59d8747f68fbca51a168d3e51452f6d8988f75ed882e74eb6">Arrived</link> = 0
+, <link linkend="_namespace_kunnymann_1_1_navigation_1a640f798214a381ef59d8747f68fbca51a902b0d55fddef6f8d651fe1035b7d4bd">Error</link>
+, <link linkend="_namespace_kunnymann_1_1_navigation_1a640f798214a381ef59d8747f68fbca51a0e22fe7d45f8e5632a4abf369b24e29c">Canceled</link>
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_kunnymann_1_1_navigation_1adb7397b72db0f2024e38c382025af2ed">LinkDirection</link> { <link linkend="_namespace_kunnymann_1_1_navigation_1adb7397b72db0f2024e38c382025af2eda67d2f6740a8eaebf4d5c6f79be8da481">Forward</link>
+, <link linkend="_namespace_kunnymann_1_1_navigation_1adb7397b72db0f2024e38c382025af2edab3263eb38f8903efc271cc7a760da510">Backward</link>
+, <link linkend="_namespace_kunnymann_1_1_navigation_1adb7397b72db0f2024e38c382025af2eda9b79723c234f1294f6e2a6de281badd8">Bidirection</link>
+ }</para>
+
+<para>Link direction data. </para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_kunnymann_1_1_navigation_1a26afc2d677d4f4e4aeba7d3bb25147ca">TransitionType</link> { <?linebreak?><link linkend="_namespace_kunnymann_1_1_navigation_1a26afc2d677d4f4e4aeba7d3bb25147caaac70412e939d72a9234cdebb1af5867b">Path</link>
+, <link linkend="_namespace_kunnymann_1_1_navigation_1a26afc2d677d4f4e4aeba7d3bb25147caa29afacedbe5ffdb19a5cf36d9b4e3434">Escalator</link>
+, <link linkend="_namespace_kunnymann_1_1_navigation_1a26afc2d677d4f4e4aeba7d3bb25147caa963695ded6583fecdbda7392e973ac6c">Elevator</link>
+, <link linkend="_namespace_kunnymann_1_1_navigation_1a26afc2d677d4f4e4aeba7d3bb25147caa0b01cc688e1e0b5f6b70f858a1b389ae">Stairs</link>
+, <?linebreak?><link linkend="_namespace_kunnymann_1_1_navigation_1a26afc2d677d4f4e4aeba7d3bb25147caabd2717e412be5471501883b70962e793">MovingWalkway</link>
+ }</para>
+
+<para>이동 수단 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Enumeration Type Documentation</title>
+<anchor xml:id="_namespace_kunnymann_1_1_navigation_1adb7397b72db0f2024e38c382025af2ed"/><section>
+    <title>LinkDirection</title>
+<indexterm><primary>LinkDirection</primary><secondary>Kunnymann.Navigation</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation</primary><secondary>LinkDirection</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_kunnymann_1_1_navigation_1adb7397b72db0f2024e38c382025af2ed">Kunnymann.Navigation.LinkDirection</link></computeroutput></para><para>
+
+<para>Link direction data. </para>
+</para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Forward</primary><secondary>Kunnymann.Navigation</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation</primary><secondary>Forward</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_navigation_1adb7397b72db0f2024e38c382025af2eda67d2f6740a8eaebf4d5c6f79be8da481"/>Forward</entry><entry>
+<para>Forward, One way. </para>
+</entry></row><row><entry><indexterm><primary>Backward</primary><secondary>Kunnymann.Navigation</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation</primary><secondary>Backward</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_navigation_1adb7397b72db0f2024e38c382025af2edab3263eb38f8903efc271cc7a760da510"/>Backward</entry><entry>
+<para>Backward, One way. </para>
+</entry></row><row><entry><indexterm><primary>Bidirection</primary><secondary>Kunnymann.Navigation</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation</primary><secondary>Bidirection</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_navigation_1adb7397b72db0f2024e38c382025af2eda9b79723c234f1294f6e2a6de281badd8"/>Bidirection</entry><entry>
+<para>Bidirection, Two way. </para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_kunnymann_1_1_navigation_1aa680eb42246bd5fdb3284061510a3e8a"/><section>
+    <title>NavigationState</title>
+<indexterm><primary>NavigationState</primary><secondary>Kunnymann.Navigation</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation</primary><secondary>NavigationState</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_kunnymann_1_1_navigation_1aa680eb42246bd5fdb3284061510a3e8a">Kunnymann.Navigation.NavigationState</link></computeroutput></para><para>
+
+<para><link linkend="_namespace_kunnymann_1_1_navigation">Navigation</link> module state. </para>
+</para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>None</primary><secondary>Kunnymann.Navigation</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation</primary><secondary>None</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_navigation_1aa680eb42246bd5fdb3284061510a3e8aa6adf97f83acf6453d4a6a4b1070f3754"/>None</entry><entry>
+<para>Waiting for initialization. </para>
+</entry></row><row><entry><indexterm><primary>Ready</primary><secondary>Kunnymann.Navigation</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation</primary><secondary>Ready</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_navigation_1aa680eb42246bd5fdb3284061510a3e8aae7d31fc0602fb2ede144d18cdffd816b"/>Ready</entry><entry>
+<para>Ready. </para>
+</entry></row><row><entry><indexterm><primary>Navigation</primary><secondary>Kunnymann.Navigation</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation</primary><secondary>Navigation</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_navigation_1aa680eb42246bd5fdb3284061510a3e8aa846495f9ceed11accf8879f555936a7d"/>Navigation</entry><entry>
+<para>Navigating. </para>
+</entry></row><row><entry><indexterm><primary>Wait</primary><secondary>Kunnymann.Navigation</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation</primary><secondary>Wait</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_navigation_1aa680eb42246bd5fdb3284061510a3e8aa0f68101772bd5397ef8eb1b632798652"/>Wait</entry><entry>
+<para>Waiting for resume. </para>
+</entry></row><row><entry><indexterm><primary>Wrong</primary><secondary>Kunnymann.Navigation</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation</primary><secondary>Wrong</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_navigation_1aa680eb42246bd5fdb3284061510a3e8aab35e5a1e003084f6f4268ed1c8abceb5"/>Wrong</entry><entry>
+<para>Wrong path detected. </para>
+</entry></row><row><entry><indexterm><primary>Recovery</primary><secondary>Kunnymann.Navigation</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation</primary><secondary>Recovery</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_navigation_1aa680eb42246bd5fdb3284061510a3e8aad8afbc541b39d23648c823057cffe3a5"/>Recovery</entry><entry>
+<para>Recovery navigation. </para>
+</entry></row><row><entry><indexterm><primary>End</primary><secondary>Kunnymann.Navigation</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation</primary><secondary>End</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_navigation_1aa680eb42246bd5fdb3284061510a3e8aa87557f11575c0ad78e4e28abedc13b6e"/>End</entry><entry>
+<para><link linkend="_namespace_kunnymann_1_1_navigation">Navigation</link> end. </para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_kunnymann_1_1_navigation_1a640f798214a381ef59d8747f68fbca51"/><section>
+    <title>SessionEndType</title>
+<indexterm><primary>SessionEndType</primary><secondary>Kunnymann.Navigation</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation</primary><secondary>SessionEndType</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_kunnymann_1_1_navigation_1a640f798214a381ef59d8747f68fbca51">Kunnymann.Navigation.SessionEndType</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Arrived</primary><secondary>Kunnymann.Navigation</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation</primary><secondary>Arrived</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_navigation_1a640f798214a381ef59d8747f68fbca51a168d3e51452f6d8988f75ed882e74eb6"/>Arrived</entry><entry>
+<para>Arrived at the destination. </para>
+</entry></row><row><entry><indexterm><primary>Error</primary><secondary>Kunnymann.Navigation</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation</primary><secondary>Error</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_navigation_1a640f798214a381ef59d8747f68fbca51a902b0d55fddef6f8d651fe1035b7d4bd"/>Error</entry><entry>
+<para>Error. </para>
+</entry></row><row><entry><indexterm><primary>Canceled</primary><secondary>Kunnymann.Navigation</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation</primary><secondary>Canceled</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_navigation_1a640f798214a381ef59d8747f68fbca51a0e22fe7d45f8e5632a4abf369b24e29c"/>Canceled</entry><entry>
+<para>Canceled. </para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_kunnymann_1_1_navigation_1a26afc2d677d4f4e4aeba7d3bb25147ca"/><section>
+    <title>TransitionType</title>
+<indexterm><primary>TransitionType</primary><secondary>Kunnymann.Navigation</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation</primary><secondary>TransitionType</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_kunnymann_1_1_navigation_1a26afc2d677d4f4e4aeba7d3bb25147ca">Kunnymann.Navigation.TransitionType</link></computeroutput></para><para>
+
+<para>이동 수단 </para>
+</para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Path</primary><secondary>Kunnymann.Navigation</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation</primary><secondary>Path</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_navigation_1a26afc2d677d4f4e4aeba7d3bb25147caaac70412e939d72a9234cdebb1af5867b"/>Path</entry><entry>
+<para><link linkend="_class_kunnymann_1_1_navigation_1_1_path">Path</link>. </para>
+</entry></row><row><entry><indexterm><primary>Escalator</primary><secondary>Kunnymann.Navigation</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation</primary><secondary>Escalator</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_navigation_1a26afc2d677d4f4e4aeba7d3bb25147caa29afacedbe5ffdb19a5cf36d9b4e3434"/>Escalator</entry><entry>
+<para>Escalator. </para>
+</entry></row><row><entry><indexterm><primary>Elevator</primary><secondary>Kunnymann.Navigation</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation</primary><secondary>Elevator</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_navigation_1a26afc2d677d4f4e4aeba7d3bb25147caa963695ded6583fecdbda7392e973ac6c"/>Elevator</entry><entry>
+<para>Elevator. </para>
+</entry></row><row><entry><indexterm><primary>Stairs</primary><secondary>Kunnymann.Navigation</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation</primary><secondary>Stairs</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_navigation_1a26afc2d677d4f4e4aeba7d3bb25147caa0b01cc688e1e0b5f6b70f858a1b389ae"/>Stairs</entry><entry>
+<para>Stairs. </para>
+</entry></row><row><entry><indexterm><primary>MovingWalkway</primary><secondary>Kunnymann.Navigation</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation</primary><secondary>MovingWalkway</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_navigation_1a26afc2d677d4f4e4aeba7d3bb25147caabd2717e412be5471501883b70962e793"/>MovingWalkway</entry><entry>
+<para>Moving walkway. </para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+</section>

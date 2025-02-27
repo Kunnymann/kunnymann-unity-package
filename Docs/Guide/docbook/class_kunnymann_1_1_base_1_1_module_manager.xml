@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_kunnymann_1_1_base_1_1_module_manager" xml:lang="en-US">
+<title>Kunnymann.Base.ModuleManager Class Reference</title>
+<indexterm><primary>Kunnymann.Base.ModuleManager</primary></indexterm>
+<para>
+
+<para>Module manager. </para>
+ 
+</para>
+<para>Inheritance diagram for Kunnymann.Base.ModuleManager:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_kunnymann_1_1_base_1_1_module_manager.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_kunnymann_1_1_base_1_1_module_base">ModuleBase</link> <link linkend="_class_kunnymann_1_1_base_1_1_module_manager_1ab24aad31d316ac7c08c5cbc25cf0d58a">GetModule</link> (string moduleName)</para>
+
+<para>모듈 객체를 반환합니다 </para>
+</listitem>
+            <listitem><para>T <link linkend="_class_kunnymann_1_1_base_1_1_module_manager_1a83be406b2419e0ee0cf95c5cdcc08016">GetModule&lt; T &gt;</link> ()</para>
+
+<para>모듈 객체를 반환합니다. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_module_manager_1a4e698a97863f1adce1a3d1c0789f9f89"/>List&lt; <link linkend="_class_kunnymann_1_1_base_1_1_module_base">ModuleBase</link> &gt; <emphasis role="strong">Modules</emphasis> = new List&lt;<link linkend="_class_kunnymann_1_1_base_1_1_module_base">ModuleBase</link>&gt;()</para>
+
+<para>모듈 컨테이너 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_module_manager_1ad8d144455480408322b4b54a51c66f93"/>static <link linkend="_class_kunnymann_1_1_base_1_1_module_manager">ModuleManager</link> <emphasis role="strong">Instance</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Singleton 객체 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Module manager. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_kunnymann_1_1_base_1_1_module_manager_1ab24aad31d316ac7c08c5cbc25cf0d58a"/><section>
+    <title>GetModule()</title>
+<indexterm><primary>GetModule</primary><secondary>Kunnymann.Base.ModuleManager</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base.ModuleManager</primary><secondary>GetModule</secondary></indexterm>
+<para><computeroutput><link linkend="_class_kunnymann_1_1_base_1_1_module_base">ModuleBase</link> Kunnymann.Base.ModuleManager.GetModule (string moduleName)</computeroutput></para><para>
+
+<para>모듈 객체를 반환합니다 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>moduleName</entry><entry>
+<para>모듈 이름</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>모듈 객체</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_base_1_1_module_manager_1a83be406b2419e0ee0cf95c5cdcc08016"/><section>
+    <title>GetModule&lt; T &gt;()</title>
+<indexterm><primary>GetModule&lt; T &gt;</primary><secondary>Kunnymann.Base.ModuleManager</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base.ModuleManager</primary><secondary>GetModule&lt; T &gt;</secondary></indexterm>
+<para><computeroutput>T <link linkend="_class_kunnymann_1_1_base_1_1_module_manager_1ab24aad31d316ac7c08c5cbc25cf0d58a">Kunnymann.Base.ModuleManager.GetModule</link>&lt; T &gt; ( )</computeroutput></para><para>
+
+<para>모듈 객체를 반환합니다. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>T</entry><entry>
+<para>모듈 클래스</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>모듈 객체</para>
+</formalpara>
+</para>
+<simplesect><title>Type Constraints</title>
+<para><emphasis role="strong">T:ModuleBase</emphasis></para>
+</simplesect>
+</section>
+</section>
+</section>

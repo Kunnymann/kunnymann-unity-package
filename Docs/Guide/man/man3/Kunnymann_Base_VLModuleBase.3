@@ -1,0 +1,186 @@
+.TH "Kunnymann.Base.VLModuleBase" 3 "Version 1.0" "Kunnymann unity package" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Kunnymann.Base.VLModuleBase \- VPS Module의 DI 객체  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBKunnymann\&.Base\&.ModuleBase\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBRun\fP ()"
+.br
+.RI "VPS를 실행합니다 "
+.ti -1c
+.RI "bool \fBInit\fP ()"
+.br
+.RI "VPS를 초기화합니다 "
+.ti -1c
+.RI "void \fBStop\fP ()"
+.br
+.RI "VPS를 중지합니다 "
+.ti -1c
+.RI "void \fBRestart\fP ()"
+.br
+.RI "VPS를 재시작합니다 "
+.ti -1c
+.RI "void \fBForceGeoCoord\fP (float longitude, float latitude)"
+.br
+.RI "위경도 값을 강제로 주입합니다 "
+.ti -1c
+.RI "void \fBSendTexture\fP (Texture texture)"
+.br
+.RI "VPS로 Texture를 전송합니다 "
+.in -1c
+
+Public Member Functions inherited from \fBKunnymann\&.Base\&.ModuleBase\fP
+.in +1c
+.ti -1c
+.RI "\fBModuleBase\fP ()"
+.br
+.RI "생성자 Default FMS를 구축합니다 "
+.ti -1c
+.RI "void \fBRunOnMainThread\fP (params Action[] action)"
+.br
+.RI "Main thread에 액션을 밀어넣습니다 "
+.ti -1c
+.RI "virtual void \fBModuleInitialize\fP ()"
+.br
+.RI "모듈의 초기화 사이클 "
+.ti -1c
+.RI "virtual void \fBModuleUpdate\fP ()"
+.br
+.RI "모듈의 Unity update 사이클 "
+.ti -1c
+.RI "virtual void \fBModuleTerminate\fP ()"
+.br
+.RI "모듈의 종료 사이클 "
+.ti -1c
+.RI "void \fBDispose\fP ()"
+.br
+.RI "Dispose\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "\fBTrackerType\fP \fBTrackerType\fP\fR [get]\fP"
+.br
+.RI "Tracker Type을 반환 "
+.ti -1c
+.RI "\fBVLState\fP \fBState\fP\fR [get]\fP"
+.br
+.RI "VL State를 반환 "
+.ti -1c
+.RI "string \fBCurrentLayer\fP\fR [get]\fP"
+.br
+.RI "Current Layer를 반환 "
+.ti -1c
+.RI "bool \fBIsInitialized\fP\fR [get]\fP"
+.br
+.RI "초기화 여부를 반환 "
+.ti -1c
+.RI "bool \fBIsRun\fP\fR [get]\fP"
+.br
+.RI "VLModule의 Run 여부를 반환 "
+.ti -1c
+.RI "Pose \fBCurrentPose\fP\fR [get]\fP"
+.br
+.RI "현재 Tracker의 Pose를 반환 "
+.in -1c
+
+Properties inherited from \fBKunnymann\&.Base\&.ModuleBase\fP
+.in +1c
+.ti -1c
+.RI "\fBModuleState\fP \fBCurrentState\fP\fR [get]\fP"
+.br
+.RI "모듈 상태 "
+.in -1c
+.SS "Events"
+
+.in +1c
+.ti -1c
+.RI "\fBEventHandler\fP< \fBVLState\fP > \fBStateChanged\fP"
+.br
+.RI "VL 상태 변경에 대한 추상 이벤트 "
+.ti -1c
+.RI "\fBEventHandler\fP< Pose > \fBPoseUpdated\fP"
+.br
+.RI "VL 위치 변경에 대한 추상 이벤트 "
+.ti -1c
+.RI "\fBEventHandler\fP< Pose > \fBSuccessPoseUpdated\fP"
+.br
+.RI "VL 성공 위치 변경에 대한 추상 이벤트 "
+.ti -1c
+.RI "\fBEventHandler\fP< string > \fBLayerInfoChanged\fP"
+.br
+.RI "VL Layer 정보 변경에 대한 추상 이벤트 "
+.ti -1c
+.RI "\fBEventHandler\fP< float, float > \fBGeoCoordUpdated\fP"
+.br
+.RI "VL GPS 좌표 변경에 대한 추상 이벤트 "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Package Functions inherited from \fBKunnymann\&.Base\&.ModuleBase\fP
+.in +1c
+.ti -1c
+.RI "void \fBProcess\fP (\fBTransitionCommand\fP transition=\fBTransitionCommand\&.None\fP)"
+.br
+.RI "모듈 동작을 처리합니다 "
+.in -1c
+.SH "Detailed Description"
+.PP 
+VPS Module의 DI 객체 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Kunnymann\&.Base\&.VLModuleBase\&.ForceGeoCoord (float longitude, float latitude)\fR [abstract]\fP"
+
+.PP
+위경도 값을 강제로 주입합니다 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlongitude\fP 경도
+.br
+\fIlatitude\fP 위도
+.RE
+.PP
+
+.SS "bool Kunnymann\&.Base\&.VLModuleBase\&.Init ()\fR [abstract]\fP"
+
+.PP
+VPS를 초기화합니다 
+.PP
+\fBParameters\fP
+.RS 4
+\fItype\fP Target VPS
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+성공 여부
+.RE
+.PP
+
+.SS "void Kunnymann\&.Base\&.VLModuleBase\&.SendTexture (Texture texture)\fR [abstract]\fP"
+
+.PP
+VPS로 Texture를 전송합니다 
+.PP
+\fBParameters\fP
+.RS 4
+\fItexture\fP 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Kunnymann unity package from the source code\&.

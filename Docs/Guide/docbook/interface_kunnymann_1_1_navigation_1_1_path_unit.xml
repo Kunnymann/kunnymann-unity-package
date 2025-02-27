@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_interface_kunnymann_1_1_navigation_1_1_path_unit" xml:lang="en-US">
+<title>Kunnymann.Navigation.PathUnit Interface Reference</title>
+<indexterm><primary>Kunnymann.Navigation.PathUnit</primary></indexterm>
+<para>
+
+<para>Units that make up the navigation path. </para>
+ 
+</para>
+<para>Inheritance diagram for Kunnymann.Navigation.PathUnit:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="interface_kunnymann_1_1_navigation_1_1_path_unit.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_interface_kunnymann_1_1_navigation_1_1_path_unit_1a6493f837bb39df3868b0cb97e13d846c">ID</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>ID. </para>
+</listitem>
+            <listitem><para>string <link linkend="_interface_kunnymann_1_1_navigation_1_1_path_unit_1a3fd6d3e6e1e94d8fe06405fe51566770">Name</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Name. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Units that make up the navigation path. </para>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_interface_kunnymann_1_1_navigation_1_1_path_unit_1a6493f837bb39df3868b0cb97e13d846c"/><section>
+    <title>ID</title>
+<indexterm><primary>ID</primary><secondary>Kunnymann.Navigation.PathUnit</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.PathUnit</primary><secondary>ID</secondary></indexterm>
+<para><computeroutput>string Kunnymann.Navigation.PathUnit.ID<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>ID. </para>
+</para>
+<para>
+Implemented in <link linkend="_class_kunnymann_1_1_navigation_1_1_current_point_1a93ade0dabf59d35b7787be16212a4405">Kunnymann.Navigation.CurrentPoint</link>.</para>
+</section>
+<anchor xml:id="_interface_kunnymann_1_1_navigation_1_1_path_unit_1a3fd6d3e6e1e94d8fe06405fe51566770"/><section>
+    <title>Name</title>
+<indexterm><primary>Name</primary><secondary>Kunnymann.Navigation.PathUnit</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.PathUnit</primary><secondary>Name</secondary></indexterm>
+<para><computeroutput>string Kunnymann.Navigation.PathUnit.Name<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Name. </para>
+</para>
+<para>
+Implemented in <link linkend="_class_kunnymann_1_1_navigation_1_1_current_point_1abdbc2b05461ee1cd060cf79374f856fd">Kunnymann.Navigation.CurrentPoint</link>.</para>
+</section>
+</section>
+</section>

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_container" xml:lang="en-US">
+<title>Kunnymann.UI.Popup.PopupContainer Class Reference</title>
+<indexterm><primary>Kunnymann.UI.Popup.PopupContainer</primary></indexterm>
+<para>
+
+<para>UIPopup Prefab들을 관리하는 Container. </para>
+ 
+</para>
+<para>Inheritance diagram for Kunnymann.UI.Popup.PopupContainer:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_container.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Package Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit">PopupUnit</link> <link linkend="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_container_1aa8c509646dca9d4bbc72abd0e26835c9">GetUIPopup</link> (string popupName)</para>
+
+<para>UIPopup을 리스트로부터 찾아와, Instantiate하여 반환합니다. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Properties inherited from <link linkend="_class_kunnymann_1_1_base_1_1_utility_1_1_mono_behaviour_singleton-1-g">Kunnymann.Base.Utility.MonoBehaviourSingleton&lt; T &gt;</link>        <itemizedlist>
+            <listitem><para>static T <emphasis role="strong">Instance</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>싱글턴 객체 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>UIPopup Prefab들을 관리하는 Container. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_container_1aa8c509646dca9d4bbc72abd0e26835c9"/><section>
+    <title>GetUIPopup()</title>
+<indexterm><primary>GetUIPopup</primary><secondary>Kunnymann.UI.Popup.PopupContainer</secondary></indexterm>
+<indexterm><primary>Kunnymann.UI.Popup.PopupContainer</primary><secondary>GetUIPopup</secondary></indexterm>
+<para><computeroutput><link linkend="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit">PopupUnit</link> Kunnymann.UI.Popup.PopupContainer.GetUIPopup (string popupName)<computeroutput>[package]</computeroutput></computeroutput></para><para>
+
+<para>UIPopup을 리스트로부터 찾아와, Instantiate하여 반환합니다. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>popupName</entry><entry>
+<para>UIPopup 프리팹 이름</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>UIPopup</para>
+</formalpara>
+</para>
+</section>
+</section>
+</section>

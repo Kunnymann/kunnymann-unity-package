@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_utility" xml:lang="en-US">
+<title>Kunnymann.UI.Popup.PopupUtility Class Reference</title>
+<indexterm><primary>Kunnymann.UI.Popup.PopupUtility</primary></indexterm>
+<para>
+
+<para><link linkend="_namespace_kunnymann_1_1_u_i_1_1_popup">Popup</link> 확장 메소드 클래스 </para>
+ 
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static T <link linkend="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_utility_1a2e705d8be43c97836ff91ce1758bbd90">SetText&lt; T &gt;</link> (this T uiPopup, params string[] texts)</para>
+
+<para>UIPopup을 구성하고 있는 TextFields에 텍스트를 설정합니다. </para>
+</listitem>
+            <listitem><para>static T <link linkend="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_utility_1aa220bc7f84e415b9abf4bc4be2292c24">SetLocalizedText&lt; T &gt;</link> (this T uiPopup, bool forceEmpty=true)</para>
+
+<para>Popup에 지정된 TextFields에 LocalizedText를 설정합니다. </para>
+</listitem>
+            <listitem><para>static T <link linkend="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_utility_1a8aa7f346c827b382b7eb4fb8f7f15803">SetButtonEvent&lt; T &gt;</link> (this T uiPopup, params UnityAction[] actions)</para>
+
+<para>UIPopup을 구성하고 있는 Button에 이벤트를 등록합니다. </para>
+</listitem>
+            <listitem><para>static T <link linkend="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_utility_1a308884e7338c6f17bb21a392d607ce60">SetDependencyOnView&lt; T &gt;</link> (this T uiPop, <link linkend="_class_kunnymann_1_1_u_i_1_1_view_unit">ViewUnit</link> view)</para>
+
+<para>UIPopup의 Dependency를 설정합니다. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_namespace_kunnymann_1_1_u_i_1_1_popup">Popup</link> 확장 메소드 클래스 </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_utility_1a8aa7f346c827b382b7eb4fb8f7f15803"/><section>
+    <title>SetButtonEvent&lt; T &gt;()</title>
+<indexterm><primary>SetButtonEvent&lt; T &gt;</primary><secondary>Kunnymann.UI.Popup.PopupUtility</secondary></indexterm>
+<indexterm><primary>Kunnymann.UI.Popup.PopupUtility</primary><secondary>SetButtonEvent&lt; T &gt;</secondary></indexterm>
+<para><computeroutput>static T Kunnymann.UI.Popup.PopupUtility.SetButtonEvent&lt; T &gt; (this T uiPopup, params UnityAction[] actions)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>UIPopup을 구성하고 있는 Button에 이벤트를 등록합니다. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>T</entry><entry>
+<para>UIPopup 클래스</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>uiPopup</entry><entry>
+<para>UIPopup</para>
+</entry>
+                            </row>
+                            <row>
+<entry>actions</entry><entry>
+<para>Button에 할당될 이벤트</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>UIPopup</para>
+</formalpara>
+</para>
+<simplesect><title>Type Constraints</title>
+<para><emphasis role="strong">T:PopupUnit</emphasis></para>
+</simplesect>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_utility_1a308884e7338c6f17bb21a392d607ce60"/><section>
+    <title>SetDependencyOnView&lt; T &gt;()</title>
+<indexterm><primary>SetDependencyOnView&lt; T &gt;</primary><secondary>Kunnymann.UI.Popup.PopupUtility</secondary></indexterm>
+<indexterm><primary>Kunnymann.UI.Popup.PopupUtility</primary><secondary>SetDependencyOnView&lt; T &gt;</secondary></indexterm>
+<para><computeroutput>static T Kunnymann.UI.Popup.PopupUtility.SetDependencyOnView&lt; T &gt; (this T uiPop, <link linkend="_class_kunnymann_1_1_u_i_1_1_view_unit">ViewUnit</link> view)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>UIPopup의 Dependency를 설정합니다. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>T</entry><entry>
+<para>UIPopup 클래스</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>uiPop</entry><entry>
+<para>UIPopup</para>
+</entry>
+                            </row>
+                            <row>
+<entry>view</entry><entry>
+<para>View</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>UIPopup</para>
+</formalpara>
+</para>
+<simplesect><title>Type Constraints</title>
+<para><emphasis role="strong">T:PopupUnit</emphasis></para>
+</simplesect>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_utility_1aa220bc7f84e415b9abf4bc4be2292c24"/><section>
+    <title>SetLocalizedText&lt; T &gt;()</title>
+<indexterm><primary>SetLocalizedText&lt; T &gt;</primary><secondary>Kunnymann.UI.Popup.PopupUtility</secondary></indexterm>
+<indexterm><primary>Kunnymann.UI.Popup.PopupUtility</primary><secondary>SetLocalizedText&lt; T &gt;</secondary></indexterm>
+<para><computeroutput>static T Kunnymann.UI.Popup.PopupUtility.SetLocalizedText&lt; T &gt; (this T uiPopup, bool forceEmpty = <computeroutput>true</computeroutput>
+)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Popup에 지정된 TextFields에 LocalizedText를 설정합니다. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>T</entry><entry>
+<para>UIPopup 클래스</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>uiPopup</entry><entry>
+<para>UIPopup</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>UIPopup</para>
+</formalpara>
+</para>
+<simplesect><title>Type Constraints</title>
+<para><emphasis role="strong">T:PopupUnit</emphasis></para>
+</simplesect>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_utility_1a2e705d8be43c97836ff91ce1758bbd90"/><section>
+    <title>SetText&lt; T &gt;()</title>
+<indexterm><primary>SetText&lt; T &gt;</primary><secondary>Kunnymann.UI.Popup.PopupUtility</secondary></indexterm>
+<indexterm><primary>Kunnymann.UI.Popup.PopupUtility</primary><secondary>SetText&lt; T &gt;</secondary></indexterm>
+<para><computeroutput>static T Kunnymann.UI.Popup.PopupUtility.SetText&lt; T &gt; (this T uiPopup, params string[] texts)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>UIPopup을 구성하고 있는 TextFields에 텍스트를 설정합니다. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>T</entry><entry>
+<para>UIPopup 클래스</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>uiPopup</entry><entry>
+<para>UIPopup</para>
+</entry>
+                            </row>
+                            <row>
+<entry>texts</entry><entry>
+<para>TextField에 들어갈 값</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>UIPopup</para>
+</formalpara>
+</para>
+<simplesect><title>Type Constraints</title>
+<para><emphasis role="strong">T:PopupUnit</emphasis></para>
+</simplesect>
+</section>
+</section>
+</section>

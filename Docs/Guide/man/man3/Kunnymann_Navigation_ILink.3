@@ -1,0 +1,68 @@
+.TH "Kunnymann.Navigation.ILink" 3 "Version 1.0" "Kunnymann unity package" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Kunnymann.Navigation.ILink \- Link interface\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBKunnymann\&.Navigation\&.PathUnit\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBReverse\fP ()"
+.br
+.RI "Reverse link data\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "\fBINode\fP \fBFrom\fP\fR [get]\fP"
+.br
+.RI "From node\&. "
+.ti -1c
+.RI "\fBINode\fP \fBTo\fP\fR [get]\fP"
+.br
+.RI "To node\&. "
+.ti -1c
+.RI "\fBLinkDirection\fP \fBDirection\fP\fR [get]\fP"
+.br
+.RI "Connected direction\&. "
+.ti -1c
+.RI "float \fBDistance\fP\fR [get]\fP"
+.br
+.RI "Distance\&. "
+.ti -1c
+.RI "bool \fBIsTransitionLink\fP\fR [get]\fP"
+.br
+.RI "Is transition link\&. "
+.in -1c
+
+Properties inherited from \fBKunnymann\&.Navigation\&.PathUnit\fP
+.in +1c
+.ti -1c
+.RI "string \fBID\fP\fR [get]\fP"
+.br
+.RI "ID\&. "
+.ti -1c
+.RI "string \fBName\fP\fR [get]\fP"
+.br
+.RI "Name\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Link interface\&. 
+.SH "Property Documentation"
+.PP 
+.SS "\fBLinkDirection\fP Kunnymann\&.Navigation\&.ILink\&.Direction\fR [get]\fP"
+
+.PP
+Connected direction\&. Forward: From -> To, Backward : From <- To, Bidirection : From <-> To 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Kunnymann unity package from the source code\&.

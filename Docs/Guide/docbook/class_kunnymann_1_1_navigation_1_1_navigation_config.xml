@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_config" xml:lang="en-US">
+<title>Kunnymann.Navigation.NavigationConfig Class Reference</title>
+<indexterm><primary>Kunnymann.Navigation.NavigationConfig</primary></indexterm>
+<para>
+
+<para><link linkend="_namespace_kunnymann_1_1_navigation">Navigation</link> configuration. </para>
+ 
+</para>
+<para>Inheritance diagram for Kunnymann.Navigation.NavigationConfig:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_kunnymann_1_1_navigation_1_1_navigation_config.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_config_1a2994da75cc36b4335fa9fcb177d2db31"/>void <emphasis role="strong">Initialize</emphasis> ()</para>
+
+<para>Initialize navigation raw data. </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> &gt; <link linkend="_class_kunnymann_1_1_navigation_1_1_navigation_config_1a46c34caa8ded75bb23b3bbd18ec9c30e">GetNodeContainer</link> ()</para>
+
+<para>Return <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> container. </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_link">ILink</link> &gt; <link linkend="_class_kunnymann_1_1_navigation_1_1_navigation_config_1a93cb89622cdb98673dd6b5caa2ec0426">GetLinkContainer</link> ()</para>
+
+<para>Return <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_link">ILink</link> container. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_config_1a7f821c08be08cb7407ad7911b3fc2329"/>void <emphasis role="strong">Awake</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_namespace_kunnymann_1_1_navigation">Navigation</link> configuration. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_config_1a93cb89622cdb98673dd6b5caa2ec0426"/><section>
+    <title>GetLinkContainer()</title>
+<indexterm><primary>GetLinkContainer</primary><secondary>Kunnymann.Navigation.NavigationConfig</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.NavigationConfig</primary><secondary>GetLinkContainer</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_link">ILink</link> &gt; Kunnymann.Navigation.NavigationConfig.GetLinkContainer ( )<computeroutput>[abstract]</computeroutput></computeroutput></para><para>
+
+<para>Return <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_link">ILink</link> container. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para><link linkend="_interface_kunnymann_1_1_navigation_1_1_i_link">ILink</link> container</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_config_1a46c34caa8ded75bb23b3bbd18ec9c30e"/><section>
+    <title>GetNodeContainer()</title>
+<indexterm><primary>GetNodeContainer</primary><secondary>Kunnymann.Navigation.NavigationConfig</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.NavigationConfig</primary><secondary>GetNodeContainer</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> &gt; Kunnymann.Navigation.NavigationConfig.GetNodeContainer ( )<computeroutput>[abstract]</computeroutput></computeroutput></para><para>
+
+<para>Return <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> container. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para><link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> container</para>
+</formalpara>
+</para>
+</section>
+</section>
+</section>

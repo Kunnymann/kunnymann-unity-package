@@ -1,0 +1,233 @@
+.TH "Kunnymann.Navigation.NavigationModule" 3 "Version 1.0" "Kunnymann unity package" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Kunnymann.Navigation.NavigationModule \- \fBNavigation\fP module\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBKunnymann\&.Base\&.ModuleBase\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBReady\fP (\fBNavigationConfig\fP config, Transform setTarget)"
+.br
+.RI "Initialize navigation module\&. "
+.ti -1c
+.RI "void \fBRegisterBehavour\fP (\fBINavigationEventHandler\fP behavour)"
+.br
+.RI "Register NavigationEventHandler\&. "
+.ti -1c
+.RI "void \fBUnregisterBehavour\fP (\fBINavigationEventHandler\fP behavour)"
+.br
+.RI "Unregister NavigationEventHandler\&. "
+.ti -1c
+.RI "\fBPath\fP \fBGetPath\fP (\fBINode\fP from, \fBINode\fP to, \fBTransitionType\fP transitionType)"
+.br
+.RI "Return path from start node to end node\&. "
+.ti -1c
+.RI "\fBPath\fP \fBGetPath\fP (Vector3 from, \fBINode\fP to, \fBTransitionType\fP transitionType)"
+.br
+.RI "Return path from Vector3 position to end node\&. "
+.ti -1c
+.RI "void \fBSetupPath\fP (\fBINode\fP destination, \fBTransitionType\fP transition)"
+.br
+.RI "Return path from current position to end node\&. "
+.ti -1c
+.RI "bool \fBRecoveryPath\fP ()"
+.br
+.RI "\fBNavigation\fP recovery path\&. "
+.ti -1c
+.RI "void \fBStart\fP ()"
+.br
+.RI "Start navigation\&. "
+.ti -1c
+.RI "void \fBCancel\fP ()"
+.br
+.RI "Cancel navigation\&. "
+.in -1c
+
+Public Member Functions inherited from \fBKunnymann\&.Base\&.ModuleBase\fP
+.in +1c
+.ti -1c
+.RI "\fBModuleBase\fP ()"
+.br
+.RI "생성자 Default FMS를 구축합니다 "
+.ti -1c
+.RI "void \fBRunOnMainThread\fP (params Action[] action)"
+.br
+.RI "Main thread에 액션을 밀어넣습니다 "
+.ti -1c
+.RI "virtual void \fBModuleInitialize\fP ()"
+.br
+.RI "모듈의 초기화 사이클 "
+.ti -1c
+.RI "virtual void \fBModuleUpdate\fP ()"
+.br
+.RI "모듈의 Unity update 사이클 "
+.ti -1c
+.RI "virtual void \fBModuleTerminate\fP ()"
+.br
+.RI "모듈의 종료 사이클 "
+.ti -1c
+.RI "void \fBDispose\fP ()"
+.br
+.RI "Dispose\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "List< \fBINode\fP > \fBNodes\fP\fR [get]\fP"
+.br
+.RI "Return Node container\&. "
+.ti -1c
+.RI "List< \fBILink\fP > \fBLinks\fP\fR [get]\fP"
+.br
+.RI "Return Link container\&. "
+.ti -1c
+.RI "Vector3 \fBCurrentPose\fP\fR [get]\fP"
+.br
+.RI "Return current pose\&. "
+.ti -1c
+.RI "\fBPath\fP \fBActivePath\fP\fR [get]\fP"
+.br
+.RI "Return current path\&. "
+.ti -1c
+.RI "\fBNavigationState\fP \fBState\fP\fR [get]\fP"
+.br
+.RI "Return current navigation state\&. "
+.ti -1c
+.RI "\fBTransitionType\fP \fBCurrentTransitType\fP\fR [get]\fP"
+.br
+.RI "Return current transition type\&. "
+.in -1c
+
+Properties inherited from \fBKunnymann\&.Base\&.ModuleBase\fP
+.in +1c
+.ti -1c
+.RI "\fBModuleState\fP \fBCurrentState\fP\fR [get]\fP"
+.br
+.RI "모듈 상태 "
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Package Functions inherited from \fBKunnymann\&.Base\&.ModuleBase\fP
+.in +1c
+.ti -1c
+.RI "void \fBProcess\fP (\fBTransitionCommand\fP transition=\fBTransitionCommand\&.None\fP)"
+.br
+.RI "모듈 동작을 처리합니다 "
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBNavigation\fP module\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBPath\fP Kunnymann\&.Navigation\&.NavigationModule\&.GetPath (\fBINode\fP from, \fBINode\fP to, \fBTransitionType\fP transitionType)"
+
+.PP
+Return path from start node to end node\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfrom\fP Start node
+.br
+\fIto\fP End node
+.br
+\fItransitionType\fP Transition method
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBPath\fP
+.RE
+.PP
+
+.SS "\fBPath\fP Kunnymann\&.Navigation\&.NavigationModule\&.GetPath (Vector3 from, \fBINode\fP to, \fBTransitionType\fP transitionType)"
+
+.PP
+Return path from Vector3 position to end node\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfrom\fP Vector3 position
+.br
+\fIto\fP End node
+.br
+\fItransitionType\fP Transition method
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBPath\fP
+.RE
+.PP
+
+.SS "void Kunnymann\&.Navigation\&.NavigationModule\&.Ready (\fBNavigationConfig\fP config, Transform setTarget)"
+
+.PP
+Initialize navigation module\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIconfig\fP \fBNavigation\fP configuration
+.br
+\fIsetTarget\fP Target to track
+.RE
+.PP
+
+.SS "bool Kunnymann\&.Navigation\&.NavigationModule\&.RecoveryPath ()"
+
+.PP
+\fBNavigation\fP recovery path\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Recovery success
+.RE
+.PP
+
+.SS "void Kunnymann\&.Navigation\&.NavigationModule\&.RegisterBehavour (\fBINavigationEventHandler\fP behavour)"
+
+.PP
+Register NavigationEventHandler\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbehavour\fP NavigationEventHandler
+.RE
+.PP
+
+.SS "void Kunnymann\&.Navigation\&.NavigationModule\&.SetupPath (\fBINode\fP destination, \fBTransitionType\fP transition)"
+
+.PP
+Return path from current position to end node\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdestination\fP End node
+.br
+\fItransition\fP Transition method
+.RE
+.PP
+
+.SS "void Kunnymann\&.Navigation\&.NavigationModule\&.UnregisterBehavour (\fBINavigationEventHandler\fP behavour)"
+
+.PP
+Unregister NavigationEventHandler\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIbehavour\fP NavigationEventHandler
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Kunnymann unity package from the source code\&.

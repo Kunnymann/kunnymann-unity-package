@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_interface_kunnymann_1_1_base_1_1_common_base" xml:lang="en-US">
+<title>Kunnymann.Base.CommonBase Interface Reference</title>
+<indexterm><primary>Kunnymann.Base.CommonBase</primary></indexterm>
+<para>
+
+<para>모듈 공통 인터페이스 </para>
+ 
+</para>
+<para>Inheritance diagram for Kunnymann.Base.CommonBase:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="interface_kunnymann_1_1_base_1_1_common_base.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<section>
+<title>Detailed Description</title>
+
+<para>모듈 공통 인터페이스 </para>
+</section>
+</section>

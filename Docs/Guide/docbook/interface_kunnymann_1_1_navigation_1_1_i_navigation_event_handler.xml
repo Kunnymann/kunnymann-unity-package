@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler" xml:lang="en-US">
+<title>Kunnymann.Navigation.INavigationEventHandler Interface Reference</title>
+<indexterm><primary>Kunnymann.Navigation.INavigationEventHandler</primary></indexterm>
+<para>
+
+<para><link linkend="_namespace_kunnymann_1_1_navigation">Navigation</link> event handler interface. </para>
+ 
+</para>
+<para>Inheritance diagram for Kunnymann.Navigation.INavigationEventHandler:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler_1ad2d11c4364045286fe6b87bfd92a3e6c">OnReadyNavigationSession</link> ()</para>
+
+<para>Called when the navigation session is ready. </para>
+</listitem>
+            <listitem><para>void <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler_1a659c7f6075eca365e8ec0983acec78b7">OnStartNavigationSession</link> (<link linkend="_class_kunnymann_1_1_navigation_1_1_path">Path</link> path)</para>
+
+<para>Called when the navigation session is started. </para>
+</listitem>
+            <listitem><para>void <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler_1a57553cdfe5456923678580efff3f9ead">OnEndNavigationSession</link> (<link linkend="_namespace_kunnymann_1_1_navigation_1a640f798214a381ef59d8747f68fbca51">SessionEndType</link> end)</para>
+
+<para>Called when the navigation session is ended. </para>
+</listitem>
+            <listitem><para>void <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler_1a7a91633d4bc27b912003dc593ee9f535">OnSessionStateChanged</link> (<link linkend="_namespace_kunnymann_1_1_navigation_1aa680eb42246bd5fdb3284061510a3e8a">NavigationState</link> state)</para>
+
+<para>Called when the navigation session state is changed. </para>
+</listitem>
+            <listitem><para>void <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler_1a6dd69be9c9b70290055f5ee32b6536fd">OnUpdatePath</link> (<link linkend="_class_kunnymann_1_1_navigation_1_1_path">Path</link> path)</para>
+
+<para>Called when the navigation path is updated. </para>
+</listitem>
+            <listitem><para>void <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler_1a360127a8b3f19b6b12ccf6ff3e21a765">OnRecoveryPath</link> (<link linkend="_class_kunnymann_1_1_navigation_1_1_path">Path</link> path)</para>
+
+<para>Called when the navigation path is recovered. </para>
+</listitem>
+            <listitem><para>void <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler_1ab699a2eb80260ca8c8fa0ca51939875d">OnEnterTransition</link> (<link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> node)</para>
+
+<para>Called when the target is entered transition zone. </para>
+</listitem>
+            <listitem><para>void <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler_1a7ae3d9189054f760c8f0e6ef6bda5a4f">OnExitTransition</link> (<link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> node)</para>
+
+<para>Called when the target is exited transition zone. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_namespace_kunnymann_1_1_navigation">Navigation</link> event handler interface. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler_1a57553cdfe5456923678580efff3f9ead"/><section>
+    <title>OnEndNavigationSession()</title>
+<indexterm><primary>OnEndNavigationSession</primary><secondary>Kunnymann.Navigation.INavigationEventHandler</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.INavigationEventHandler</primary><secondary>OnEndNavigationSession</secondary></indexterm>
+<para><computeroutput>void Kunnymann.Navigation.INavigationEventHandler.OnEndNavigationSession (<link linkend="_namespace_kunnymann_1_1_navigation_1a640f798214a381ef59d8747f68fbca51">SessionEndType</link> end)</computeroutput></para><para>
+
+<para>Called when the navigation session is ended. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>end</entry><entry>
+<para>Session end type</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implemented in <link linkend="_class_kunnymann_1_1_navigation_1_1_navigation_behaviour_1acafd48611e42c61caac868ad001e5471">Kunnymann.Navigation.NavigationBehaviour</link>.</para>
+</section>
+<anchor xml:id="_interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler_1ab699a2eb80260ca8c8fa0ca51939875d"/><section>
+    <title>OnEnterTransition()</title>
+<indexterm><primary>OnEnterTransition</primary><secondary>Kunnymann.Navigation.INavigationEventHandler</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.INavigationEventHandler</primary><secondary>OnEnterTransition</secondary></indexterm>
+<para><computeroutput>void Kunnymann.Navigation.INavigationEventHandler.OnEnterTransition (<link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> node)</computeroutput></para><para>
+
+<para>Called when the target is entered transition zone. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>node</entry><entry>
+<para>transition zone node</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implemented in <link linkend="_class_kunnymann_1_1_navigation_1_1_navigation_behaviour_1af513a7402e288311a90bb53446890d7c">Kunnymann.Navigation.NavigationBehaviour</link>.</para>
+</section>
+<anchor xml:id="_interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler_1a7ae3d9189054f760c8f0e6ef6bda5a4f"/><section>
+    <title>OnExitTransition()</title>
+<indexterm><primary>OnExitTransition</primary><secondary>Kunnymann.Navigation.INavigationEventHandler</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.INavigationEventHandler</primary><secondary>OnExitTransition</secondary></indexterm>
+<para><computeroutput>void Kunnymann.Navigation.INavigationEventHandler.OnExitTransition (<link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> node)</computeroutput></para><para>
+
+<para>Called when the target is exited transition zone. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>node</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implemented in <link linkend="_class_kunnymann_1_1_navigation_1_1_navigation_behaviour_1ac606eedb08ac2ece7217db00fe15bf70">Kunnymann.Navigation.NavigationBehaviour</link>.</para>
+</section>
+<anchor xml:id="_interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler_1ad2d11c4364045286fe6b87bfd92a3e6c"/><section>
+    <title>OnReadyNavigationSession()</title>
+<indexterm><primary>OnReadyNavigationSession</primary><secondary>Kunnymann.Navigation.INavigationEventHandler</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.INavigationEventHandler</primary><secondary>OnReadyNavigationSession</secondary></indexterm>
+<para><computeroutput>void Kunnymann.Navigation.INavigationEventHandler.OnReadyNavigationSession ( )</computeroutput></para><para>
+
+<para>Called when the navigation session is ready. </para>
+</para>
+<para>
+Implemented in <link linkend="_class_kunnymann_1_1_navigation_1_1_navigation_behaviour_1a53d87671aabc3b647701c16a49a7f794">Kunnymann.Navigation.NavigationBehaviour</link>.</para>
+</section>
+<anchor xml:id="_interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler_1a360127a8b3f19b6b12ccf6ff3e21a765"/><section>
+    <title>OnRecoveryPath()</title>
+<indexterm><primary>OnRecoveryPath</primary><secondary>Kunnymann.Navigation.INavigationEventHandler</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.INavigationEventHandler</primary><secondary>OnRecoveryPath</secondary></indexterm>
+<para><computeroutput>void Kunnymann.Navigation.INavigationEventHandler.OnRecoveryPath (<link linkend="_class_kunnymann_1_1_navigation_1_1_path">Path</link> path)</computeroutput></para><para>
+
+<para>Called when the navigation path is recovered. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>path</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implemented in <link linkend="_class_kunnymann_1_1_navigation_1_1_navigation_behaviour_1a7e6aea0a3b4cffefbd8840782ecb37ac">Kunnymann.Navigation.NavigationBehaviour</link>.</para>
+</section>
+<anchor xml:id="_interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler_1a7a91633d4bc27b912003dc593ee9f535"/><section>
+    <title>OnSessionStateChanged()</title>
+<indexterm><primary>OnSessionStateChanged</primary><secondary>Kunnymann.Navigation.INavigationEventHandler</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.INavigationEventHandler</primary><secondary>OnSessionStateChanged</secondary></indexterm>
+<para><computeroutput>void Kunnymann.Navigation.INavigationEventHandler.OnSessionStateChanged (<link linkend="_namespace_kunnymann_1_1_navigation_1aa680eb42246bd5fdb3284061510a3e8a">NavigationState</link> state)</computeroutput></para><para>
+
+<para>Called when the navigation session state is changed. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>state</entry><entry>
+<para><link linkend="_namespace_kunnymann_1_1_navigation">Navigation</link> session state</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implemented in <link linkend="_class_kunnymann_1_1_navigation_1_1_navigation_behaviour_1a7b5e0928547ec93dc24c0b6eb222b91e">Kunnymann.Navigation.NavigationBehaviour</link>.</para>
+</section>
+<anchor xml:id="_interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler_1a659c7f6075eca365e8ec0983acec78b7"/><section>
+    <title>OnStartNavigationSession()</title>
+<indexterm><primary>OnStartNavigationSession</primary><secondary>Kunnymann.Navigation.INavigationEventHandler</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.INavigationEventHandler</primary><secondary>OnStartNavigationSession</secondary></indexterm>
+<para><computeroutput>void Kunnymann.Navigation.INavigationEventHandler.OnStartNavigationSession (<link linkend="_class_kunnymann_1_1_navigation_1_1_path">Path</link> path)</computeroutput></para><para>
+
+<para>Called when the navigation session is started. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>path</entry><entry>
+<para>Current path</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implemented in <link linkend="_class_kunnymann_1_1_navigation_1_1_navigation_behaviour_1aa7fd9e222e0c2e8d9111ed3fb42dd410">Kunnymann.Navigation.NavigationBehaviour</link>.</para>
+</section>
+<anchor xml:id="_interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler_1a6dd69be9c9b70290055f5ee32b6536fd"/><section>
+    <title>OnUpdatePath()</title>
+<indexterm><primary>OnUpdatePath</primary><secondary>Kunnymann.Navigation.INavigationEventHandler</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.INavigationEventHandler</primary><secondary>OnUpdatePath</secondary></indexterm>
+<para><computeroutput>void Kunnymann.Navigation.INavigationEventHandler.OnUpdatePath (<link linkend="_class_kunnymann_1_1_navigation_1_1_path">Path</link> path)</computeroutput></para><para>
+
+<para>Called when the navigation path is updated. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>path</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implemented in <link linkend="_class_kunnymann_1_1_navigation_1_1_navigation_behaviour_1a8a39cd8748902d181785d327cd3c0054">Kunnymann.Navigation.NavigationBehaviour</link>.</para>
+</section>
+</section>
+</section>

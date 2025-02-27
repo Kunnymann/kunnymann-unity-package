@@ -1,0 +1,136 @@
+.TH "Kunnymann.Navigation.CurrentPoint" 3 "Version 1.0" "Kunnymann unity package" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Kunnymann.Navigation.CurrentPoint
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBKunnymann\&.Navigation\&.INode\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBAddLink\fP (\fBILink\fP link)"
+.br
+.RI "Add link\&. "
+.ti -1c
+.RI "void \fBAddConnectedNode\fP (\fBINode\fP node)"
+.br
+.RI "Add connected node\&. "
+.in -1c
+.SS "Package Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCurrentPoint\fP (Vector3 position)"
+.br
+.ti -1c
+.RI "void \fBUpdateValue\fP (\fBINode\fP node)"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "float \fBDistance\fP\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "Vector3 \fBPosition\fP\fR [get, set]\fP"
+.br
+.RI "Unity position\&. "
+.ti -1c
+.RI "Vector3 \fBDirection\fP\fR [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBID\fP\fR [get]\fP"
+.br
+.RI "ID\&. "
+.ti -1c
+.RI "string \fBName\fP\fR [get]\fP"
+.br
+.RI "Name\&. "
+.ti -1c
+.RI "\fBTransitionType\fP \fBTransitionType\fP\fR [get]\fP"
+.br
+.RI "Transition type\&. "
+.ti -1c
+.RI "IReadOnlyList< \fBILink\fP > \fBLinks\fP\fR [get]\fP"
+.br
+.RI "Link data that connects to node\&. "
+.ti -1c
+.RI "IEnumerable< \fBINode\fP > \fBConnectedNode\fP\fR [get]\fP"
+.br
+.RI "Connected node\&. "
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void Kunnymann\&.Navigation\&.CurrentPoint\&.AddConnectedNode (\fBINode\fP node)"
+
+.PP
+Add connected node\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInode\fP Node instance
+.RE
+.PP
+
+.PP
+Implements \fBKunnymann\&.Navigation\&.INode\fP\&.
+.SS "void Kunnymann\&.Navigation\&.CurrentPoint\&.AddLink (\fBILink\fP link)"
+
+.PP
+Add link\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlink\fP Link instance
+.RE
+.PP
+
+.PP
+Implements \fBKunnymann\&.Navigation\&.INode\fP\&.
+.SH "Property Documentation"
+.PP 
+.SS "IEnumerable<\fBINode\fP> Kunnymann\&.Navigation\&.CurrentPoint\&.ConnectedNode\fR [get]\fP"
+
+.PP
+Connected node\&. 
+.PP
+Implements \fBKunnymann\&.Navigation\&.INode\fP\&.
+.SS "string Kunnymann\&.Navigation\&.CurrentPoint\&.ID\fR [get]\fP"
+
+.PP
+ID\&. 
+.PP
+Implements \fBKunnymann\&.Navigation\&.PathUnit\fP\&.
+.SS "IReadOnlyList<\fBILink\fP> Kunnymann\&.Navigation\&.CurrentPoint\&.Links\fR [get]\fP"
+
+.PP
+Link data that connects to node\&. 
+.PP
+Implements \fBKunnymann\&.Navigation\&.INode\fP\&.
+.SS "string Kunnymann\&.Navigation\&.CurrentPoint\&.Name\fR [get]\fP"
+
+.PP
+Name\&. 
+.PP
+Implements \fBKunnymann\&.Navigation\&.PathUnit\fP\&.
+.SS "Vector3 Kunnymann\&.Navigation\&.CurrentPoint\&.Position\fR [get]\fP, \fR [set]\fP"
+
+.PP
+Unity position\&. 
+.PP
+Implements \fBKunnymann\&.Navigation\&.INode\fP\&.
+.SS "\fBTransitionType\fP Kunnymann\&.Navigation\&.CurrentPoint\&.TransitionType\fR [get]\fP"
+
+.PP
+Transition type\&. 
+.PP
+Implements \fBKunnymann\&.Navigation\&.INode\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Kunnymann unity package from the source code\&.

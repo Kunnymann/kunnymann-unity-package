@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_kunnymann_1_1_base_1_1_debugger_1_1_log_helper" xml:lang="en-US">
+<title>Kunnymann.Base.Debugger.LogHelper Class Reference</title>
+<indexterm><primary>Kunnymann.Base.Debugger.LogHelper</primary></indexterm>
+<para>
+
+<para>Log helper 클래스 </para>
+ 
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_kunnymann_1_1_base_1_1_debugger_1_1_log_helper_1ac0d966f77fa64f6c20406e5cd34778b5">Log</link> (<link linkend="_namespace_kunnymann_1_1_base_1_1_debugger_1ad0c1f577757bcc2297591dc772185140">LogLevel</link> lv, object msg)</para>
+
+<para>레벨에 따른 로그를 출력합니다 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Log helper 클래스 </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_kunnymann_1_1_base_1_1_debugger_1_1_log_helper_1ac0d966f77fa64f6c20406e5cd34778b5"/><section>
+    <title>Log()</title>
+<indexterm><primary>Log</primary><secondary>Kunnymann.Base.Debugger.LogHelper</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base.Debugger.LogHelper</primary><secondary>Log</secondary></indexterm>
+<para><computeroutput>void Kunnymann.Base.Debugger.LogHelper.Log (<link linkend="_namespace_kunnymann_1_1_base_1_1_debugger_1ad0c1f577757bcc2297591dc772185140">LogLevel</link> lv, object msg)</computeroutput></para><para>
+
+<para>레벨에 따른 로그를 출력합니다 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>lv</entry><entry>
+<para>로그 레벨</para>
+</entry>
+                            </row>
+                            <row>
+<entry>msg</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>Exception</entry><entry>
+<para>유효하지 않는 레벨에 대한 에러</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+</section>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_const" xml:lang="en-US">
+<title>Kunnymann.Navigation.NavigationConst Class Reference</title>
+<indexterm><primary>Kunnymann.Navigation.NavigationConst</primary></indexterm>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_const_1a6a41255412e8292f2bdacf2a7b51fd7a"/>static float <emphasis role="strong">ArrivalThreshold</emphasis> = 1.0f</para>
+
+<para>Arrival threshold. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_const_1a8de7c8dc71a041e5e94ff43b2b1fb8e7"/>static float <emphasis role="strong">EnterTransitionThreshold</emphasis> = 2.0f</para>
+
+<para>Enter transition threshold. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_const_1a2edf75a06636cb0cfed2e4a8287a85b1"/>static float <emphasis role="strong">RecoveryThreshold</emphasis> = 1.5f</para>
+
+<para>Recovery threshold. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_const_1a3142fe386bee84a002bfab5dbe92d6bf"/>static string <emphasis role="strong">CurrentPointID</emphasis> = &quot;CurrentPoint&quot;</para>
+
+<para><link linkend="_class_kunnymann_1_1_navigation_1_1_current_point">CurrentPoint</link> id. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_const_1ae1da89995cfe609b71760ed83f62785e"/>static string <emphasis role="strong">CurrentPointName</emphasis> = &quot;CurrentPoint&quot;</para>
+
+<para><link linkend="_class_kunnymann_1_1_navigation_1_1_current_point">CurrentPoint</link> name. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

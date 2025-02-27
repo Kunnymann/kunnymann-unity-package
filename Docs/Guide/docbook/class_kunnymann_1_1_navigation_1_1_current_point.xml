@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_kunnymann_1_1_navigation_1_1_current_point" xml:lang="en-US">
+<title>Kunnymann.Navigation.CurrentPoint Class Reference</title>
+<indexterm><primary>Kunnymann.Navigation.CurrentPoint</primary></indexterm>
+<para>Inheritance diagram for Kunnymann.Navigation.CurrentPoint:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_kunnymann_1_1_navigation_1_1_current_point.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_kunnymann_1_1_navigation_1_1_current_point_1af8b687bcd0053fe2a8a247cc6fc60e8a">AddLink</link> (<link linkend="_interface_kunnymann_1_1_navigation_1_1_i_link">ILink</link> link)</para>
+
+<para>Add link. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_kunnymann_1_1_navigation_1_1_current_point_1a5dd2f3ab95af6d4a48b2a09038ce5818">AddConnectedNode</link> (<link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> node)</para>
+
+<para>Add connected node. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Package Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_navigation_1_1_current_point_1a392548abcbbbc1d4aeb8b9e7f98e11f3"/><emphasis role="strong">CurrentPoint</emphasis> (Vector3 position)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_navigation_1_1_current_point_1aa2159a37ca69cdf45477aa35e1e9435f"/>void <emphasis role="strong">UpdateValue</emphasis> (<link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> node)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_navigation_1_1_current_point_1af4f93b2dfc8d86a4fab3d872cee2634d"/>float <emphasis role="strong">Distance</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>Vector3 <link linkend="_class_kunnymann_1_1_navigation_1_1_current_point_1ae9150292c250cf8bcb2a0fb1b3917bd8">Position</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Unity position. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_navigation_1_1_current_point_1a49c2e134c27597054fcc4dc33d0bc1af"/>Vector3 <emphasis role="strong">Direction</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_kunnymann_1_1_navigation_1_1_current_point_1a93ade0dabf59d35b7787be16212a4405">ID</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>ID. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_kunnymann_1_1_navigation_1_1_current_point_1abdbc2b05461ee1cd060cf79374f856fd">Name</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Name. </para>
+</listitem>
+            <listitem><para><link linkend="_namespace_kunnymann_1_1_navigation_1a26afc2d677d4f4e4aeba7d3bb25147ca">TransitionType</link> <link linkend="_class_kunnymann_1_1_navigation_1_1_current_point_1a67a4534d16781648d9f3e1ac4f9e81db">TransitionType</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Transition type. </para>
+</listitem>
+            <listitem><para>IReadOnlyList&lt; <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_link">ILink</link> &gt; <link linkend="_class_kunnymann_1_1_navigation_1_1_current_point_1ab95a49a053162750935a13f23f618e51">Links</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Link data that connects to node. </para>
+</listitem>
+            <listitem><para>IEnumerable&lt; <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> &gt; <link linkend="_class_kunnymann_1_1_navigation_1_1_current_point_1a628a5f608756684e7c2a7b6600cd8c27">ConnectedNode</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Connected node. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_kunnymann_1_1_navigation_1_1_current_point_1a5dd2f3ab95af6d4a48b2a09038ce5818"/><section>
+    <title>AddConnectedNode()</title>
+<indexterm><primary>AddConnectedNode</primary><secondary>Kunnymann.Navigation.CurrentPoint</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.CurrentPoint</primary><secondary>AddConnectedNode</secondary></indexterm>
+<para><computeroutput>void Kunnymann.Navigation.CurrentPoint.AddConnectedNode (<link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> node)</computeroutput></para><para>
+
+<para>Add connected node. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>node</entry><entry>
+<para>Node instance</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node_1afd39d3533d4edcc054b25e2d2aecad61">Kunnymann.Navigation.INode</link>.</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_navigation_1_1_current_point_1af8b687bcd0053fe2a8a247cc6fc60e8a"/><section>
+    <title>AddLink()</title>
+<indexterm><primary>AddLink</primary><secondary>Kunnymann.Navigation.CurrentPoint</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.CurrentPoint</primary><secondary>AddLink</secondary></indexterm>
+<para><computeroutput>void Kunnymann.Navigation.CurrentPoint.AddLink (<link linkend="_interface_kunnymann_1_1_navigation_1_1_i_link">ILink</link> link)</computeroutput></para><para>
+
+<para>Add link. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>link</entry><entry>
+<para>Link instance</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Implements <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node_1aae1d2f442878cf59cda02633289205c1">Kunnymann.Navigation.INode</link>.</para>
+</section>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_kunnymann_1_1_navigation_1_1_current_point_1a628a5f608756684e7c2a7b6600cd8c27"/><section>
+    <title>ConnectedNode</title>
+<indexterm><primary>ConnectedNode</primary><secondary>Kunnymann.Navigation.CurrentPoint</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.CurrentPoint</primary><secondary>ConnectedNode</secondary></indexterm>
+<para><computeroutput>IEnumerable&lt;<link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link>&gt; Kunnymann.Navigation.CurrentPoint.ConnectedNode<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Connected node. </para>
+</para>
+<para>
+Implements <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node_1a9297f4fb76c8ffc1794f2aefe42c3f9a">Kunnymann.Navigation.INode</link>.</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_navigation_1_1_current_point_1a93ade0dabf59d35b7787be16212a4405"/><section>
+    <title>ID</title>
+<indexterm><primary>ID</primary><secondary>Kunnymann.Navigation.CurrentPoint</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.CurrentPoint</primary><secondary>ID</secondary></indexterm>
+<para><computeroutput>string Kunnymann.Navigation.CurrentPoint.ID<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>ID. </para>
+</para>
+<para>
+Implements <link linkend="_interface_kunnymann_1_1_navigation_1_1_path_unit_1a6493f837bb39df3868b0cb97e13d846c">Kunnymann.Navigation.PathUnit</link>.</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_navigation_1_1_current_point_1ab95a49a053162750935a13f23f618e51"/><section>
+    <title>Links</title>
+<indexterm><primary>Links</primary><secondary>Kunnymann.Navigation.CurrentPoint</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.CurrentPoint</primary><secondary>Links</secondary></indexterm>
+<para><computeroutput>IReadOnlyList&lt;<link linkend="_interface_kunnymann_1_1_navigation_1_1_i_link">ILink</link>&gt; Kunnymann.Navigation.CurrentPoint.Links<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Link data that connects to node. </para>
+</para>
+<para>
+Implements <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node_1a38de2f732c43d335cf436717b82118df">Kunnymann.Navigation.INode</link>.</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_navigation_1_1_current_point_1abdbc2b05461ee1cd060cf79374f856fd"/><section>
+    <title>Name</title>
+<indexterm><primary>Name</primary><secondary>Kunnymann.Navigation.CurrentPoint</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.CurrentPoint</primary><secondary>Name</secondary></indexterm>
+<para><computeroutput>string Kunnymann.Navigation.CurrentPoint.Name<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Name. </para>
+</para>
+<para>
+Implements <link linkend="_interface_kunnymann_1_1_navigation_1_1_path_unit_1a3fd6d3e6e1e94d8fe06405fe51566770">Kunnymann.Navigation.PathUnit</link>.</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_navigation_1_1_current_point_1ae9150292c250cf8bcb2a0fb1b3917bd8"/><section>
+    <title>Position</title>
+<indexterm><primary>Position</primary><secondary>Kunnymann.Navigation.CurrentPoint</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.CurrentPoint</primary><secondary>Position</secondary></indexterm>
+<para><computeroutput>Vector3 Kunnymann.Navigation.CurrentPoint.Position<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Unity position. </para>
+</para>
+<para>
+Implements <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node_1a1ee1697d6a81f2332e6b331f551e5471">Kunnymann.Navigation.INode</link>.</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_navigation_1_1_current_point_1a67a4534d16781648d9f3e1ac4f9e81db"/><section>
+    <title>TransitionType</title>
+<indexterm><primary>TransitionType</primary><secondary>Kunnymann.Navigation.CurrentPoint</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.CurrentPoint</primary><secondary>TransitionType</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_kunnymann_1_1_navigation_1a26afc2d677d4f4e4aeba7d3bb25147ca">TransitionType</link> Kunnymann.Navigation.CurrentPoint.TransitionType<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Transition type. </para>
+</para>
+<para>
+Implements <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node_1ad9158e08d7c3984fa0bb3e6d42e9ce92">Kunnymann.Navigation.INode</link>.</para>
+</section>
+</section>
+</section>

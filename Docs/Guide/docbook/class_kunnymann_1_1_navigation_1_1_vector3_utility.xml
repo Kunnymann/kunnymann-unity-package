@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_kunnymann_1_1_navigation_1_1_vector3_utility" xml:lang="en-US">
+<title>Kunnymann.Navigation.Vector3Utility Class Reference</title>
+<indexterm><primary>Kunnymann.Navigation.Vector3Utility</primary></indexterm>
+<para>
+
+<para>Vector3 utility. </para>
+ 
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static Vector3 <link linkend="_class_kunnymann_1_1_navigation_1_1_vector3_utility_1a9de1a17b2735b56aaa6a0745a799d4f5">YZProject</link> (Vector3 vector)</para>
+
+<para>Vector3 YZ projection. </para>
+</listitem>
+            <listitem><para>static Vector3 <link linkend="_class_kunnymann_1_1_navigation_1_1_vector3_utility_1a4df494d2112c1cc1fd969f509c708503">XZProject</link> (Vector3 vector)</para>
+
+<para>Vector3 XZ projection. </para>
+</listitem>
+            <listitem><para>static Vector3 <link linkend="_class_kunnymann_1_1_navigation_1_1_vector3_utility_1a296c85c46f43030fffcdd738d3cda79d">XYProject</link> (Vector3 vector)</para>
+
+<para>Vector3 XY projection. </para>
+</listitem>
+            <listitem><para>static float <link linkend="_class_kunnymann_1_1_navigation_1_1_vector3_utility_1aa87b0c46ac0e681b4869b23521bb7066">GetYZDistance</link> (Vector3 vector1, Vector3 vector2)</para>
+
+<para>Return distance between two vectors. </para>
+</listitem>
+            <listitem><para>static float <link linkend="_class_kunnymann_1_1_navigation_1_1_vector3_utility_1a207182776dda39e84f12944fa314207d">GetXZDistance</link> (Vector3 vector1, Vector3 vector2)</para>
+
+<para>Return distance between two XZ projected vectors. </para>
+</listitem>
+            <listitem><para>static float <link linkend="_class_kunnymann_1_1_navigation_1_1_vector3_utility_1a235447e1fe7c2d77b8153c6de5e5c60e">GetXYDistance</link> (Vector3 vector1, Vector3 vector2)</para>
+
+<para>Return distance between two XY projected vectors. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Vector3 utility. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_kunnymann_1_1_navigation_1_1_vector3_utility_1a235447e1fe7c2d77b8153c6de5e5c60e"/><section>
+    <title>GetXYDistance()</title>
+<indexterm><primary>GetXYDistance</primary><secondary>Kunnymann.Navigation.Vector3Utility</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.Vector3Utility</primary><secondary>GetXYDistance</secondary></indexterm>
+<para><computeroutput>static float Kunnymann.Navigation.Vector3Utility.GetXYDistance (Vector3 vector1, Vector3 vector2)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Return distance between two XY projected vectors. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>vector1</entry><entry>
+<para>Vector 1</para>
+</entry>
+                            </row>
+                            <row>
+<entry>vector2</entry><entry>
+<para>Vector 2</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Distance</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_navigation_1_1_vector3_utility_1a207182776dda39e84f12944fa314207d"/><section>
+    <title>GetXZDistance()</title>
+<indexterm><primary>GetXZDistance</primary><secondary>Kunnymann.Navigation.Vector3Utility</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.Vector3Utility</primary><secondary>GetXZDistance</secondary></indexterm>
+<para><computeroutput>static float Kunnymann.Navigation.Vector3Utility.GetXZDistance (Vector3 vector1, Vector3 vector2)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Return distance between two XZ projected vectors. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>vector1</entry><entry>
+<para>Vector 1</para>
+</entry>
+                            </row>
+                            <row>
+<entry>vector2</entry><entry>
+<para>Vector 2</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Distance</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_navigation_1_1_vector3_utility_1aa87b0c46ac0e681b4869b23521bb7066"/><section>
+    <title>GetYZDistance()</title>
+<indexterm><primary>GetYZDistance</primary><secondary>Kunnymann.Navigation.Vector3Utility</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.Vector3Utility</primary><secondary>GetYZDistance</secondary></indexterm>
+<para><computeroutput>static float Kunnymann.Navigation.Vector3Utility.GetYZDistance (Vector3 vector1, Vector3 vector2)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Return distance between two vectors. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>vector1</entry><entry>
+<para>Vector 1</para>
+</entry>
+                            </row>
+                            <row>
+<entry>vector2</entry><entry>
+<para>Vector 2</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Distance</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_navigation_1_1_vector3_utility_1a296c85c46f43030fffcdd738d3cda79d"/><section>
+    <title>XYProject()</title>
+<indexterm><primary>XYProject</primary><secondary>Kunnymann.Navigation.Vector3Utility</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.Vector3Utility</primary><secondary>XYProject</secondary></indexterm>
+<para><computeroutput>static Vector3 Kunnymann.Navigation.Vector3Utility.XYProject (Vector3 vector)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Vector3 XY projection. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>vector</entry><entry>
+<para>Vector3</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>XY Vector3</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_navigation_1_1_vector3_utility_1a4df494d2112c1cc1fd969f509c708503"/><section>
+    <title>XZProject()</title>
+<indexterm><primary>XZProject</primary><secondary>Kunnymann.Navigation.Vector3Utility</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.Vector3Utility</primary><secondary>XZProject</secondary></indexterm>
+<para><computeroutput>static Vector3 Kunnymann.Navigation.Vector3Utility.XZProject (Vector3 vector)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Vector3 XZ projection. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>vector</entry><entry>
+<para>Vector3</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>XZ Vector3</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_navigation_1_1_vector3_utility_1a9de1a17b2735b56aaa6a0745a799d4f5"/><section>
+    <title>YZProject()</title>
+<indexterm><primary>YZProject</primary><secondary>Kunnymann.Navigation.Vector3Utility</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.Vector3Utility</primary><secondary>YZProject</secondary></indexterm>
+<para><computeroutput>static Vector3 Kunnymann.Navigation.Vector3Utility.YZProject (Vector3 vector)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Vector3 YZ projection. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>vector</entry><entry>
+<para>Vector3</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>YZ Vector3</para>
+</formalpara>
+</para>
+</section>
+</section>
+</section>

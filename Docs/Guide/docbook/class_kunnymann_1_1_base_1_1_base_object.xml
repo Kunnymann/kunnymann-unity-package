@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_kunnymann_1_1_base_1_1_base_object" xml:lang="en-US">
+<title>Kunnymann.Base.BaseObject Class Reference</title>
+<indexterm><primary>Kunnymann.Base.BaseObject</primary></indexterm>
+<para>
+
+<para>모듈 기본 오브젝트 </para>
+ 
+</para>
+<para>Inheritance diagram for Kunnymann.Base.BaseObject:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_kunnymann_1_1_base_1_1_base_object.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<section>
+<title>Detailed Description</title>
+
+<para>모듈 기본 오브젝트 </para>
+</section>
+</section>

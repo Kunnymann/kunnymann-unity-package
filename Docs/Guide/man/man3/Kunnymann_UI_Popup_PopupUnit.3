@@ -1,0 +1,266 @@
+.TH "Kunnymann.UI.Popup.PopupUnit" 3 "Version 1.0" "Kunnymann unity package" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Kunnymann.UI.Popup.PopupUnit \- \fBPopup\fP GUI의 최소 단위인 MonoBeheviour\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBShowImmediately\fP ()"
+.br
+.RI "UIPopup을 즉시 Show합니다\&. "
+.ti -1c
+.RI "virtual async UniTask \fBShow\fP ()"
+.br
+.RI "UIPopup을 애니메이션에 따라 Show합니다\&. "
+.ti -1c
+.RI "virtual async UniTask \fBShow\fP (float duration)"
+.br
+.RI "UIPopup을 애니메이션에 따라 duration 동안, Show합니다\&. "
+.ti -1c
+.RI "void \fBHideImmediately\fP ()"
+.br
+.RI "UIPopup을 즉시 Hide합니다\&. "
+.ti -1c
+.RI "virtual async UniTask \fBHide\fP ()"
+.br
+.RI "UIPopup을 애니메이션에 따라 Hide합니다\&. "
+.ti -1c
+.RI "virtual async UniTask \fBHide\fP (float duration)"
+.br
+.RI "UIPopup을 애니메이션에 따라 duration 동안, Hide합니다\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBPopupUnit\fP \fBGetUIPopup\fP (string name)"
+.br
+.RI "UIPopup을 Container로부터 얻어와, Instantiate합니다\&. "
+.ti -1c
+.RI "static void \fBDestroy\fP ()"
+.br
+.RI "현재 UIPopup Object를 제거합니다\&. "
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBOnViewVisibleStateChanged\fP (\fBVisibleState\fP visibleState)"
+.br
+.RI "UIPopup의 VisibleState가 변할 때, 호출됩니다\&. "
+.ti -1c
+.RI "virtual async UniTask \fBShowInternal\fP (float duration)"
+.br
+.RI "UIPopup의 \fBPopup\fP 내부 동작입니다\&. "
+.ti -1c
+.RI "virtual async UniTask \fBHideInternal\fP (float duration)"
+.br
+.RI "UIPopup의 Dismiss 내부 동작입니다\&. "
+.ti -1c
+.RI "virtual void \fBAddShowAnimationJobs\fP (List< UniTask > jobs, float duration, CanvasGroup target)"
+.br
+.RI "내부 동작 Popup이 실행되면서 처리될 애니메이션 Job을 추가합니다\&. "
+.ti -1c
+.RI "virtual void \fBAddHideAnimationJobs\fP (List< UniTask > jobs, float duration, CanvasGroup target)"
+.br
+.RI "내부 동작 Dismiss가 실행되면서 처리될 애니메이션 Job을 추가합니다\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "CanvasGroup \fB_contentCanvasGroup\fP"
+.br
+.ti -1c
+.RI "CanvasGroup \fB_backgroundCanvasGroup\fP"
+.br
+.ti -1c
+.RI "float \fB_showAnimDuration\fP = 1f"
+.br
+.ti -1c
+.RI "float \fB_hideAnimDuration\fP = 1f"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "List< Text > \fBTextFields\fP\fR [get]\fP"
+.br
+.RI "동적으로 Text 내용을 할당할 TextField List입니다\&. "
+.ti -1c
+.RI "List< Button > \fBButtons\fP\fR [get]\fP"
+.br
+.RI "동적으로 Listener를 할당할 Button List입니다\&. "
+.ti -1c
+.RI "\fBVisibleState\fP \fBVisibleState\fP = \fBVisibleState\&.Disappeared\fP\fR [get]\fP"
+.br
+.RI "Popup의 VisibleState\&. "
+.ti -1c
+.RI "\fBViewUnit\fP \fBView\fP\fR [get, set]\fP"
+.br
+.RI "현재 Popup의 UIView\&. "
+.ti -1c
+.RI "static \fBPopupUnit\fP \fBInstance\fP\fR [get]\fP"
+.br
+.RI "현재 팝업된 인스턴스를 반환합니다\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBPopup\fP GUI의 최소 단위인 MonoBeheviour\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Kunnymann\&.UI\&.Popup\&.PopupUnit\&.AddHideAnimationJobs (List< UniTask > jobs, float duration, CanvasGroup target)\fR [protected]\fP, \fR [virtual]\fP"
+
+.PP
+내부 동작 Dismiss가 실행되면서 처리될 애니메이션 Job을 추가합니다\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIjobs\fP WhenAll이 실행될 UniTask list
+.br
+\fIduration\fP Animation 시간
+.br
+\fItarget\fP 타겟 CanvasGroup
+.RE
+.PP
+
+.SS "virtual void Kunnymann\&.UI\&.Popup\&.PopupUnit\&.AddShowAnimationJobs (List< UniTask > jobs, float duration, CanvasGroup target)\fR [protected]\fP, \fR [virtual]\fP"
+
+.PP
+내부 동작 Popup이 실행되면서 처리될 애니메이션 Job을 추가합니다\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIjobs\fP WhenAll이 실행될 UniTask list
+.br
+\fIduration\fP Animation 시간
+.br
+\fItarget\fP 타겟 CanvasGroup
+.RE
+.PP
+
+.SS "static \fBPopupUnit\fP Kunnymann\&.UI\&.Popup\&.PopupUnit\&.GetUIPopup (string name)\fR [static]\fP"
+
+.PP
+UIPopup을 Container로부터 얻어와, Instantiate합니다\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP UIPopup prefab 이름
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+UIPopup
+.RE
+.PP
+
+.SS "virtual async UniTask Kunnymann\&.UI\&.Popup\&.PopupUnit\&.Hide ()\fR [virtual]\fP"
+
+.PP
+UIPopup을 애니메이션에 따라 Hide합니다\&. 
+.PP
+\fBReturns\fP
+.RS 4
+UniTask
+.RE
+.PP
+
+.SS "virtual async UniTask Kunnymann\&.UI\&.Popup\&.PopupUnit\&.Hide (float duration)\fR [virtual]\fP"
+
+.PP
+UIPopup을 애니메이션에 따라 duration 동안, Hide합니다\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIduration\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "virtual async UniTask Kunnymann\&.UI\&.Popup\&.PopupUnit\&.HideInternal (float duration)\fR [protected]\fP, \fR [virtual]\fP"
+
+.PP
+UIPopup의 Dismiss 내부 동작입니다\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIduration\fP Animation 시간
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+UniTask
+.RE
+.PP
+
+.SS "void Kunnymann\&.UI\&.Popup\&.PopupUnit\&.OnViewVisibleStateChanged (\fBVisibleState\fP visibleState)\fR [protected]\fP"
+
+.PP
+UIPopup의 VisibleState가 변할 때, 호출됩니다\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIvisibleState\fP 
+.RE
+.PP
+
+.SS "virtual async UniTask Kunnymann\&.UI\&.Popup\&.PopupUnit\&.Show ()\fR [virtual]\fP"
+
+.PP
+UIPopup을 애니메이션에 따라 Show합니다\&. 
+.PP
+\fBReturns\fP
+.RS 4
+UniTask
+.RE
+.PP
+
+.SS "virtual async UniTask Kunnymann\&.UI\&.Popup\&.PopupUnit\&.Show (float duration)\fR [virtual]\fP"
+
+.PP
+UIPopup을 애니메이션에 따라 duration 동안, Show합니다\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIduration\fP 애니메이션 시간
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+UniTask
+.RE
+.PP
+
+.SS "virtual async UniTask Kunnymann\&.UI\&.Popup\&.PopupUnit\&.ShowInternal (float duration)\fR [protected]\fP, \fR [virtual]\fP"
+
+.PP
+UIPopup의 \fBPopup\fP 내부 동작입니다\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIduration\fP Animation 시간
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+UniTask
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Kunnymann unity package from the source code\&.

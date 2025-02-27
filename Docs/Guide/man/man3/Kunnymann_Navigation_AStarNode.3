@@ -1,0 +1,82 @@
+.TH "Kunnymann.Navigation.AStarNode" 3 "Version 1.0" "Kunnymann unity package" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Kunnymann.Navigation.AStarNode \- A* Node\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits IEquatable\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBEquals\fP (\fBAStarNode\fP other)"
+.br
+.ti -1c
+.RI "override int \fBGetHashCode\fP ()"
+.br
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.in -1c
+.SS "Package Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAStarNode\fP (\fBINode\fP node, \fBINode\fP fromNode=null)"
+.br
+.RI "Constructor\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "\fBINode\fP \fBNode\fP\fR [get]\fP"
+.br
+.RI "Node\&. "
+.ti -1c
+.RI "\fBINode\fP \fBFromNode\fP\fR [get]\fP"
+.br
+.RI "FromNode\&. "
+.ti -1c
+.RI "\fBILink\fP \fBConnected\fP\fR [get]\fP"
+.br
+.RI "Link\&. "
+.ti -1c
+.RI "float \fBG\fP\fR [get, set]\fP"
+.br
+.RI "A* weight G\&. "
+.ti -1c
+.RI "float \fBH\fP\fR [get, set]\fP"
+.br
+.RI "A* weight H\&. "
+.ti -1c
+.RI "float \fBF\fP\fR [get]\fP"
+.br
+.RI "A* weight F\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+A* Node\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Kunnymann\&.Navigation\&.AStarNode\&.AStarNode (\fBINode\fP node, \fBINode\fP fromNode = \fRnull\fP)\fR [package]\fP"
+
+.PP
+Constructor\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInode\fP Target node
+.br
+\fIfromNode\fP From node
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Kunnymann unity package from the source code\&.

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_kunnymann_1_1_base_1_1_navigation_module_base" xml:lang="en-US">
+<title>Kunnymann.Base.NavigationModuleBase Class Reference</title>
+<indexterm><primary>Kunnymann.Base.NavigationModuleBase</primary></indexterm>
+<para>
+
+<para><link linkend="_namespace_kunnymann_1_1_navigation">Navigation</link> DI 객체 </para>
+ 
+</para>
+<para>Inheritance diagram for Kunnymann.Base.NavigationModuleBase:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_kunnymann_1_1_base_1_1_navigation_module_base.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Public Member Functions inherited from <link linkend="_class_kunnymann_1_1_base_1_1_module_base">Kunnymann.Base.ModuleBase</link>        <itemizedlist>
+            <listitem><para><emphasis role="strong">ModuleBase</emphasis> ()</para>
+
+<para>생성자 Default FMS를 구축합니다 </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_kunnymann_1_1_base_1_1_module_base_1acb9aefc0fda6e98dd8f944a0c6468b11">RunOnMainThread</link> (params Action[] action)</para>
+
+<para>Main thread에 액션을 밀어넣습니다 </para>
+</listitem>
+            <listitem><para>virtual void <emphasis role="strong">ModuleInitialize</emphasis> ()</para>
+
+<para>모듈의 초기화 사이클 </para>
+</listitem>
+            <listitem><para>virtual void <emphasis role="strong">ModuleUpdate</emphasis> ()</para>
+
+<para>모듈의 Unity update 사이클 </para>
+</listitem>
+            <listitem><para>virtual void <emphasis role="strong">ModuleTerminate</emphasis> ()</para>
+
+<para>모듈의 종료 사이클 </para>
+</listitem>
+            <listitem><para>void <emphasis role="strong">Dispose</emphasis> ()</para>
+
+<para>Dispose. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Package Functions inherited from <link linkend="_class_kunnymann_1_1_base_1_1_module_base">Kunnymann.Base.ModuleBase</link>        <itemizedlist>
+            <listitem><para>void <link linkend="_class_kunnymann_1_1_base_1_1_module_base_1a23c460f47e5a96cdef1e9d6eaea0ab82">Process</link> (<link linkend="_namespace_kunnymann_1_1_base_1a5499720892d50d5abe3f285d7e62c425">TransitionCommand</link> transition=<link linkend="_namespace_kunnymann_1_1_base_1a5499720892d50d5abe3f285d7e62c425a6adf97f83acf6453d4a6a4b1070f3754">TransitionCommand.None</link>)</para>
+
+<para>모듈 동작을 처리합니다 </para>
+</listitem>
+        </itemizedlist>
+Properties inherited from <link linkend="_class_kunnymann_1_1_base_1_1_module_base">Kunnymann.Base.ModuleBase</link>        <itemizedlist>
+            <listitem><para><link linkend="_namespace_kunnymann_1_1_base_1af4a55dba9a8a8c759cc6256c6af3594c">ModuleState</link> <emphasis role="strong">CurrentState</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>모듈 상태 </para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_namespace_kunnymann_1_1_navigation">Navigation</link> DI 객체 </para>
+</section>
+</section>

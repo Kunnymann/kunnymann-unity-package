@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_kunnymann_1_1_base_1_1_v_l_module_base" xml:lang="en-US">
+<title>Kunnymann.Base.VLModuleBase Class Reference</title>
+<indexterm><primary>Kunnymann.Base.VLModuleBase</primary></indexterm>
+<para>
+
+<para>VPS Module의 DI 객체 </para>
+ 
+</para>
+<para>Inheritance diagram for Kunnymann.Base.VLModuleBase:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_kunnymann_1_1_base_1_1_v_l_module_base.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_v_l_module_base_1a6c0a730eceacb7ae59bc72461fd91f60"/>void <emphasis role="strong">Run</emphasis> ()</para>
+
+<para>VPS를 실행합니다 </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_kunnymann_1_1_base_1_1_v_l_module_base_1a14d90265bbf7860613f1daf166e4d769">Init</link> ()</para>
+
+<para>VPS를 초기화합니다 </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_v_l_module_base_1ac11ffeea74ee77e4e0a4edd51b628dab"/>void <emphasis role="strong">Stop</emphasis> ()</para>
+
+<para>VPS를 중지합니다 </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_v_l_module_base_1a3d6d9b0bec621a471844619af31605ef"/>void <emphasis role="strong">Restart</emphasis> ()</para>
+
+<para>VPS를 재시작합니다 </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_kunnymann_1_1_base_1_1_v_l_module_base_1ae4c74a2e13493a3bda182bdd0c3ffb62">ForceGeoCoord</link> (float longitude, float latitude)</para>
+
+<para>위경도 값을 강제로 주입합니다 </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_kunnymann_1_1_base_1_1_v_l_module_base_1a466ad069ec2bc2f58dbf8b3c438824f1">SendTexture</link> (Texture texture)</para>
+
+<para>VPS로 Texture를 전송합니다 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_kunnymann_1_1_base_1_1_module_base">Kunnymann.Base.ModuleBase</link>        <itemizedlist>
+            <listitem><para><emphasis role="strong">ModuleBase</emphasis> ()</para>
+
+<para>생성자 Default FMS를 구축합니다 </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_kunnymann_1_1_base_1_1_module_base_1acb9aefc0fda6e98dd8f944a0c6468b11">RunOnMainThread</link> (params Action[] action)</para>
+
+<para>Main thread에 액션을 밀어넣습니다 </para>
+</listitem>
+            <listitem><para>virtual void <emphasis role="strong">ModuleInitialize</emphasis> ()</para>
+
+<para>모듈의 초기화 사이클 </para>
+</listitem>
+            <listitem><para>virtual void <emphasis role="strong">ModuleUpdate</emphasis> ()</para>
+
+<para>모듈의 Unity update 사이클 </para>
+</listitem>
+            <listitem><para>virtual void <emphasis role="strong">ModuleTerminate</emphasis> ()</para>
+
+<para>모듈의 종료 사이클 </para>
+</listitem>
+            <listitem><para>void <emphasis role="strong">Dispose</emphasis> ()</para>
+
+<para>Dispose. </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_v_l_module_base_1ac046d6b299071924b34bb89f68fed1c8"/><link linkend="_namespace_kunnymann_1_1_base_1a58914db540ce5a6ecc423a0c016d0104">TrackerType</link> <emphasis role="strong">TrackerType</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Tracker Type을 반환 </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_v_l_module_base_1ac1fa6a93797e9d4a74a6dd6132ac21b5"/><link linkend="_namespace_kunnymann_1_1_base_1a23a5f8e6be05d5150cf8f9ef97a1d60d">VLState</link> <emphasis role="strong">State</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>VL State를 반환 </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_v_l_module_base_1af6bfa4ca0f606f666a92951a09664641"/>string <emphasis role="strong">CurrentLayer</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Current Layer를 반환 </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_v_l_module_base_1ac966c6a493f53bfefcd8dcbf1484329a"/>bool <emphasis role="strong">IsInitialized</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>초기화 여부를 반환 </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_v_l_module_base_1a2aa365e08a209802a8045429013ef020"/>bool <emphasis role="strong">IsRun</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>VLModule의 Run 여부를 반환 </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_v_l_module_base_1a5e0147cfc9015199556918ac904fdd80"/>Pose <emphasis role="strong">CurrentPose</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>현재 Tracker의 Pose를 반환 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Properties inherited from <link linkend="_class_kunnymann_1_1_base_1_1_module_base">Kunnymann.Base.ModuleBase</link>        <itemizedlist>
+            <listitem><para><link linkend="_namespace_kunnymann_1_1_base_1af4a55dba9a8a8c759cc6256c6af3594c">ModuleState</link> <emphasis role="strong">CurrentState</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>모듈 상태 </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Events    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_v_l_module_base_1a55ba382eac6e93dd73d5ef94c57b2ff8"/><link linkend="_namespace_kunnymann_1_1_base_1a800efb0d7480862caedb1adf7c53a1f8">EventHandler</link>&lt; <link linkend="_namespace_kunnymann_1_1_base_1a23a5f8e6be05d5150cf8f9ef97a1d60d">VLState</link> &gt; <emphasis role="strong">StateChanged</emphasis></para>
+
+<para>VL 상태 변경에 대한 추상 이벤트 </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_v_l_module_base_1a1af4f1512a1a99d97d20bc0bb18ef590"/><link linkend="_namespace_kunnymann_1_1_base_1a800efb0d7480862caedb1adf7c53a1f8">EventHandler</link>&lt; Pose &gt; <emphasis role="strong">PoseUpdated</emphasis></para>
+
+<para>VL 위치 변경에 대한 추상 이벤트 </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_v_l_module_base_1a60cf77d3ab0e6d571d977586c5f3e18d"/><link linkend="_namespace_kunnymann_1_1_base_1a800efb0d7480862caedb1adf7c53a1f8">EventHandler</link>&lt; Pose &gt; <emphasis role="strong">SuccessPoseUpdated</emphasis></para>
+
+<para>VL 성공 위치 변경에 대한 추상 이벤트 </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_v_l_module_base_1a40ede526db79f66259190d07e1e75939"/><link linkend="_namespace_kunnymann_1_1_base_1a800efb0d7480862caedb1adf7c53a1f8">EventHandler</link>&lt; string &gt; <emphasis role="strong">LayerInfoChanged</emphasis></para>
+
+<para>VL Layer 정보 변경에 대한 추상 이벤트 </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_v_l_module_base_1a827706d5ee061ee011c266f19bc53d5d"/><link linkend="_namespace_kunnymann_1_1_base_1a800efb0d7480862caedb1adf7c53a1f8">EventHandler</link>&lt; float, float &gt; <emphasis role="strong">GeoCoordUpdated</emphasis></para>
+
+<para>VL GPS 좌표 변경에 대한 추상 이벤트 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Package Functions inherited from <link linkend="_class_kunnymann_1_1_base_1_1_module_base">Kunnymann.Base.ModuleBase</link>        <itemizedlist>
+            <listitem><para>void <link linkend="_class_kunnymann_1_1_base_1_1_module_base_1a23c460f47e5a96cdef1e9d6eaea0ab82">Process</link> (<link linkend="_namespace_kunnymann_1_1_base_1a5499720892d50d5abe3f285d7e62c425">TransitionCommand</link> transition=<link linkend="_namespace_kunnymann_1_1_base_1a5499720892d50d5abe3f285d7e62c425a6adf97f83acf6453d4a6a4b1070f3754">TransitionCommand.None</link>)</para>
+
+<para>모듈 동작을 처리합니다 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>VPS Module의 DI 객체 </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_kunnymann_1_1_base_1_1_v_l_module_base_1ae4c74a2e13493a3bda182bdd0c3ffb62"/><section>
+    <title>ForceGeoCoord()</title>
+<indexterm><primary>ForceGeoCoord</primary><secondary>Kunnymann.Base.VLModuleBase</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base.VLModuleBase</primary><secondary>ForceGeoCoord</secondary></indexterm>
+<para><computeroutput>void Kunnymann.Base.VLModuleBase.ForceGeoCoord (float longitude, float latitude)<computeroutput>[abstract]</computeroutput></computeroutput></para><para>
+
+<para>위경도 값을 강제로 주입합니다 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>longitude</entry><entry>
+<para>경도</para>
+</entry>
+                            </row>
+                            <row>
+<entry>latitude</entry><entry>
+<para>위도</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_base_1_1_v_l_module_base_1a14d90265bbf7860613f1daf166e4d769"/><section>
+    <title>Init()</title>
+<indexterm><primary>Init</primary><secondary>Kunnymann.Base.VLModuleBase</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base.VLModuleBase</primary><secondary>Init</secondary></indexterm>
+<para><computeroutput>bool Kunnymann.Base.VLModuleBase.Init ( )<computeroutput>[abstract]</computeroutput></computeroutput></para><para>
+
+<para>VPS를 초기화합니다 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>type</entry><entry>
+<para>Target VPS</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>성공 여부</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_base_1_1_v_l_module_base_1a466ad069ec2bc2f58dbf8b3c438824f1"/><section>
+    <title>SendTexture()</title>
+<indexterm><primary>SendTexture</primary><secondary>Kunnymann.Base.VLModuleBase</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base.VLModuleBase</primary><secondary>SendTexture</secondary></indexterm>
+<para><computeroutput>void Kunnymann.Base.VLModuleBase.SendTexture (Texture texture)<computeroutput>[abstract]</computeroutput></computeroutput></para><para>
+
+<para>VPS로 Texture를 전송합니다 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>texture</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+</section>

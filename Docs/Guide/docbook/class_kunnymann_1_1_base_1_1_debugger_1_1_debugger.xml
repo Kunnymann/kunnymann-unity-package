@@ -1,0 +1,447 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger" xml:lang="en-US">
+<title>Kunnymann.Base.Debugger.Debugger Class Reference</title>
+<indexterm><primary>Kunnymann.Base.Debugger.Debugger</primary></indexterm>
+<para>
+
+<para><link linkend="_namespace_kunnymann">Kunnymann</link> 패키지의 디버거 클래스 </para>
+ 
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static bool <link linkend="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_1ab3186f983b3e2ba1bf27f2a35a19c2e3">HasLogLevel</link> (<link linkend="_namespace_kunnymann_1_1_base_1_1_debugger_1ad0c1f577757bcc2297591dc772185140">LogLevel</link> lv)</para>
+
+<para>Log의 레벨 수준을 비교합니다 </para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_1a17871ac93811a07b0a18f89badeaaa3b">Debug</link> (object msg)</para>
+
+<para>Debug 레벨의 로그를 출력합니다 </para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_1a04489f510f9e0e4fcc63253cdef08aa0">Debug</link> (string format, params object[] args)</para>
+
+<para>Debug 레벨의 로그를 출력합니다 </para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_1a268f88fec5ca782393e0e0e817aaaf4b">Info</link> (object msg)</para>
+
+<para>Info 레벨의 로그를 출력합니다 </para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_1a4515016616d7bf675d4b7f61c2296549">Info</link> (string format, params object[] args)</para>
+
+<para>Info 레벨의 로그를 출력합니다 </para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_1a5571e8177dafd4cc59ae526909403b46">Warning</link> (object msg)</para>
+
+<para>Warning 레벨의 로그를 출력합니다 </para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_1a1b27390cdb6320a85fb5e8aac9e582ee">Warning</link> (string format, params object[] args)</para>
+
+<para>Warning 레벨의 로그를 출력합니다 </para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_1aa2928e5cb3a17cac3c82c7b65dd723a9">Error</link> (object msg)</para>
+
+<para>Error 레벨의 로그를 출력합니다 </para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_1a720e635b6645c25c1ad5122f7885e23a">Error</link> (string format, params object[] args)</para>
+
+<para>Error 레벨의 로그를 출력합니다 </para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_1a66f83e4dd7b9548e8ae844e49f2b8c71">Fatal</link> (object msg)</para>
+
+<para>Fatal 레벨의 로그를 출력합니다 </para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_1a3da237094a48cc208aa860fd38205497">Fatal</link> (string format, params object[] args)</para>
+
+<para>Fatal 레벨의 로그를 출력합니다 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_1a73c835f955542cf0d34be31c52afc8fd"/>static <link linkend="_namespace_kunnymann_1_1_base_1_1_debugger_1ad0c1f577757bcc2297591dc772185140">LogLevel</link> <emphasis role="strong">LogLevel</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Log level. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_namespace_kunnymann">Kunnymann</link> 패키지의 디버거 클래스 </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_1a17871ac93811a07b0a18f89badeaaa3b"/><section>
+    <title>Debug()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Debug</primary><secondary>Kunnymann.Base.Debugger.Debugger</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base.Debugger.Debugger</primary><secondary>Debug</secondary></indexterm>
+<para><computeroutput>static void Kunnymann.Base.Debugger.Debugger.Debug (object msg)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Debug 레벨의 로그를 출력합니다 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>msg</entry><entry>
+<para>메시지</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_1a04489f510f9e0e4fcc63253cdef08aa0"/><section>
+    <title>Debug()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Debug</primary><secondary>Kunnymann.Base.Debugger.Debugger</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base.Debugger.Debugger</primary><secondary>Debug</secondary></indexterm>
+<para><computeroutput>static void Kunnymann.Base.Debugger.Debugger.Debug (string format, params object[] args)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Debug 레벨의 로그를 출력합니다 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>format</entry><entry>
+<para>메시지 포멧</para>
+</entry>
+                            </row>
+                            <row>
+<entry>args</entry><entry>
+<para>파라미터</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_1aa2928e5cb3a17cac3c82c7b65dd723a9"/><section>
+    <title>Error()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Error</primary><secondary>Kunnymann.Base.Debugger.Debugger</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base.Debugger.Debugger</primary><secondary>Error</secondary></indexterm>
+<para><computeroutput>static void Kunnymann.Base.Debugger.Debugger.Error (object msg)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Error 레벨의 로그를 출력합니다 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>msg</entry><entry>
+<para>메시지</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_1a720e635b6645c25c1ad5122f7885e23a"/><section>
+    <title>Error()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Error</primary><secondary>Kunnymann.Base.Debugger.Debugger</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base.Debugger.Debugger</primary><secondary>Error</secondary></indexterm>
+<para><computeroutput>static void Kunnymann.Base.Debugger.Debugger.Error (string format, params object[] args)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Error 레벨의 로그를 출력합니다 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>format</entry><entry>
+<para>메시지 포멧</para>
+</entry>
+                            </row>
+                            <row>
+<entry>args</entry><entry>
+<para>파라미터</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_1a66f83e4dd7b9548e8ae844e49f2b8c71"/><section>
+    <title>Fatal()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Fatal</primary><secondary>Kunnymann.Base.Debugger.Debugger</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base.Debugger.Debugger</primary><secondary>Fatal</secondary></indexterm>
+<para><computeroutput>static void Kunnymann.Base.Debugger.Debugger.Fatal (object msg)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Fatal 레벨의 로그를 출력합니다 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>msg</entry><entry>
+<para>메시지</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_1a3da237094a48cc208aa860fd38205497"/><section>
+    <title>Fatal()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Fatal</primary><secondary>Kunnymann.Base.Debugger.Debugger</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base.Debugger.Debugger</primary><secondary>Fatal</secondary></indexterm>
+<para><computeroutput>static void Kunnymann.Base.Debugger.Debugger.Fatal (string format, params object[] args)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Fatal 레벨의 로그를 출력합니다 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>format</entry><entry>
+<para>메시지 포멧</para>
+</entry>
+                            </row>
+                            <row>
+<entry>args</entry><entry>
+<para>파라미터</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_1ab3186f983b3e2ba1bf27f2a35a19c2e3"/><section>
+    <title>HasLogLevel()</title>
+<indexterm><primary>HasLogLevel</primary><secondary>Kunnymann.Base.Debugger.Debugger</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base.Debugger.Debugger</primary><secondary>HasLogLevel</secondary></indexterm>
+<para><computeroutput>static bool Kunnymann.Base.Debugger.Debugger.HasLogLevel (<link linkend="_namespace_kunnymann_1_1_base_1_1_debugger_1ad0c1f577757bcc2297591dc772185140">LogLevel</link> lv)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Log의 레벨 수준을 비교합니다 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>lv</entry><entry>
+<para>대상</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>레벨 이하인지 판단한 결과</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_1a268f88fec5ca782393e0e0e817aaaf4b"/><section>
+    <title>Info()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Info</primary><secondary>Kunnymann.Base.Debugger.Debugger</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base.Debugger.Debugger</primary><secondary>Info</secondary></indexterm>
+<para><computeroutput>static void Kunnymann.Base.Debugger.Debugger.Info (object msg)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Info 레벨의 로그를 출력합니다 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>msg</entry><entry>
+<para>메시지</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_1a4515016616d7bf675d4b7f61c2296549"/><section>
+    <title>Info()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Info</primary><secondary>Kunnymann.Base.Debugger.Debugger</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base.Debugger.Debugger</primary><secondary>Info</secondary></indexterm>
+<para><computeroutput>static void Kunnymann.Base.Debugger.Debugger.Info (string format, params object[] args)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Info 레벨의 로그를 출력합니다 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>format</entry><entry>
+<para>메시지 포멧</para>
+</entry>
+                            </row>
+                            <row>
+<entry>args</entry><entry>
+<para>파라미터</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_1a5571e8177dafd4cc59ae526909403b46"/><section>
+    <title>Warning()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Warning</primary><secondary>Kunnymann.Base.Debugger.Debugger</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base.Debugger.Debugger</primary><secondary>Warning</secondary></indexterm>
+<para><computeroutput>static void Kunnymann.Base.Debugger.Debugger.Warning (object msg)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Warning 레벨의 로그를 출력합니다 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>msg</entry><entry>
+<para>메시지</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_1a1b27390cdb6320a85fb5e8aac9e582ee"/><section>
+    <title>Warning()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Warning</primary><secondary>Kunnymann.Base.Debugger.Debugger</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base.Debugger.Debugger</primary><secondary>Warning</secondary></indexterm>
+<para><computeroutput>static void Kunnymann.Base.Debugger.Debugger.Warning (string format, params object[] args)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Warning 레벨의 로그를 출력합니다 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>format</entry><entry>
+<para>메시지 포멧</para>
+</entry>
+                            </row>
+                            <row>
+<entry>args</entry><entry>
+<para>파라미터</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+</section>

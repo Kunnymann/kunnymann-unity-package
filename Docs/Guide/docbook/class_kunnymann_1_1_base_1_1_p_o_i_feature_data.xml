@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_kunnymann_1_1_base_1_1_p_o_i_feature_data" xml:lang="en-US">
+<title>Kunnymann.Base.POIFeatureData Class Reference</title>
+<indexterm><primary>Kunnymann.Base.POIFeatureData</primary></indexterm>
+<para>
+
+<para>AR POI 데이터 </para>
+ 
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_kunnymann_1_1_base_1_1_p_o_i_feature_data_1a1baab792337d8b143ccaf311a5d8ccbe">POIFeatureData</link> (string id, string dpName, string type, Vector3 position, string source, string description)</para>
+
+<para>생성자 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_p_o_i_feature_data_1a36aeff60a594887d1ac222be187ab273"/>string <emphasis role="strong">ID</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>ID. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_p_o_i_feature_data_1a1db93c79586c1fd91842f45b0321de2b"/>string <emphasis role="strong">DPName</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Display name. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_p_o_i_feature_data_1a8bfe81395b62d8bf89d02f9f589e9e7c"/>string <emphasis role="strong">Type</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Type. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_p_o_i_feature_data_1a3e21ce38c32a544b1f5e19c2bf1e230b"/>Vector3 <emphasis role="strong">Position</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Unity position. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_p_o_i_feature_data_1aae5f25e11b99bf6bbd4b5bfb88174323"/>string <emphasis role="strong">Source</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>데이터 소스 </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_p_o_i_feature_data_1a01608604df5a41e9a89acc45e22d9db7"/>string <emphasis role="strong">Description</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>POI description. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>AR POI 데이터 </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_kunnymann_1_1_base_1_1_p_o_i_feature_data_1a1baab792337d8b143ccaf311a5d8ccbe"/><section>
+    <title>POIFeatureData()</title>
+<indexterm><primary>POIFeatureData</primary><secondary>Kunnymann.Base.POIFeatureData</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base.POIFeatureData</primary><secondary>POIFeatureData</secondary></indexterm>
+<para><computeroutput>Kunnymann.Base.POIFeatureData.POIFeatureData (string id, string dpName, string type, Vector3 position, string source, string description)</computeroutput></para><para>
+
+<para>생성자 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>ID</para>
+</entry>
+                            </row>
+                            <row>
+<entry>dpName</entry><entry>
+<para>Display name</para>
+</entry>
+                            </row>
+                            <row>
+<entry>type</entry><entry>
+<para>Type</para>
+</entry>
+                            </row>
+                            <row>
+<entry>position</entry><entry>
+<para>Position</para>
+</entry>
+                            </row>
+                            <row>
+<entry>source</entry><entry>
+<para>Data</para>
+</entry>
+                            </row>
+                            <row>
+<entry>description</entry><entry>
+<para>Description</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+</section>

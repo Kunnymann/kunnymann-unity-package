@@ -1,0 +1,215 @@
+.TH "Kunnymann.Navigation.Path" 3 "Version 1.0" "Kunnymann unity package" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Kunnymann.Navigation.Path \- Node와 Link로 구성된 \fBPath\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits IEnumerable\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "IEnumerator< \fBPathUnit\fP > \fBGetEnumerator\fP ()"
+.br
+.RI "Enumerator\&. "
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.RI "\fBPath\fP string info\&. "
+.ti -1c
+.RI "IEnumerable< \fBINode\fP > \fBGetNodeFromCurrentToEnd\fP ()"
+.br
+.RI "Return Nodes from current position to end\&. "
+.ti -1c
+.RI "IEnumerable< \fBILink\fP > \fBGetLinkFromCurrentToEnd\fP ()"
+.br
+.RI "Return Links from current position to end\&. "
+.in -1c
+.SS "Package Functions"
+
+.in +1c
+.ti -1c
+.RI "IEnumerable< \fBPathUnit\fP > \fBGetPathNodeEnumerator\fP ()"
+.br
+.RI "Return path node enumerator\&. "
+.ti -1c
+.RI "void \fBAdd\fP (\fBPathUnit\fP pathUnit)"
+.br
+.RI "Add \fBPathUnit\fP\&. "
+.ti -1c
+.RI "bool \fBILink\fP int float Vector3 positionInLink \fBGetNearestInLink\fP (Vector3 position)"
+.br
+.ti -1c
+.RI "float bool isNeeded \fBShouldRecoveryPath\fP (Vector3 position)"
+.br
+.in -1c
+.SS "Package Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBrefind\fP"
+.br
+.RI "Return Link is nearest from position\&. "
+.ti -1c
+.RI "bool \fBILink\fP \fBlink\fP"
+.br
+.ti -1c
+.RI "bool \fBILink\fP int \fBcollectionIndex\fP"
+.br
+.ti -1c
+.RI "bool \fBILink\fP int float \fBweight\fP"
+.br
+.ti -1c
+.RI "float \fBweight\fP"
+.br
+.RI "Return tuple is recovery necessity and nearest link weight\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "\fBINode\fP \fBStartNode\fP\fR [get]\fP"
+.br
+.RI "Start node of path\&. "
+.ti -1c
+.RI "\fBINode\fP \fBEndNode\fP\fR [get]\fP"
+.br
+.RI "End node of path\&. "
+.ti -1c
+.RI "\fBINode\fP \fBCurrentTransitionNode\fP\fR [get]\fP"
+.br
+.RI "Current transition node\&. "
+.ti -1c
+.RI "List< \fBINode\fP > \fBPathTransitionNodes\fP\fR [get]\fP"
+.br
+.RI "All transition node\&. "
+.ti -1c
+.RI "int \fBCount\fP\fR [get]\fP"
+.br
+.RI "\fBPathUnit\fP count\&. "
+.ti -1c
+.RI "int \fBNodeCount\fP\fR [get]\fP"
+.br
+.RI "Node count\&. "
+.ti -1c
+.RI "int \fBLinkCount\fP\fR [get]\fP"
+.br
+.RI "Link count\&. "
+.ti -1c
+.RI "float \fBAllDistance\fP\fR [get]\fP"
+.br
+.RI "\fBPath\fP distance\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Node와 Link로 구성된 \fBPath\fP\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Kunnymann\&.Navigation\&.Path\&.Add (\fBPathUnit\fP pathUnit)\fR [package]\fP"
+
+.PP
+Add \fBPathUnit\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpathUnit\fP \fBPathUnit\fP (Node or Link)
+.RE
+.PP
+
+.SS "IEnumerator< \fBPathUnit\fP > Kunnymann\&.Navigation\&.Path\&.GetEnumerator ()"
+
+.PP
+Enumerator\&. 
+.PP
+\fBReturns\fP
+.RS 4
+IEnumerator
+.RE
+.PP
+
+.SS "IEnumerable< \fBILink\fP > Kunnymann\&.Navigation\&.Path\&.GetLinkFromCurrentToEnd ()"
+
+.PP
+Return Links from current position to end\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Link collection
+.RE
+.PP
+
+.SS "IEnumerable< \fBINode\fP > Kunnymann\&.Navigation\&.Path\&.GetNodeFromCurrentToEnd ()"
+
+.PP
+Return Nodes from current position to end\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Node collection
+.RE
+.PP
+
+.SS "IEnumerable< \fBPathUnit\fP > Kunnymann\&.Navigation\&.Path\&.GetPathNodeEnumerator ()\fR [package]\fP"
+
+.PP
+Return path node enumerator\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Enumerable \fBPathUnit\fP
+.RE
+.PP
+
+.SS "override string Kunnymann\&.Navigation\&.Path\&.ToString ()"
+
+.PP
+\fBPath\fP string info\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Info
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "bool Kunnymann\&.Navigation\&.Path\&.refind\fR [package]\fP"
+
+.PP
+Return Link is nearest from position\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIposition\fP Position
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Tuple (Need recovery, Link, Link index, Link weight, Positin in Link)
+.RE
+.PP
+
+.SS "float Kunnymann\&.Navigation\&.Path\&.weight\fR [package]\fP"
+
+.PP
+Return tuple is recovery necessity and nearest link weight\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIposition\fP position
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+tuple
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Kunnymann unity package from the source code\&.

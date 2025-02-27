@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_interface_kunnymann_1_1_navigation_1_1_i_link" xml:lang="en-US">
+<title>Kunnymann.Navigation.ILink Interface Reference</title>
+<indexterm><primary>Kunnymann.Navigation.ILink</primary></indexterm>
+<para>
+
+<para>Link interface. </para>
+ 
+</para>
+<para>Inheritance diagram for Kunnymann.Navigation.ILink:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="interface_kunnymann_1_1_navigation_1_1_i_link.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_interface_kunnymann_1_1_navigation_1_1_i_link_1a72bb261f96949a5d66403ea52f069ed4"/>void <emphasis role="strong">Reverse</emphasis> ()</para>
+
+<para>Reverse link data. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_interface_kunnymann_1_1_navigation_1_1_i_link_1a37293d00bb016f2347f6575436c3bfc5"/><link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> <emphasis role="strong">From</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>From node. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_interface_kunnymann_1_1_navigation_1_1_i_link_1acfacd07815a45c0d92ce1ed554b043e2"/><link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> <emphasis role="strong">To</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>To node. </para>
+</listitem>
+            <listitem><para><link linkend="_namespace_kunnymann_1_1_navigation_1adb7397b72db0f2024e38c382025af2ed">LinkDirection</link> <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_link_1a9797699537c3a1d3582af875d081e3d0">Direction</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Connected direction. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_interface_kunnymann_1_1_navigation_1_1_i_link_1a6e837c8832b0a404aa8ec3c95ea5c5fc"/>float <emphasis role="strong">Distance</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Distance. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_interface_kunnymann_1_1_navigation_1_1_i_link_1ac3722e2740115c269a5d605290d8456a"/>bool <emphasis role="strong">IsTransitionLink</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Is transition link. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Properties inherited from <link linkend="_interface_kunnymann_1_1_navigation_1_1_path_unit">Kunnymann.Navigation.PathUnit</link>        <itemizedlist>
+            <listitem><para>string <link linkend="_interface_kunnymann_1_1_navigation_1_1_path_unit_1a6493f837bb39df3868b0cb97e13d846c">ID</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>ID. </para>
+</listitem>
+            <listitem><para>string <link linkend="_interface_kunnymann_1_1_navigation_1_1_path_unit_1a3fd6d3e6e1e94d8fe06405fe51566770">Name</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Name. </para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>Detailed Description</title>
+
+<para>Link interface. </para>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_interface_kunnymann_1_1_navigation_1_1_i_link_1a9797699537c3a1d3582af875d081e3d0"/><section>
+    <title>Direction</title>
+<indexterm><primary>Direction</primary><secondary>Kunnymann.Navigation.ILink</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.ILink</primary><secondary>Direction</secondary></indexterm>
+<para><computeroutput><link linkend="_namespace_kunnymann_1_1_navigation_1adb7397b72db0f2024e38c382025af2ed">LinkDirection</link> Kunnymann.Navigation.ILink.Direction<computeroutput>[get]</computeroutput></computeroutput></para><para>
+
+<para>Connected direction. </para>
+</para>
+
+<para>Forward: From -&gt; To, Backward : From &lt;- To, Bidirection : From &lt;-&gt; To </para>
+</section>
+</section>
+</section>

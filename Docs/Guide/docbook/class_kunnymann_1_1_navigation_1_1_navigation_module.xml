@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_module" xml:lang="en-US">
+<title>Kunnymann.Navigation.NavigationModule Class Reference</title>
+<indexterm><primary>Kunnymann.Navigation.NavigationModule</primary></indexterm>
+<para>
+
+<para><link linkend="_namespace_kunnymann_1_1_navigation">Navigation</link> module. </para>
+ 
+</para>
+<para>Inheritance diagram for Kunnymann.Navigation.NavigationModule:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_kunnymann_1_1_navigation_1_1_navigation_module.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_kunnymann_1_1_navigation_1_1_navigation_module_1a670b63cfc32f95d8e5e488f10f5c1dd1">Ready</link> (<link linkend="_class_kunnymann_1_1_navigation_1_1_navigation_config">NavigationConfig</link> config, Transform setTarget)</para>
+
+<para>Initialize navigation module. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_kunnymann_1_1_navigation_1_1_navigation_module_1ac0069d101888482fe41e1ef00094626c">RegisterBehavour</link> (<link linkend="_interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler">INavigationEventHandler</link> behavour)</para>
+
+<para>Register NavigationEventHandler. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_kunnymann_1_1_navigation_1_1_navigation_module_1a7619b0c91f71e378b8fa51967547e076">UnregisterBehavour</link> (<link linkend="_interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler">INavigationEventHandler</link> behavour)</para>
+
+<para>Unregister NavigationEventHandler. </para>
+</listitem>
+            <listitem><para><link linkend="_class_kunnymann_1_1_navigation_1_1_path">Path</link> <link linkend="_class_kunnymann_1_1_navigation_1_1_navigation_module_1abaf634e67089f946b8952a0975642bcf">GetPath</link> (<link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> from, <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> to, <link linkend="_namespace_kunnymann_1_1_navigation_1a26afc2d677d4f4e4aeba7d3bb25147ca">TransitionType</link> transitionType)</para>
+
+<para>Return path from start node to end node. </para>
+</listitem>
+            <listitem><para><link linkend="_class_kunnymann_1_1_navigation_1_1_path">Path</link> <link linkend="_class_kunnymann_1_1_navigation_1_1_navigation_module_1a866103dff83bdea1a358b94032b6dbe4">GetPath</link> (Vector3 from, <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> to, <link linkend="_namespace_kunnymann_1_1_navigation_1a26afc2d677d4f4e4aeba7d3bb25147ca">TransitionType</link> transitionType)</para>
+
+<para>Return path from Vector3 position to end node. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_kunnymann_1_1_navigation_1_1_navigation_module_1ab172558bb0fb57c0e62b31153c269b50">SetupPath</link> (<link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> destination, <link linkend="_namespace_kunnymann_1_1_navigation_1a26afc2d677d4f4e4aeba7d3bb25147ca">TransitionType</link> transition)</para>
+
+<para>Return path from current position to end node. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_kunnymann_1_1_navigation_1_1_navigation_module_1a1868e33b4eacefbb395e1988fe217783">RecoveryPath</link> ()</para>
+
+<para><link linkend="_namespace_kunnymann_1_1_navigation">Navigation</link> recovery path. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_module_1a31530b69ec718f2ae5c9484290bc9804"/>void <emphasis role="strong">Start</emphasis> ()</para>
+
+<para>Start navigation. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_module_1a957a453f2cab77a26eaae68efe7d05e4"/>void <emphasis role="strong">Cancel</emphasis> ()</para>
+
+<para>Cancel navigation. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_kunnymann_1_1_base_1_1_module_base">Kunnymann.Base.ModuleBase</link>        <itemizedlist>
+            <listitem><para><emphasis role="strong">ModuleBase</emphasis> ()</para>
+
+<para>생성자 Default FMS를 구축합니다 </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_kunnymann_1_1_base_1_1_module_base_1acb9aefc0fda6e98dd8f944a0c6468b11">RunOnMainThread</link> (params Action[] action)</para>
+
+<para>Main thread에 액션을 밀어넣습니다 </para>
+</listitem>
+            <listitem><para>virtual void <emphasis role="strong">ModuleInitialize</emphasis> ()</para>
+
+<para>모듈의 초기화 사이클 </para>
+</listitem>
+            <listitem><para>virtual void <emphasis role="strong">ModuleUpdate</emphasis> ()</para>
+
+<para>모듈의 Unity update 사이클 </para>
+</listitem>
+            <listitem><para>virtual void <emphasis role="strong">ModuleTerminate</emphasis> ()</para>
+
+<para>모듈의 종료 사이클 </para>
+</listitem>
+            <listitem><para>void <emphasis role="strong">Dispose</emphasis> ()</para>
+
+<para>Dispose. </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_module_1a81626a94fde3b7bb7ac64e0d81b61385"/>List&lt; <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> &gt; <emphasis role="strong">Nodes</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Return Node container. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_module_1ad117ec7c47217780289723ca9d1cec43"/>List&lt; <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_link">ILink</link> &gt; <emphasis role="strong">Links</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Return Link container. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_module_1af8083f0112bd469cfc4e23ef1e18a3b9"/>Vector3 <emphasis role="strong">CurrentPose</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Return current pose. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_module_1ad07ca97b958584d28b1aebf7402a171f"/><link linkend="_class_kunnymann_1_1_navigation_1_1_path">Path</link> <emphasis role="strong">ActivePath</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Return current path. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_module_1a0a83567e97dbe643535a755170572e98"/><link linkend="_namespace_kunnymann_1_1_navigation_1aa680eb42246bd5fdb3284061510a3e8a">NavigationState</link> <emphasis role="strong">State</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Return current navigation state. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_module_1a0a7c0a1241420a429a05856a920c434e"/><link linkend="_namespace_kunnymann_1_1_navigation_1a26afc2d677d4f4e4aeba7d3bb25147ca">TransitionType</link> <emphasis role="strong">CurrentTransitType</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Return current transition type. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Properties inherited from <link linkend="_class_kunnymann_1_1_base_1_1_module_base">Kunnymann.Base.ModuleBase</link>        <itemizedlist>
+            <listitem><para><link linkend="_namespace_kunnymann_1_1_base_1af4a55dba9a8a8c759cc6256c6af3594c">ModuleState</link> <emphasis role="strong">CurrentState</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>모듈 상태 </para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Package Functions inherited from <link linkend="_class_kunnymann_1_1_base_1_1_module_base">Kunnymann.Base.ModuleBase</link>        <itemizedlist>
+            <listitem><para>void <link linkend="_class_kunnymann_1_1_base_1_1_module_base_1a23c460f47e5a96cdef1e9d6eaea0ab82">Process</link> (<link linkend="_namespace_kunnymann_1_1_base_1a5499720892d50d5abe3f285d7e62c425">TransitionCommand</link> transition=<link linkend="_namespace_kunnymann_1_1_base_1a5499720892d50d5abe3f285d7e62c425a6adf97f83acf6453d4a6a4b1070f3754">TransitionCommand.None</link>)</para>
+
+<para>모듈 동작을 처리합니다 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_namespace_kunnymann_1_1_navigation">Navigation</link> module. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_module_1abaf634e67089f946b8952a0975642bcf"/><section>
+    <title>GetPath()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>GetPath</primary><secondary>Kunnymann.Navigation.NavigationModule</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.NavigationModule</primary><secondary>GetPath</secondary></indexterm>
+<para><computeroutput><link linkend="_class_kunnymann_1_1_navigation_1_1_path">Path</link> Kunnymann.Navigation.NavigationModule.GetPath (<link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> from, <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> to, <link linkend="_namespace_kunnymann_1_1_navigation_1a26afc2d677d4f4e4aeba7d3bb25147ca">TransitionType</link> transitionType)</computeroutput></para><para>
+
+<para>Return path from start node to end node. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>from</entry><entry>
+<para>Start node</para>
+</entry>
+                            </row>
+                            <row>
+<entry>to</entry><entry>
+<para>End node</para>
+</entry>
+                            </row>
+                            <row>
+<entry>transitionType</entry><entry>
+<para>Transition method</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para><link linkend="_class_kunnymann_1_1_navigation_1_1_path">Path</link></para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_module_1a866103dff83bdea1a358b94032b6dbe4"/><section>
+    <title>GetPath()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>GetPath</primary><secondary>Kunnymann.Navigation.NavigationModule</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.NavigationModule</primary><secondary>GetPath</secondary></indexterm>
+<para><computeroutput><link linkend="_class_kunnymann_1_1_navigation_1_1_path">Path</link> Kunnymann.Navigation.NavigationModule.GetPath (Vector3 from, <link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> to, <link linkend="_namespace_kunnymann_1_1_navigation_1a26afc2d677d4f4e4aeba7d3bb25147ca">TransitionType</link> transitionType)</computeroutput></para><para>
+
+<para>Return path from Vector3 position to end node. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>from</entry><entry>
+<para>Vector3 position</para>
+</entry>
+                            </row>
+                            <row>
+<entry>to</entry><entry>
+<para>End node</para>
+</entry>
+                            </row>
+                            <row>
+<entry>transitionType</entry><entry>
+<para>Transition method</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para><link linkend="_class_kunnymann_1_1_navigation_1_1_path">Path</link></para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_module_1a670b63cfc32f95d8e5e488f10f5c1dd1"/><section>
+    <title>Ready()</title>
+<indexterm><primary>Ready</primary><secondary>Kunnymann.Navigation.NavigationModule</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.NavigationModule</primary><secondary>Ready</secondary></indexterm>
+<para><computeroutput>void Kunnymann.Navigation.NavigationModule.Ready (<link linkend="_class_kunnymann_1_1_navigation_1_1_navigation_config">NavigationConfig</link> config, Transform setTarget)</computeroutput></para><para>
+
+<para>Initialize navigation module. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>config</entry><entry>
+<para><link linkend="_namespace_kunnymann_1_1_navigation">Navigation</link> configuration</para>
+</entry>
+                            </row>
+                            <row>
+<entry>setTarget</entry><entry>
+<para>Target to track</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_module_1a1868e33b4eacefbb395e1988fe217783"/><section>
+    <title>RecoveryPath()</title>
+<indexterm><primary>RecoveryPath</primary><secondary>Kunnymann.Navigation.NavigationModule</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.NavigationModule</primary><secondary>RecoveryPath</secondary></indexterm>
+<para><computeroutput>bool Kunnymann.Navigation.NavigationModule.RecoveryPath ( )</computeroutput></para><para>
+
+<para><link linkend="_namespace_kunnymann_1_1_navigation">Navigation</link> recovery path. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>Recovery success</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_module_1ac0069d101888482fe41e1ef00094626c"/><section>
+    <title>RegisterBehavour()</title>
+<indexterm><primary>RegisterBehavour</primary><secondary>Kunnymann.Navigation.NavigationModule</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.NavigationModule</primary><secondary>RegisterBehavour</secondary></indexterm>
+<para><computeroutput>void Kunnymann.Navigation.NavigationModule.RegisterBehavour (<link linkend="_interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler">INavigationEventHandler</link> behavour)</computeroutput></para><para>
+
+<para>Register NavigationEventHandler. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>behavour</entry><entry>
+<para>NavigationEventHandler</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_module_1ab172558bb0fb57c0e62b31153c269b50"/><section>
+    <title>SetupPath()</title>
+<indexterm><primary>SetupPath</primary><secondary>Kunnymann.Navigation.NavigationModule</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.NavigationModule</primary><secondary>SetupPath</secondary></indexterm>
+<para><computeroutput>void Kunnymann.Navigation.NavigationModule.SetupPath (<link linkend="_interface_kunnymann_1_1_navigation_1_1_i_node">INode</link> destination, <link linkend="_namespace_kunnymann_1_1_navigation_1a26afc2d677d4f4e4aeba7d3bb25147ca">TransitionType</link> transition)</computeroutput></para><para>
+
+<para>Return path from current position to end node. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>destination</entry><entry>
+<para>End node</para>
+</entry>
+                            </row>
+                            <row>
+<entry>transition</entry><entry>
+<para>Transition method</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_navigation_1_1_navigation_module_1a7619b0c91f71e378b8fa51967547e076"/><section>
+    <title>UnregisterBehavour()</title>
+<indexterm><primary>UnregisterBehavour</primary><secondary>Kunnymann.Navigation.NavigationModule</secondary></indexterm>
+<indexterm><primary>Kunnymann.Navigation.NavigationModule</primary><secondary>UnregisterBehavour</secondary></indexterm>
+<para><computeroutput>void Kunnymann.Navigation.NavigationModule.UnregisterBehavour (<link linkend="_interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler">INavigationEventHandler</link> behavour)</computeroutput></para><para>
+
+<para>Unregister NavigationEventHandler. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>behavour</entry><entry>
+<para>NavigationEventHandler</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+</section>

@@ -1,0 +1,68 @@
+# Doxyfile for Unity pacakge documentation
+
+# 프로젝트 정보
+PROJECT_NAME           = "Kunnymann unity package"
+PROJECT_NUMBER         = 1.0
+PROJECT_BRIEF          = "A collection of Unity packages"
+OUTPUT_DIRECTORY       = ./Guide
+
+# 입력 설정
+INPUT                  = ../Assets/Packages
+INPUT                 += ./DocsMD 
+RECURSIVE              = YES
+EXCLUDE_PATTERNS       = */.*/* */Samples/* */Tests/* */External/* */Plugins/*
+EXCLUDE_SYMBOLS        = *Editor* *Tests*
+
+# 출력 설정
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+HTML_EXTRA_STYLESHEET  = ./doxygen-awesome-css/doxygen-awesome.css
+HTML_COLORSTYLE        = LIGHT
+
+# 다이어그램 설정
+HAVE_DOT               = NO
+UML_LOOK               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+
+# 문서화 설정
+EXTRACT_ALL            = NO
+EXTRACT_PRIVATE        = NO
+EXTRACT_PACKAGE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+SHOW_USED_FILES        = NO
+
+# 소스 브라우징
+SOURCE_BROWSER         = NO
+INLINE_SOURCES         = NO
+
+# 언어 설정
+OPTIMIZE_OUTPUT_JAVA   = YES  # C#에도 적용됩니다
+
+# 기타 설정
+ALPHABETICAL_INDEX     = YES
+DISABLE_INDEX          = NO
+GENERATE_TREEVIEW      = YES
+TREEVIEW_WIDTH         = 250
+
+# 패키지별 그룹화
+SUBGROUPING            = YES
+GROUP_NESTED_COMPOUNDS = YES
+
+# 예제 코드 포함
+EXAMPLE_PATH           = ../Assets/Packages
+EXAMPLE_PATTERNS       = *
+EXAMPLE_RECURSIVE      = YES
+
+# 이미지 설정
+IMAGE_PATH             = ../Assets/Packages
+
+# 별도 페이지
+USE_MDFILE_AS_MAINPAGE = ./DocsMD/Main.md
+FILE_PATTERNS          = *.md *.markdown *.cs
+
+# ALIASES 설정
+ALIASES                = "Kunnymann=\b Kunnymann"

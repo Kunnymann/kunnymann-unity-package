@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_kunnymann_1_1_base" xml:lang="en-US">
+<title>Kunnymann.Base Namespace Reference</title>
+<indexterm><primary>Kunnymann.Base</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_kunnymann_1_1_base_1_1_base_behaviour">BaseBehaviour</link></para>
+
+<para>모듈 기본 Behaviour </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_kunnymann_1_1_base_1_1_base_object">BaseObject</link></para>
+
+<para>모듈 기본 오브젝트 </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_kunnymann_1_1_base_1_1_base_scriptable_object">BaseScriptableObject</link></para>
+
+<para>모듈 기본 ScriptableObject </para>
+</listitem>
+            <listitem><para>interface <link linkend="_interface_kunnymann_1_1_base_1_1_common_base">CommonBase</link></para>
+
+<para>모듈 공통 인터페이스 </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_kunnymann_1_1_base_1_1_const_value">ConstValue</link></para>
+
+<para>상수값 </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_kunnymann_1_1_base_1_1_module_base">ModuleBase</link></para>
+
+<para>모듈의 공통 베이스 </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_kunnymann_1_1_base_1_1_module_manager">ModuleManager</link></para>
+
+<para>Module manager. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_kunnymann_1_1_base_1_1_navigation_module_base">NavigationModuleBase</link></para>
+
+<para><link linkend="_namespace_kunnymann_1_1_navigation">Navigation</link> DI 객체 </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_kunnymann_1_1_base_1_1_p_o_i_feature_data">POIFeatureData</link></para>
+
+<para>AR POI 데이터 </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_kunnymann_1_1_base_1_1_p_o_i_module_base">POIModuleBase</link></para>
+
+<para>POI DI 객체 </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_kunnymann_1_1_base_1_1_script_excution_order">ScriptExcutionOrder</link></para>
+
+<para>스크립트 실행 순위 조절 Attribute </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_kunnymann_1_1_base_1_1_v_l_module_base">VLModuleBase</link></para>
+
+<para>VPS Module의 DI 객체 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespace_kunnymann_1_1_base_1af4a55dba9a8a8c759cc6256c6af3594c">ModuleState</link> { <link linkend="_namespace_kunnymann_1_1_base_1af4a55dba9a8a8c759cc6256c6af3594ca0eceeb45861f9585dd7a97a3e36f85c6">Created</link>
+, <link linkend="_namespace_kunnymann_1_1_base_1af4a55dba9a8a8c759cc6256c6af3594ca3cab03c00dbd11bc3569afa0748013f0">Inactive</link>
+, <link linkend="_namespace_kunnymann_1_1_base_1af4a55dba9a8a8c759cc6256c6af3594ca4d3d769b812b6faa6b76e1a8abaece2d">Active</link>
+, <link linkend="_namespace_kunnymann_1_1_base_1af4a55dba9a8a8c759cc6256c6af3594cafba9c4daa2dd29d1077d32d965320ac1">Terminated</link>
+ }</para>
+
+<para>모듈의 상태 </para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_kunnymann_1_1_base_1a5499720892d50d5abe3f285d7e62c425">TransitionCommand</link> { <link linkend="_namespace_kunnymann_1_1_base_1a5499720892d50d5abe3f285d7e62c425a223e06f5cb15fc701ea1e686f7934f4f">Initialize</link>
+, <link linkend="_namespace_kunnymann_1_1_base_1a5499720892d50d5abe3f285d7e62c425a6adf97f83acf6453d4a6a4b1070f3754">None</link>
+, <link linkend="_namespace_kunnymann_1_1_base_1a5499720892d50d5abe3f285d7e62c425a056fa3d840f48b7bfbbd68c19a4797b3">Terminate</link>
+ }</para>
+
+<para>모듈의 상태 전이를 위한 명령어 </para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_kunnymann_1_1_base_1a23a5f8e6be05d5150cf8f9ef97a1d60d">VLState</link> { <?linebreak?><link linkend="_namespace_kunnymann_1_1_base_1a23a5f8e6be05d5150cf8f9ef97a1d60da6adf97f83acf6453d4a6a4b1070f3754">None</link>
+, <link linkend="_namespace_kunnymann_1_1_base_1a23a5f8e6be05d5150cf8f9ef97a1d60da4f2a91e15af2631ff9424564b8a45fb2">Initial</link>
+, <link linkend="_namespace_kunnymann_1_1_base_1a23a5f8e6be05d5150cf8f9ef97a1d60daac5bb077c33753116b5e91ff1766e7bc">Received</link>
+, <link linkend="_namespace_kunnymann_1_1_base_1a23a5f8e6be05d5150cf8f9ef97a1d60daceaa0734f0b3c738120c67344d8f3ec1">Fail</link>
+, <?linebreak?><link linkend="_namespace_kunnymann_1_1_base_1a23a5f8e6be05d5150cf8f9ef97a1d60da505a83f220c02df2f85c3810cd9ceb38">Success</link>
+, <link linkend="_namespace_kunnymann_1_1_base_1a23a5f8e6be05d5150cf8f9ef97a1d60daf63a325c7f0ff7171e92e3ae958b9d1d">OutofService</link>
+ }</para>
+
+<para>VPS engine state. </para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespace_kunnymann_1_1_base_1a58914db540ce5a6ecc423a0c016d0104">TrackerType</link> { <link linkend="_namespace_kunnymann_1_1_base_1a58914db540ce5a6ecc423a0c016d0104a7a1920d61156abc05a60135aefe8bc67">Default</link> = 0
+, <link linkend="_namespace_kunnymann_1_1_base_1a58914db540ce5a6ecc423a0c016d0104a0e31301fddb0b9823b89abfe739473e7">SourceProprietaryTech</link>
+, <link linkend="_namespace_kunnymann_1_1_base_1a58914db540ce5a6ecc423a0c016d0104aef34b542973b9ab4822bde679eff2447">LocalTech</link>
+, <link linkend="_namespace_kunnymann_1_1_base_1a58914db540ce5a6ecc423a0c016d0104ad0384211cbe162db92d24c0d8f563e01">Simulator</link>
+ }</para>
+
+<para>VPS engine type. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_namespace_kunnymann_1_1_base_1a800efb0d7480862caedb1adf7c53a1f8"/>delegate void <emphasis role="strong">EventHandler</emphasis> ()</para>
+
+<para>모듈 이벤트 핸들러 </para>
+</listitem>
+            <listitem><para>delegate void <link linkend="_namespace_kunnymann_1_1_base_1ae797529c37e301284389e1c52a23b824">EventHandler&lt; TEventArg &gt;</link> (TEventArg eventArg)</para>
+
+<para>모듈 이벤트 핸들러 </para>
+</listitem>
+            <listitem><para>delegate void <link linkend="_namespace_kunnymann_1_1_base_1ac59029511a2a35ae4e1a7f74d390fc6e">EventHandler&lt; TEventArg1, TEventArg2 &gt;</link> (TEventArg1 eventArg1, TEventArg2 eventArg2)</para>
+
+<para>모듈 이벤트 핸들러 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Enumeration Type Documentation</title>
+<anchor xml:id="_namespace_kunnymann_1_1_base_1af4a55dba9a8a8c759cc6256c6af3594c"/><section>
+    <title>ModuleState</title>
+<indexterm><primary>ModuleState</primary><secondary>Kunnymann.Base</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base</primary><secondary>ModuleState</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_kunnymann_1_1_base_1af4a55dba9a8a8c759cc6256c6af3594c">Kunnymann.Base.ModuleState</link></computeroutput></para><para>
+
+<para>모듈의 상태 </para>
+</para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Created</primary><secondary>Kunnymann.Base</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base</primary><secondary>Created</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_base_1af4a55dba9a8a8c759cc6256c6af3594ca0eceeb45861f9585dd7a97a3e36f85c6"/>Created</entry><entry>
+<para>생성 </para>
+</entry></row><row><entry><indexterm><primary>Inactive</primary><secondary>Kunnymann.Base</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base</primary><secondary>Inactive</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_base_1af4a55dba9a8a8c759cc6256c6af3594ca3cab03c00dbd11bc3569afa0748013f0"/>Inactive</entry><entry>
+<para>비활성화 </para>
+</entry></row><row><entry><indexterm><primary>Active</primary><secondary>Kunnymann.Base</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base</primary><secondary>Active</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_base_1af4a55dba9a8a8c759cc6256c6af3594ca4d3d769b812b6faa6b76e1a8abaece2d"/>Active</entry><entry>
+<para>활성화 </para>
+</entry></row><row><entry><indexterm><primary>Terminated</primary><secondary>Kunnymann.Base</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base</primary><secondary>Terminated</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_base_1af4a55dba9a8a8c759cc6256c6af3594cafba9c4daa2dd29d1077d32d965320ac1"/>Terminated</entry><entry>
+<para>제거 </para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_kunnymann_1_1_base_1a58914db540ce5a6ecc423a0c016d0104"/><section>
+    <title>TrackerType</title>
+<indexterm><primary>TrackerType</primary><secondary>Kunnymann.Base</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base</primary><secondary>TrackerType</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_kunnymann_1_1_base_1a58914db540ce5a6ecc423a0c016d0104">Kunnymann.Base.TrackerType</link></computeroutput></para><para>
+
+<para>VPS engine type. </para>
+</para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Default</primary><secondary>Kunnymann.Base</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base</primary><secondary>Default</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_base_1a58914db540ce5a6ecc423a0c016d0104a7a1920d61156abc05a60135aefe8bc67"/>Default</entry><entry>
+<para>기본값 </para>
+</entry></row><row><entry><indexterm><primary>SourceProprietaryTech</primary><secondary>Kunnymann.Base</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base</primary><secondary>SourceProprietaryTech</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_base_1a58914db540ce5a6ecc423a0c016d0104a0e31301fddb0b9823b89abfe739473e7"/>SourceProprietaryTech</entry><entry>
+<para>원천 기술사 VPS engine </para>
+</entry></row><row><entry><indexterm><primary>LocalTech</primary><secondary>Kunnymann.Base</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base</primary><secondary>LocalTech</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_base_1a58914db540ce5a6ecc423a0c016d0104aef34b542973b9ab4822bde679eff2447"/>LocalTech</entry><entry>
+<para>자사 VPS engine </para>
+</entry></row><row><entry><indexterm><primary>Simulator</primary><secondary>Kunnymann.Base</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base</primary><secondary>Simulator</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_base_1a58914db540ce5a6ecc423a0c016d0104ad0384211cbe162db92d24c0d8f563e01"/>Simulator</entry><entry>
+<para>시뮬레이터 </para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_kunnymann_1_1_base_1a5499720892d50d5abe3f285d7e62c425"/><section>
+    <title>TransitionCommand</title>
+<indexterm><primary>TransitionCommand</primary><secondary>Kunnymann.Base</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base</primary><secondary>TransitionCommand</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_kunnymann_1_1_base_1a5499720892d50d5abe3f285d7e62c425">Kunnymann.Base.TransitionCommand</link></computeroutput></para><para>
+
+<para>모듈의 상태 전이를 위한 명령어 </para>
+</para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>Initialize</primary><secondary>Kunnymann.Base</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base</primary><secondary>Initialize</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_base_1a5499720892d50d5abe3f285d7e62c425a223e06f5cb15fc701ea1e686f7934f4f"/>Initialize</entry><entry>
+<para>초기화 명령 </para>
+</entry></row><row><entry><indexterm><primary>None</primary><secondary>Kunnymann.Base</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base</primary><secondary>None</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_base_1a5499720892d50d5abe3f285d7e62c425a6adf97f83acf6453d4a6a4b1070f3754"/>None</entry><entry>
+<para>명령 없음 </para>
+</entry></row><row><entry><indexterm><primary>Terminate</primary><secondary>Kunnymann.Base</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base</primary><secondary>Terminate</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_base_1a5499720892d50d5abe3f285d7e62c425a056fa3d840f48b7bfbbd68c19a4797b3"/>Terminate</entry><entry>
+<para>제거 명령 </para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_namespace_kunnymann_1_1_base_1a23a5f8e6be05d5150cf8f9ef97a1d60d"/><section>
+    <title>VLState</title>
+<indexterm><primary>VLState</primary><secondary>Kunnymann.Base</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base</primary><secondary>VLState</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespace_kunnymann_1_1_base_1a23a5f8e6be05d5150cf8f9ef97a1d60d">Kunnymann.Base.VLState</link></computeroutput></para><para>
+
+<para>VPS engine state. </para>
+</para>
+<informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>None</primary><secondary>Kunnymann.Base</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base</primary><secondary>None</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_base_1a23a5f8e6be05d5150cf8f9ef97a1d60da6adf97f83acf6453d4a6a4b1070f3754"/>None</entry><entry>
+<para>초기화 대기 </para>
+</entry></row><row><entry><indexterm><primary>Initial</primary><secondary>Kunnymann.Base</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base</primary><secondary>Initial</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_base_1a23a5f8e6be05d5150cf8f9ef97a1d60da4f2a91e15af2631ff9424564b8a45fb2"/>Initial</entry><entry>
+<para>초기화 완료 </para>
+</entry></row><row><entry><indexterm><primary>Received</primary><secondary>Kunnymann.Base</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base</primary><secondary>Received</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_base_1a23a5f8e6be05d5150cf8f9ef97a1d60daac5bb077c33753116b5e91ff1766e7bc"/>Received</entry><entry>
+<para>VPS로부터 응답이 수신된 상태 </para>
+</entry></row><row><entry><indexterm><primary>Fail</primary><secondary>Kunnymann.Base</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base</primary><secondary>Fail</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_base_1a23a5f8e6be05d5150cf8f9ef97a1d60daceaa0734f0b3c738120c67344d8f3ec1"/>Fail</entry><entry>
+<para>인식 실패 </para>
+</entry></row><row><entry><indexterm><primary>Success</primary><secondary>Kunnymann.Base</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base</primary><secondary>Success</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_base_1a23a5f8e6be05d5150cf8f9ef97a1d60da505a83f220c02df2f85c3810cd9ceb38"/>Success</entry><entry>
+<para>인식 성공 </para>
+</entry></row><row><entry><indexterm><primary>OutofService</primary><secondary>Kunnymann.Base</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base</primary><secondary>OutofService</secondary></indexterm>
+<anchor xml:id="_namespace_kunnymann_1_1_base_1a23a5f8e6be05d5150cf8f9ef97a1d60daf63a325c7f0ff7171e92e3ae958b9d1d"/>OutofService</entry><entry>
+<para>서비스 미지원 </para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespace_kunnymann_1_1_base_1ae797529c37e301284389e1c52a23b824"/><section>
+    <title>EventHandler&lt; TEventArg &gt;()</title>
+<indexterm><primary>EventHandler&lt; TEventArg &gt;</primary><secondary>Kunnymann.Base</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base</primary><secondary>EventHandler&lt; TEventArg &gt;</secondary></indexterm>
+<para><computeroutput>delegate void <link linkend="_namespace_kunnymann_1_1_base_1a800efb0d7480862caedb1adf7c53a1f8">Kunnymann.Base.EventHandler</link>&lt; TEventArg &gt; (TEventArg eventArg)</computeroutput></para><para>
+
+<para>모듈 이벤트 핸들러 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>TEventArg</entry><entry>
+<para>타입</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>eventArg</entry><entry>
+<para>파라미터</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_namespace_kunnymann_1_1_base_1ac59029511a2a35ae4e1a7f74d390fc6e"/><section>
+    <title>EventHandler&lt; TEventArg1, TEventArg2 &gt;()</title>
+<indexterm><primary>EventHandler&lt; TEventArg1, TEventArg2 &gt;</primary><secondary>Kunnymann.Base</secondary></indexterm>
+<indexterm><primary>Kunnymann.Base</primary><secondary>EventHandler&lt; TEventArg1, TEventArg2 &gt;</secondary></indexterm>
+<para><computeroutput>delegate void <link linkend="_namespace_kunnymann_1_1_base_1a800efb0d7480862caedb1adf7c53a1f8">Kunnymann.Base.EventHandler</link>&lt; TEventArg1, TEventArg2 &gt; (TEventArg1 eventArg1, TEventArg2 eventArg2)</computeroutput></para><para>
+
+<para>모듈 이벤트 핸들러 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Template Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>TEventArg1</entry><entry>
+<para>타입 1</para>
+</entry>
+                            </row>
+                            <row>
+<entry>TEventArg2</entry><entry>
+<para>타입 2</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>eventArg1</entry><entry>
+<para>파라미터 1</para>
+</entry>
+                            </row>
+                            <row>
+<entry>eventArg2</entry><entry>
+<para>파라미터 2</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+</section>

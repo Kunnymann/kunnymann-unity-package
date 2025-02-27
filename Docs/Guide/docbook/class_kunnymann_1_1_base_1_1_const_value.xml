@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_kunnymann_1_1_base_1_1_const_value" xml:lang="en-US">
+<title>Kunnymann.Base.ConstValue Class Reference</title>
+<indexterm><primary>Kunnymann.Base.ConstValue</primary></indexterm>
+<para>
+
+<para>상수값 </para>
+ 
+</para>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_base_1_1_const_value_1ae253d42056d829786edf658cd0480610"/>const string <emphasis role="strong">MODULE_MANAGER_NAME</emphasis> = &quot;ModuleManager&quot;</para>
+
+<para><link linkend="_class_kunnymann_1_1_base_1_1_module_manager">ModuleManager</link> 게임 오브젝트 이름 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>상수값 </para>
+</section>
+</section>

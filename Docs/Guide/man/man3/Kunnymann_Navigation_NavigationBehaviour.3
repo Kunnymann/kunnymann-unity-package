@@ -1,0 +1,161 @@
+.TH "Kunnymann.Navigation.NavigationBehaviour" 3 "Version 1.0" "Kunnymann unity package" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Kunnymann.Navigation.NavigationBehaviour \- \fBNavigation\fP behaviour base class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits MonoBehaviour, and \fBKunnymann\&.Navigation\&.INavigationEventHandler\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBOnReadyNavigationSession\fP ()"
+.br
+.RI "Called when the navigation session is ready\&. "
+.ti -1c
+.RI "virtual void \fBOnStartNavigationSession\fP (\fBPath\fP path)"
+.br
+.RI "Called when the navigation session is started\&. "
+.ti -1c
+.RI "virtual void \fBOnEndNavigationSession\fP (\fBSessionEndType\fP end)"
+.br
+.RI "Called when the navigation session is ended\&. "
+.ti -1c
+.RI "virtual void \fBOnSessionStateChanged\fP (\fBNavigationState\fP state)"
+.br
+.RI "Called when the navigation session state is changed\&. "
+.ti -1c
+.RI "virtual void \fBOnRecoveryPath\fP (\fBPath\fP path)"
+.br
+.RI "Called when the navigation path is recovered\&. "
+.ti -1c
+.RI "virtual void \fBOnUpdatePath\fP (\fBPath\fP path)"
+.br
+.RI "Called when the navigation path is updated\&. "
+.ti -1c
+.RI "virtual void \fBOnEnterTransition\fP (\fBINode\fP node)"
+.br
+.RI "Called when the target is entered transition zone\&. "
+.ti -1c
+.RI "virtual void \fBOnExitTransition\fP (\fBINode\fP node)"
+.br
+.RI "Called when the target is exited transition zone\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "\fBNavigationModule\fP \fBNavigation\fP\fR [get, set]\fP"
+.br
+.RI "\fBNavigation\fP module\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBNavigation\fP behaviour base class\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Kunnymann\&.Navigation\&.NavigationBehaviour\&.OnEndNavigationSession (\fBSessionEndType\fP end)\fR [virtual]\fP"
+
+.PP
+Called when the navigation session is ended\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIend\fP Session end type
+.RE
+.PP
+
+.PP
+Implements \fBKunnymann\&.Navigation\&.INavigationEventHandler\fP\&.
+.SS "virtual void Kunnymann\&.Navigation\&.NavigationBehaviour\&.OnEnterTransition (\fBINode\fP node)\fR [virtual]\fP"
+
+.PP
+Called when the target is entered transition zone\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInode\fP transition zone node
+.RE
+.PP
+
+.PP
+Implements \fBKunnymann\&.Navigation\&.INavigationEventHandler\fP\&.
+.SS "virtual void Kunnymann\&.Navigation\&.NavigationBehaviour\&.OnExitTransition (\fBINode\fP node)\fR [virtual]\fP"
+
+.PP
+Called when the target is exited transition zone\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInode\fP 
+.RE
+.PP
+
+.PP
+Implements \fBKunnymann\&.Navigation\&.INavigationEventHandler\fP\&.
+.SS "virtual void Kunnymann\&.Navigation\&.NavigationBehaviour\&.OnReadyNavigationSession ()\fR [virtual]\fP"
+
+.PP
+Called when the navigation session is ready\&. 
+.PP
+Implements \fBKunnymann\&.Navigation\&.INavigationEventHandler\fP\&.
+.SS "virtual void Kunnymann\&.Navigation\&.NavigationBehaviour\&.OnRecoveryPath (\fBPath\fP path)\fR [virtual]\fP"
+
+.PP
+Called when the navigation path is recovered\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP 
+.RE
+.PP
+
+.PP
+Implements \fBKunnymann\&.Navigation\&.INavigationEventHandler\fP\&.
+.SS "virtual void Kunnymann\&.Navigation\&.NavigationBehaviour\&.OnSessionStateChanged (\fBNavigationState\fP state)\fR [virtual]\fP"
+
+.PP
+Called when the navigation session state is changed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIstate\fP \fBNavigation\fP session state
+.RE
+.PP
+
+.PP
+Implements \fBKunnymann\&.Navigation\&.INavigationEventHandler\fP\&.
+.SS "virtual void Kunnymann\&.Navigation\&.NavigationBehaviour\&.OnStartNavigationSession (\fBPath\fP path)\fR [virtual]\fP"
+
+.PP
+Called when the navigation session is started\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP Current path
+.RE
+.PP
+
+.PP
+Implements \fBKunnymann\&.Navigation\&.INavigationEventHandler\fP\&.
+.SS "virtual void Kunnymann\&.Navigation\&.NavigationBehaviour\&.OnUpdatePath (\fBPath\fP path)\fR [virtual]\fP"
+
+.PP
+Called when the navigation path is updated\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpath\fP 
+.RE
+.PP
+
+.PP
+Implements \fBKunnymann\&.Navigation\&.INavigationEventHandler\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Kunnymann unity package from the source code\&.

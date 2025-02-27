@@ -1,0 +1,450 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit" xml:lang="en-US">
+<title>Kunnymann.UI.Popup.PopupUnit Class Reference</title>
+<indexterm><primary>Kunnymann.UI.Popup.PopupUnit</primary></indexterm>
+<para>
+
+<para><link linkend="_namespace_kunnymann_1_1_u_i_1_1_popup">Popup</link> GUI의 최소 단위인 MonoBeheviour. </para>
+ 
+</para>
+<para>Inheritance diagram for Kunnymann.UI.Popup.PopupUnit:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1a3c35469d9d5368aad4caacf705536a3a"/>void <emphasis role="strong">ShowImmediately</emphasis> ()</para>
+
+<para>UIPopup을 즉시 Show합니다. </para>
+</listitem>
+            <listitem><para>virtual async UniTask <link linkend="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1a6d237374ec021703ff87747be0678933">Show</link> ()</para>
+
+<para>UIPopup을 애니메이션에 따라 Show합니다. </para>
+</listitem>
+            <listitem><para>virtual async UniTask <link linkend="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1a10002f157ffda27dabd7f09239401658">Show</link> (float duration)</para>
+
+<para>UIPopup을 애니메이션에 따라 duration 동안, Show합니다. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1ab1657807515a14d0ba638e64e3161742"/>void <emphasis role="strong">HideImmediately</emphasis> ()</para>
+
+<para>UIPopup을 즉시 Hide합니다. </para>
+</listitem>
+            <listitem><para>virtual async UniTask <link linkend="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1a7dad4c170113849a5d64e26e488c7cab">Hide</link> ()</para>
+
+<para>UIPopup을 애니메이션에 따라 Hide합니다. </para>
+</listitem>
+            <listitem><para>virtual async UniTask <link linkend="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1aaee3a71e2bbce181e9775cf7ad39c598">Hide</link> (float duration)</para>
+
+<para>UIPopup을 애니메이션에 따라 duration 동안, Hide합니다. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit">PopupUnit</link> <link linkend="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1ac0b98fd27faa61859d2ed113005633e9">GetUIPopup</link> (string name)</para>
+
+<para>UIPopup을 Container로부터 얻어와, Instantiate합니다. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1aef4a4dc8abfd860f43ee587902cdbf85"/>static void <emphasis role="strong">Destroy</emphasis> ()</para>
+
+<para>현재 UIPopup Object를 제거합니다. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1ac6ab21b212749c1a48557a1adb8306e1">OnViewVisibleStateChanged</link> (<link linkend="_namespace_kunnymann_1_1_u_i_1a5f733c84027ffdf9e3e8a6245163f472">VisibleState</link> visibleState)</para>
+
+<para>UIPopup의 VisibleState가 변할 때, 호출됩니다. </para>
+</listitem>
+            <listitem><para>virtual async UniTask <link linkend="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1ae26a28a08f3e24ea9808e492525f9c91">ShowInternal</link> (float duration)</para>
+
+<para>UIPopup의 <link linkend="_namespace_kunnymann_1_1_u_i_1_1_popup">Popup</link> 내부 동작입니다. </para>
+</listitem>
+            <listitem><para>virtual async UniTask <link linkend="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1affe7730c2d330f55c64ee7137ede396d">HideInternal</link> (float duration)</para>
+
+<para>UIPopup의 Dismiss 내부 동작입니다. </para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1ab908bf7ca1ad370e5fc0df6ac074ac9a">AddShowAnimationJobs</link> (List&lt; UniTask &gt; jobs, float duration, CanvasGroup target)</para>
+
+<para>내부 동작 Popup이 실행되면서 처리될 애니메이션 Job을 추가합니다. </para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1a1ef595859ef977728a481f8675685367">AddHideAnimationJobs</link> (List&lt; UniTask &gt; jobs, float duration, CanvasGroup target)</para>
+
+<para>내부 동작 Dismiss가 실행되면서 처리될 애니메이션 Job을 추가합니다. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1a8dbb5e72b2df9596a30938fe77a39267"/>CanvasGroup <emphasis role="strong">_contentCanvasGroup</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1ab101f41735bd9c7a01983d7757f32ca2"/>CanvasGroup <emphasis role="strong">_backgroundCanvasGroup</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1a772941d2cca4f0ca9549a87e06c4299c"/>float <emphasis role="strong">_showAnimDuration</emphasis> = 1f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1a704bba23539bc9dcf08949f6bbc7d0f8"/>float <emphasis role="strong">_hideAnimDuration</emphasis> = 1f</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1af99f03b0c5e82f180681edcc5f4ca1fb"/>List&lt; Text &gt; <emphasis role="strong">TextFields</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>동적으로 Text 내용을 할당할 TextField List입니다. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1ab8cdefd476aa5efd7817e3a224c59664"/>List&lt; Button &gt; <emphasis role="strong">Buttons</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>동적으로 Listener를 할당할 Button List입니다. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1aa9900b0e445e07d1de6cf6c89ae9dbc1"/><link linkend="_namespace_kunnymann_1_1_u_i_1a5f733c84027ffdf9e3e8a6245163f472">VisibleState</link> <emphasis role="strong">VisibleState</emphasis> = <link linkend="_namespace_kunnymann_1_1_u_i_1a5f733c84027ffdf9e3e8a6245163f472aa9547b76e2556dd30ee038f82c199236">VisibleState.Disappeared</link><computeroutput> [get]</computeroutput>
+</para>
+
+<para>Popup의 VisibleState. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1aa02a7aab422bd39b7a42d40e57a90649"/><link linkend="_class_kunnymann_1_1_u_i_1_1_view_unit">ViewUnit</link> <emphasis role="strong">View</emphasis><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>현재 Popup의 UIView. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1aa55124f31c6fb24348163a1aee5edfd9"/>static <link linkend="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit">PopupUnit</link> <emphasis role="strong">Instance</emphasis><computeroutput> [get]</computeroutput>
+</para>
+
+<para>현재 팝업된 인스턴스를 반환합니다. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_namespace_kunnymann_1_1_u_i_1_1_popup">Popup</link> GUI의 최소 단위인 MonoBeheviour. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1a1ef595859ef977728a481f8675685367"/><section>
+    <title>AddHideAnimationJobs()</title>
+<indexterm><primary>AddHideAnimationJobs</primary><secondary>Kunnymann.UI.Popup.PopupUnit</secondary></indexterm>
+<indexterm><primary>Kunnymann.UI.Popup.PopupUnit</primary><secondary>AddHideAnimationJobs</secondary></indexterm>
+<para><computeroutput>virtual void Kunnymann.UI.Popup.PopupUnit.AddHideAnimationJobs (List&lt; UniTask &gt; jobs, float duration, CanvasGroup target)<computeroutput>[protected]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>내부 동작 Dismiss가 실행되면서 처리될 애니메이션 Job을 추가합니다. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>jobs</entry><entry>
+<para>WhenAll이 실행될 UniTask list</para>
+</entry>
+                            </row>
+                            <row>
+<entry>duration</entry><entry>
+<para>Animation 시간</para>
+</entry>
+                            </row>
+                            <row>
+<entry>target</entry><entry>
+<para>타겟 CanvasGroup</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1ab908bf7ca1ad370e5fc0df6ac074ac9a"/><section>
+    <title>AddShowAnimationJobs()</title>
+<indexterm><primary>AddShowAnimationJobs</primary><secondary>Kunnymann.UI.Popup.PopupUnit</secondary></indexterm>
+<indexterm><primary>Kunnymann.UI.Popup.PopupUnit</primary><secondary>AddShowAnimationJobs</secondary></indexterm>
+<para><computeroutput>virtual void Kunnymann.UI.Popup.PopupUnit.AddShowAnimationJobs (List&lt; UniTask &gt; jobs, float duration, CanvasGroup target)<computeroutput>[protected]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>내부 동작 Popup이 실행되면서 처리될 애니메이션 Job을 추가합니다. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>jobs</entry><entry>
+<para>WhenAll이 실행될 UniTask list</para>
+</entry>
+                            </row>
+                            <row>
+<entry>duration</entry><entry>
+<para>Animation 시간</para>
+</entry>
+                            </row>
+                            <row>
+<entry>target</entry><entry>
+<para>타겟 CanvasGroup</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1ac0b98fd27faa61859d2ed113005633e9"/><section>
+    <title>GetUIPopup()</title>
+<indexterm><primary>GetUIPopup</primary><secondary>Kunnymann.UI.Popup.PopupUnit</secondary></indexterm>
+<indexterm><primary>Kunnymann.UI.Popup.PopupUnit</primary><secondary>GetUIPopup</secondary></indexterm>
+<para><computeroutput>static <link linkend="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit">PopupUnit</link> Kunnymann.UI.Popup.PopupUnit.GetUIPopup (string name)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>UIPopup을 Container로부터 얻어와, Instantiate합니다. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>name</entry><entry>
+<para>UIPopup prefab 이름</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>UIPopup</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1a7dad4c170113849a5d64e26e488c7cab"/><section>
+    <title>Hide()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Hide</primary><secondary>Kunnymann.UI.Popup.PopupUnit</secondary></indexterm>
+<indexterm><primary>Kunnymann.UI.Popup.PopupUnit</primary><secondary>Hide</secondary></indexterm>
+<para><computeroutput>virtual async UniTask Kunnymann.UI.Popup.PopupUnit.Hide ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>UIPopup을 애니메이션에 따라 Hide합니다. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>UniTask</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1aaee3a71e2bbce181e9775cf7ad39c598"/><section>
+    <title>Hide()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Hide</primary><secondary>Kunnymann.UI.Popup.PopupUnit</secondary></indexterm>
+<indexterm><primary>Kunnymann.UI.Popup.PopupUnit</primary><secondary>Hide</secondary></indexterm>
+<para><computeroutput>virtual async UniTask Kunnymann.UI.Popup.PopupUnit.Hide (float duration)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>UIPopup을 애니메이션에 따라 duration 동안, Hide합니다. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>duration</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para></para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1affe7730c2d330f55c64ee7137ede396d"/><section>
+    <title>HideInternal()</title>
+<indexterm><primary>HideInternal</primary><secondary>Kunnymann.UI.Popup.PopupUnit</secondary></indexterm>
+<indexterm><primary>Kunnymann.UI.Popup.PopupUnit</primary><secondary>HideInternal</secondary></indexterm>
+<para><computeroutput>virtual async UniTask Kunnymann.UI.Popup.PopupUnit.HideInternal (float duration)<computeroutput>[protected]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>UIPopup의 Dismiss 내부 동작입니다. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>duration</entry><entry>
+<para>Animation 시간</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>UniTask</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1ac6ab21b212749c1a48557a1adb8306e1"/><section>
+    <title>OnViewVisibleStateChanged()</title>
+<indexterm><primary>OnViewVisibleStateChanged</primary><secondary>Kunnymann.UI.Popup.PopupUnit</secondary></indexterm>
+<indexterm><primary>Kunnymann.UI.Popup.PopupUnit</primary><secondary>OnViewVisibleStateChanged</secondary></indexterm>
+<para><computeroutput>void Kunnymann.UI.Popup.PopupUnit.OnViewVisibleStateChanged (<link linkend="_namespace_kunnymann_1_1_u_i_1a5f733c84027ffdf9e3e8a6245163f472">VisibleState</link> visibleState)<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+
+<para>UIPopup의 VisibleState가 변할 때, 호출됩니다. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>visibleState</entry><entry></entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1a6d237374ec021703ff87747be0678933"/><section>
+    <title>Show()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Show</primary><secondary>Kunnymann.UI.Popup.PopupUnit</secondary></indexterm>
+<indexterm><primary>Kunnymann.UI.Popup.PopupUnit</primary><secondary>Show</secondary></indexterm>
+<para><computeroutput>virtual async UniTask Kunnymann.UI.Popup.PopupUnit.Show ( )<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>UIPopup을 애니메이션에 따라 Show합니다. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>UniTask</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1a10002f157ffda27dabd7f09239401658"/><section>
+    <title>Show()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Show</primary><secondary>Kunnymann.UI.Popup.PopupUnit</secondary></indexterm>
+<indexterm><primary>Kunnymann.UI.Popup.PopupUnit</primary><secondary>Show</secondary></indexterm>
+<para><computeroutput>virtual async UniTask Kunnymann.UI.Popup.PopupUnit.Show (float duration)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>UIPopup을 애니메이션에 따라 duration 동안, Show합니다. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>duration</entry><entry>
+<para>애니메이션 시간</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>UniTask</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit_1ae26a28a08f3e24ea9808e492525f9c91"/><section>
+    <title>ShowInternal()</title>
+<indexterm><primary>ShowInternal</primary><secondary>Kunnymann.UI.Popup.PopupUnit</secondary></indexterm>
+<indexterm><primary>Kunnymann.UI.Popup.PopupUnit</primary><secondary>ShowInternal</secondary></indexterm>
+<para><computeroutput>virtual async UniTask Kunnymann.UI.Popup.PopupUnit.ShowInternal (float duration)<computeroutput>[protected]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>UIPopup의 <link linkend="_namespace_kunnymann_1_1_u_i_1_1_popup">Popup</link> 내부 동작입니다. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>duration</entry><entry>
+<para>Animation 시간</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>UniTask</para>
+</formalpara>
+</para>
+</section>
+</section>
+</section>
