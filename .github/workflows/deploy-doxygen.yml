@@ -24,7 +24,7 @@ jobs:
           submodules: recursive
 
       - name: Doxygen Action
-        uses: mattnotmitt/doxygen-action@edge
+        uses: mattnotmitt/doxygen-action@1.13.2
         with:
           doxyfile-path: "./Docs/Doxyfile"
           working-directory: "."
