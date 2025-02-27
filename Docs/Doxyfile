@@ -4,7 +4,7 @@
 PROJECT_NAME           = "Kunnymann unity package"
 PROJECT_NUMBER         = 1.0
 PROJECT_BRIEF          = "A collection of Unity packages"
-OUTPUT_DIRECTORY       = ./Guide
+OUTPUT_DIRECTORY       = BuildedDocs
 
 # 입력 설정
 INPUT                  = ../Assets/Packages
