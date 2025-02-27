@@ -33,7 +33,7 @@ jobs:
         run: sudo touch ./build_doc/html/.nojekyll
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./build_doc/html
 
