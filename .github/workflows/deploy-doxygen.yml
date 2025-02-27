@@ -27,16 +27,15 @@ jobs:
         uses: mattnotmitt/doxygen-action@1.12.0
         with:
           doxyfile-path: "./Docs/Doxyfile"
-          working-directory: "./Docs"
+          working-directory: "."
       
-      - name: Add Build Doc
-        run: |
-          mkdir -p ./build_doc/
-          
+      - name: Add .nojekyll
+        run: sudo touch ./BuildedDocs/html/.nojekyll
+        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build_doc
+          path: ./BuildedDocs/html
 
   # Deployment job
   deploy:
