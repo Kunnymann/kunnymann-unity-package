@@ -1,3 +1,5 @@
+using Kunnymann.Navigation.Data;
+
 namespace Kunnymann.Navigation
 {
     /// <summary>

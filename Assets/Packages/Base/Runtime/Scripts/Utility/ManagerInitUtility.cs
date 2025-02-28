@@ -40,7 +40,7 @@ namespace Kunnymann.Base.Utility
                 ModuleManager.Modules.Add(moduleInstance);
             }
 
-            Debugger.Debugger.Debug($"Initialized module count : {types.Count}");
+            Debug.Log($"Initialized module count : {types.Count}");
         }
     }
 }

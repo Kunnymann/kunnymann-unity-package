@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using System;
 
-namespace Kunnymann.Base.Debugger
+namespace Kunnymann.Debugger
 {
     /// <summary>
     /// 에러 리스너

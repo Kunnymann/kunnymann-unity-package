@@ -1,9 +1,7 @@
 using Kunnymann.Base.Utility;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using Kunnymann.Base.Debugger;
 
 namespace Kunnymann.UI.Popup
 {
@@ -29,7 +27,7 @@ namespace Kunnymann.UI.Popup
             var popup = _uiPopupList.SingleOrDefault(found => found.name == popupName);
             if (popup == null)
             {
-                ErrorListener.Check(new NullReferenceException(), $"{popupName}의 Popup UI를 찾을 수 없습니다.", needthrowerror: true);
+                Debug.LogError($"{popupName}의 Popup UI를 찾을 수 없습니다.");
                 return null;
             }
 

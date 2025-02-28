@@ -1,4 +1,4 @@
-namespace Kunnymann.Navigation
+namespace Kunnymann.Navigation.Data
 {
     /// <summary>
     /// Navigation module state

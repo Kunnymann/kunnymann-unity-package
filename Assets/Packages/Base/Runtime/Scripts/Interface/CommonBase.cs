@@ -5,7 +5,10 @@ namespace Kunnymann.Base
     /// </summary>
     public interface CommonBase
     {
-
+        /// <summary>
+        /// 일반 초기화 및 Setting 초기화를 수행합니다
+        /// </summary>
+        public void Initialize();
     }
 }
 

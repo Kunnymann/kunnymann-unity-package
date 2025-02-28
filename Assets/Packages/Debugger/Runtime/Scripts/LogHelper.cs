@@ -1,7 +1,7 @@
 using UnityEngine;
 using System;
 
-namespace Kunnymann.Base.Debugger
+namespace Kunnymann.Debugger
 {
     /// <summary>
     /// Log level
@@ -9,13 +9,9 @@ namespace Kunnymann.Base.Debugger
     public enum LogLevel
     {
         /// <summary>
-        /// All level
-        /// </summary>
-        All = 0,
-        /// <summary>
         /// Debug level
         /// </summary>
-        Debug,
+        Debug = 0,
         /// <summary>
         /// Info level
         /// </summary>

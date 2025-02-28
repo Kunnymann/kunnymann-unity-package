@@ -1,7 +1,7 @@
 using Kunnymann.Utility;
 using UnityEngine;
 
-namespace Kunnymann.Base.Debugger
+namespace Kunnymann.Debugger
 {
     /// <summary>
     /// Debugger config
@@ -12,6 +12,6 @@ namespace Kunnymann.Base.Debugger
         /// <summary>
         /// Log level
         /// </summary>
-        public LogLevel LogLevel = LogLevel.All;
+        public LogLevel LogLevel = LogLevel.Debug;
     }
 }

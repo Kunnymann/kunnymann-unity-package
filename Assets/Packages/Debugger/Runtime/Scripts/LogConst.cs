@@ -1,4 +1,4 @@
-namespace Kunnymann.Base.Debugger
+namespace Kunnymann.Debugger
 {
     /// <summary>
     /// 디버거 로그 상수

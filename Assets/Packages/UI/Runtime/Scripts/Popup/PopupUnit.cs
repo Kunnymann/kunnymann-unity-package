@@ -1,6 +1,4 @@
 using Cysharp.Threading.Tasks;
-using Kunnymann.Base.Debugger;
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -66,7 +64,7 @@ namespace Kunnymann.UI.Popup
             var uiPopup = PopupContainer.Instance.GetUIPopup(name);
             if (uiPopup == null)
             {
-                ErrorListener.Check(new NullReferenceException(), $"{name}의 UIPopup이 Container 목록에 존재하지 않습니다.", needthrowerror: true);
+                Debug.LogError($"{name}의 UIPopup이 Container 목록에 존재하지 않습니다.");
                 return null;
             }
 

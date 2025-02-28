@@ -1,6 +1,6 @@
 using System;
 
-namespace Kunnymann.Base.Debugger
+namespace Kunnymann.Debugger
 {
     /// <summary>
     /// Kunnymann 패키지의 디버거 클래스
@@ -55,7 +55,7 @@ namespace Kunnymann.Base.Debugger
                     logLevelWord = string.Format(LogConst.LOG_LEVEL_WORD_FATAL, _LogLevel.ToString());
                     break;
                 default:
-                    throw new Exception("Invalid log level");
+                    break;
             }
 
             _LogHelper.Log(LogLevel.Info, string.Format("Debugger Initialized - Log level : {0}", logLevelWord));

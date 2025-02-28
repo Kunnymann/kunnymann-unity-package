@@ -1,6 +1,7 @@
+using Kunnymann.Base.Data;
 using UnityEngine;
 
-namespace Kunnymann.Base
+namespace Kunnymann.Base.DI
 {
     /// <summary>
     /// VPS Module의 DI 객체

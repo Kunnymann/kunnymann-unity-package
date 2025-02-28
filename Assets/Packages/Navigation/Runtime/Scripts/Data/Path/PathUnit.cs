@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Kunnymann.Navigation
+namespace Kunnymann.Navigation.Data
 {
     /// <summary>
     /// Units that make up the navigation path

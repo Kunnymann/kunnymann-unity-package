@@ -1,4 +1,4 @@
-namespace Kunnymann.Base
+namespace Kunnymann.Base.DI
 {
     /// <summary>
     /// Navigation DI 객체

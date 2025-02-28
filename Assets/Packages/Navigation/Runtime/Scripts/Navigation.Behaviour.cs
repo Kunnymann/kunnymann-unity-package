@@ -1,3 +1,4 @@
+using Kunnymann.Navigation.Data;
 using UnityEngine;
 
 namespace Kunnymann.Navigation

@@ -1,4 +1,4 @@
-namespace Kunnymann.Base
+namespace Kunnymann.Base.Data
 {
     /// <summary>
     /// VPS engine state

@@ -1,4 +1,4 @@
-namespace Kunnymann.Navigation
+namespace Kunnymann.Navigation.Data
 {
     /// <summary>
     /// 이동 수단

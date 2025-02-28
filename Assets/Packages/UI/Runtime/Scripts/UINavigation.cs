@@ -4,7 +4,6 @@ using UnityEngine;
 using UniRx;
 using System.Collections.Concurrent;
 using System.Linq;
-using Kunnymann.Base.Debugger;
 
 namespace Kunnymann.UI.Navigation
 {
@@ -106,13 +105,13 @@ namespace Kunnymann.UI.Navigation
 
             if (result == null)
             {
-                ErrorListener.Check(new NullReferenceException(), $"{viewName}의 View를 찾을 수 없습니다", true);
+                Debug.LogError($"{viewName}의 View를 찾을 수 없습니다");
                 return null;
             }
 
             if (!typeof(T).IsAssignableFrom(result.GetType()))
             {
-                ErrorListener.Check(new NullReferenceException(), $"{viewName}의 타입 형식이 {result.GetType()}과 다릅니다", true);
+                Debug.LogError($"{viewName}의 타입 형식이 {result.GetType()}과 다릅니다");
                 return null;
             }
 
@@ -131,13 +130,13 @@ namespace Kunnymann.UI.Navigation
 
             if (show == null)
             {
-                ErrorListener.Check(new NullReferenceException(), $"{viewName}의 View를 찾을 수 없습니다", true);
+                Debug.LogError($"{viewName}의 View를 찾을 수 없습니다");
                 return null;
             }
 
             if (!typeof(T).IsAssignableFrom(show.GetType()))
             {
-                ErrorListener.Check(new NullReferenceException(), $"{viewName}의 타입 형식이 {show.GetType()}과 다릅니다", true);
+                Debug.LogError($"{viewName}의 타입 형식이 {show.GetType()}과 다릅니다");
                 return null;
             }
 
@@ -161,7 +160,7 @@ namespace Kunnymann.UI.Navigation
         {
             if (_viewStack == null || _viewStack.Count == 0)
             {
-                Debugger.Warning("View가 더 이상 존재하지 않거나, View stack이 초기화되지 않았습니다");
+                Debug.LogWarning("View가 더 이상 존재하지 않거나, View stack이 초기화되지 않았습니다");
                 return null;
             }
             _viewStack.TryPop(out ViewUnit hide);
@@ -179,19 +178,19 @@ namespace Kunnymann.UI.Navigation
         {
             if (_viewStack == null || _viewStack.Count == 0)
             {
-                Debugger.Warning("View가 더 이상 존재하지 않거나, View stack이 초기화되지 않았습니다");
+                Debug.LogWarning("View가 더 이상 존재하지 않거나, View stack이 초기화되지 않았습니다");
                 return null;
             }
 
             if (!_viewStack.Any(view => view.name == viewName))
             {
-                Debugger.Warning($"{viewName}의 View를 찾을 수 없습니다");
+                Debug.LogWarning($"{viewName}의 View를 찾을 수 없습니다");
                 return null;
             }
 
             if (_viewStack.Last().name == viewName)
             {
-                Debugger.Warning($"{viewName}은 이미 현재 View입니다");
+                Debug.LogWarning($"{viewName}은 이미 현재 View입니다");
                 return null;
             }
 
@@ -217,13 +216,13 @@ namespace Kunnymann.UI.Navigation
         {
             if (_viewStack == null || _viewStack.Count == 0)
             {
-                Debugger.Warning("View가 더 이상 존재하지 않거나, View stack이 초기화되지 않았습니다");
+                Debug.LogWarning("View가 더 이상 존재하지 않거나, View stack이 초기화되지 않았습니다");
                 return null;
             }
 
             if (_viewStack.Count < 2)
             {
-                Debugger.Warning("View가 현재 RootView만 있습니다");
+                Debug.LogWarning("View가 현재 RootView만 있습니다");
                 _viewStack.TryPeek(out ViewUnit root);
                 return root;
             }

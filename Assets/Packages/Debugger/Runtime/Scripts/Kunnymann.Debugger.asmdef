@@ -1,0 +1,16 @@
+{
+    "name": "Kunnymann.Debugger",
+    "rootNamespace": "",
+    "references": [
+        "GUID:25caddc5597c7484da625069d2d6b48d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

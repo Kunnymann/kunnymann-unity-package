@@ -1,6 +1,4 @@
 using UnityEngine;
-using System;
-using Kunnymann.Base.Debugger;
 
 namespace Kunnymann.Utility
 {
@@ -27,12 +25,12 @@ namespace Kunnymann.Utility
                     T[] asset = Resources.LoadAll<T>(string.Empty);
                     if (asset == null || asset.Length < 1)
                     {
-                        ErrorListener.Check(new Exception(), $"{nameof(T)}의 ScriptableObject를 Resource에서 찾을 수 없습니다.", needthrowerror: false);
+                        Debug.LogError($"{nameof(T)}의 ScriptableObject를 Resource에서 찾을 수 없습니다.");
                         return null;
                     }
                     else if (asset.Length > 1)
                     {
-                        ErrorListener.Check(new Exception(), $"중복된 ScriptableObject ({nameof(T)})가 있습니다.", needthrowerror: true);
+                        Debug.LogError($"중복된 ScriptableObject ({nameof(T)})가 있습니다.");
                         return null;
                     }
 

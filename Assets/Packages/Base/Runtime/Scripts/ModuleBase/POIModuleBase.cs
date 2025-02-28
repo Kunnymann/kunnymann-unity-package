@@ -1,4 +1,6 @@
-namespace Kunnymann.Base
+using Kunnymann.Base.Data;
+
+namespace Kunnymann.Base.DI
 {
     /// <summary>
     /// POI DI 객체

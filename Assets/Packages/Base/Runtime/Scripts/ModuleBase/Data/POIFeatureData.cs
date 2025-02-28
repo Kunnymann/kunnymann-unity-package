@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Kunnymann.Base
+namespace Kunnymann.Base.Data
 {
     /// <summary>
     /// AR POI 데이터
