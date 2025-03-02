@@ -1,0 +1,45 @@
+name: Verdaccio Publishing
+
+# 패키지 명을 입력 받는다
+on:
+  workflow_dispatch:
+    inputs:
+      package:
+        description: 'Package name to publish'
+        required: true
+
+jobs:
+  validate-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          registry-url: ${{ vars.PACKAGE_URL }}
+
+      - name: Validate package
+        id: validate
+        # 입력받은 패키지 이름이 존재하는지 우선 확인한다
+        run: |
+          PACKAGE_PATH="Assets/Packages/${{ github.event.inputs.package }}"
+          if [ ! -f "$PACKAGE_PATH/package.json" ]; then
+            echo "Error: package.json not found in $PACKAGE_PATH"
+            exit 1
+          fi
+          if ! jq empty "$PACKAGE_PATH/package.json" 2>/dev/null; then
+            echo "Error: Invalid package.json in $PACKAGE_PATH"
+            exit 1
+          fi
+          echo "Package ${{ github.event.inputs.package }} is valid"
+          echo "package_path=$PACKAGE_PATH" >> $GITHUB_OUTPUT
+
+      # 패키지 퍼블리싱 수행
+      - name: Publish to Verdaccio
+        run: |
+          cd Assets/Packages/${{ github.event.inputs.package }}
+          npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NODE_TOKEN }}
