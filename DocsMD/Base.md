@@ -8,15 +8,15 @@ Module 형식의 패키지를 지원하기 위한 Core 패키지입니다. 기�
 
 ![img_base_modulelifecycle](./Images/img_base_modulelifecycle.png)
 
-패키지에서 동작하는 모든 Module들은 **ModuleBase**를 상속받은 형태로 구현되었습니다. 위 도식은 Unity 이벤트 사이클에 맞게 동작하는 ModuleBase의 State machine을 보여주고 있습니다.
+패키지에서 동작하는 모든 Module들은 **ModuleBase** 를 상속받은 형태로 구현되었습니다. 위 도식은 Unity 이벤트 사이클에 맞게 동작하는 ModuleBase의 State machine을 보여주고 있습니다.
 
-각 Module들은 독립적인 **Main thread concurrent queue**를 소유하고 있어, Unity 이벤트에 맞게 이벤트를 발행합니다.
+각 Module들은 독립적인 **Main thread concurrent queue** 를 소유하고 있어, Unity 이벤트에 맞게 이벤트를 발행합니다.
 
-아래는 **ModuleManager**를 통해, 현재 구현된 모듈들을 모두 로드하고 제작할 서비스에 맞게 선택하여 사용하는 예제입니다.
+아래는 **ModuleManager** 를 통해, 현재 구현된 모듈들을 모두 로드하고 제작할 서비스에 맞게 선택하여 사용하는 예제입니다.
 
 ![img_base_howtouse01](./Images/img_base_howtouse01.png)
 
-Scene에서 빈 오브젝트를 생성한 후, `ModuleManager` 컴포넌트를 할당합니다. 그리고, 현재 사용 중인 모듈들을 수집하기 위해서 **Reload modules**을 누릅니다.
+Scene에서 빈 오브젝트를 생성한 후, `ModuleManager` 컴포넌트를 할당합니다. 그리고, 현재 사용 중인 모듈들을 수집하기 위해서 **Reload modules** 을 누릅니다.
 
 ![img_base_howtouse02](./Images/img_base_howtouse02.png)
 

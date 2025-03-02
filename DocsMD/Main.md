@@ -10,15 +10,15 @@
 
 ## Environment
 
-기본적으로 **Unity package manager** 포멧을 기반으로 하고 있으며, **Scoped registries**를 사용하시길 권장드립니다.
+기본적으로 **Unity package manager** 포멧을 기반으로 하고 있으며, **Scoped registries** 를 사용하시길 권장드립니다.
 
 - Unity 2022.3 LTS
 
 ## Installation
 
-1. `Edit / Project Settings / Package Manager`에서 **Scoped Registries**를 등록합니다.
-2. URL 필드에 **http://ec2-3-34-136-147.ap-northeast-2.compute.amazonaws.com:4873/**를 입력한 후, 해당 사이트에서 원하는 패키지들의 Scope를 확인하여 필드에 값을 채워넣습니다.
-3. Registry를 등록한 후, Unity package manager에서 **Add package by name**을 눌러, `com.kunnymann.[PACKAGE_NAME]`을 입력하여 패키지를 다운로드 받습니다.
+1. `Edit / Project Settings / Package Manager`에서 **Scoped Registries** 를 등록합니다.
+2. URL 필드에 **http://ec2-43-200-170-179.ap-northeast-2.compute.amazonaws.com:4873/** 를 입력한 후, 해당 사이트에서 원하는 패키지들의 Scope를 확인하여 필드에 값을 채워넣습니다.
+3. Registry를 등록한 후, Unity package manager에서 **Add package by name** 을 눌러, `com.kunnymann.[PACKAGE_NAME]`을 입력하여 패키지를 다운로드 받습니다.
 
 ## Content
 
