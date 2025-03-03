@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['error_0',['Error',['../class_kunnymann_1_1_base_1_1_debugger_1_1_debugger.html#aa2928e5cb3a17cac3c82c7b65dd723a9',1,'Kunnymann.Base.Debugger.Debugger.Error(object msg)'],['../class_kunnymann_1_1_base_1_1_debugger_1_1_debugger.html#a720e635b6645c25c1ad5122f7885e23a',1,'Kunnymann.Base.Debugger.Debugger.Error(string format, params object[] args)']]],
-  ['eventhandler_1',['EventHandler',['../namespace_kunnymann_1_1_base.html#a800efb0d7480862caedb1adf7c53a1f8',1,'Kunnymann::Base']]],
-  ['eventhandler_3c_20teventarg_20_3e_2',['EventHandler&lt; TEventArg &gt;',['../namespace_kunnymann_1_1_base.html#ae797529c37e301284389e1c52a23b824',1,'Kunnymann::Base']]],
-  ['eventhandler_3c_20teventarg1_2c_20teventarg2_20_3e_3',['EventHandler&lt; TEventArg1, TEventArg2 &gt;',['../namespace_kunnymann_1_1_base.html#ac59029511a2a35ae4e1a7f74d390fc6e',1,'Kunnymann::Base']]]
+  ['debug_0',['Debug',['../class_kunnymann_1_1_debugger_1_1_debugger.html#a8224ef6e2c9c4f7065167d8b0d549ec6',1,'Kunnymann.Debugger.Debugger.Debug(object msg)'],['../class_kunnymann_1_1_debugger_1_1_debugger.html#a32e38d0ae75f8211224118698fbfc985',1,'Kunnymann.Debugger.Debugger.Debug(string format, params object[] args)']]],
+  ['destroy_1',['Destroy',['../class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit.html#aef4a4dc8abfd860f43ee587902cdbf85',1,'Kunnymann::UI::Popup::PopupUnit']]],
+  ['dispose_2',['Dispose',['../class_kunnymann_1_1_base_1_1_module_base.html#a1c52a6cc63ee671f692547a185c370fb',1,'Kunnymann::Base::ModuleBase']]]
 ];

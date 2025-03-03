@@ -9,16 +9,16 @@ var hierarchy =
       [ "Kunnymann.Base.BaseObject", "class_kunnymann_1_1_base_1_1_base_object.html", null ],
       [ "Kunnymann.Base.BaseScriptableObject", "class_kunnymann_1_1_base_1_1_base_scriptable_object.html", [
         [ "Kunnymann.Base.ModuleBase", "class_kunnymann_1_1_base_1_1_module_base.html", [
-          [ "Kunnymann.Base.NavigationModuleBase", "class_kunnymann_1_1_base_1_1_navigation_module_base.html", null ],
-          [ "Kunnymann.Base.POIModuleBase", "class_kunnymann_1_1_base_1_1_p_o_i_module_base.html", null ],
-          [ "Kunnymann.Base.VLModuleBase", "class_kunnymann_1_1_base_1_1_v_l_module_base.html", null ],
+          [ "Kunnymann.Base.DI.NavigationModuleBase", "class_kunnymann_1_1_base_1_1_d_i_1_1_navigation_module_base.html", null ],
+          [ "Kunnymann.Base.DI.POIModuleBase", "class_kunnymann_1_1_base_1_1_d_i_1_1_p_o_i_module_base.html", null ],
+          [ "Kunnymann.Base.DI.VLModuleBase", "class_kunnymann_1_1_base_1_1_d_i_1_1_v_l_module_base.html", null ],
           [ "Kunnymann.Navigation.NavigationModule", "class_kunnymann_1_1_navigation_1_1_navigation_module.html", null ]
         ] ]
       ] ]
     ] ],
     [ "Kunnymann.Base.ConstValue", "class_kunnymann_1_1_base_1_1_const_value.html", null ],
-    [ "Kunnymann.Base.Debugger.Debugger", "class_kunnymann_1_1_base_1_1_debugger_1_1_debugger.html", null ],
-    [ "Kunnymann.Base.Debugger.ErrorListener", "class_kunnymann_1_1_base_1_1_debugger_1_1_error_listener.html", null ],
+    [ "Kunnymann.Debugger.Debugger", "class_kunnymann_1_1_debugger_1_1_debugger.html", null ],
+    [ "Kunnymann.Debugger.ErrorListener", "class_kunnymann_1_1_debugger_1_1_error_listener.html", null ],
     [ "IBeginDragHandler", null, [
       [ "Kunnymann.UI.DraggableHandle", "class_kunnymann_1_1_u_i_1_1_draggable_handle.html", null ]
     ] ],
@@ -40,8 +40,8 @@ var hierarchy =
     [ "Kunnymann.Navigation.INavigationEventHandler", "interface_kunnymann_1_1_navigation_1_1_i_navigation_event_handler.html", [
       [ "Kunnymann.Navigation.NavigationBehaviour", "class_kunnymann_1_1_navigation_1_1_navigation_behaviour.html", null ]
     ] ],
-    [ "Kunnymann.Base.Debugger.LogConst", "class_kunnymann_1_1_base_1_1_debugger_1_1_log_const.html", null ],
-    [ "Kunnymann.Base.Debugger.LogHelper", "class_kunnymann_1_1_base_1_1_debugger_1_1_log_helper.html", null ],
+    [ "Kunnymann.Debugger.LogConst", "class_kunnymann_1_1_debugger_1_1_log_const.html", null ],
+    [ "Kunnymann.Debugger.LogHelper", "class_kunnymann_1_1_debugger_1_1_log_helper.html", null ],
     [ "Kunnymann.Base.Utility.ManagerInitUtility", "class_kunnymann_1_1_base_1_1_utility_1_1_manager_init_utility.html", null ],
     [ "MonoBehaviour", null, [
       [ "Kunnymann.Base.BaseBehaviour", "class_kunnymann_1_1_base_1_1_base_behaviour.html", null ],
@@ -49,6 +49,7 @@ var hierarchy =
       [ "Kunnymann.Base.Utility.MonoBehaviourSingleton< T >", "class_kunnymann_1_1_base_1_1_utility_1_1_mono_behaviour_singleton-1-g.html", [
         [ "Kunnymann.UI.Popup.PopupContainer", "class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_container.html", null ]
       ] ],
+      [ "Kunnymann.HelloWorld.KunnymannHelloWorld", "class_kunnymann_1_1_hello_world_1_1_kunnymann_hello_world.html", null ],
       [ "Kunnymann.Navigation.NavigationBehaviour", "class_kunnymann_1_1_navigation_1_1_navigation_behaviour.html", null ],
       [ "Kunnymann.UI.DraggableHandle", "class_kunnymann_1_1_u_i_1_1_draggable_handle.html", null ],
       [ "Kunnymann.UI.Navigation.UINavigation", "class_kunnymann_1_1_u_i_1_1_navigation_1_1_u_i_navigation.html", null ],
@@ -62,19 +63,19 @@ var hierarchy =
       [ "Kunnymann.UI.ViewUnit", "class_kunnymann_1_1_u_i_1_1_view_unit.html", null ]
     ] ],
     [ "Kunnymann.Navigation.NavigationConst", "class_kunnymann_1_1_navigation_1_1_navigation_const.html", null ],
-    [ "Kunnymann.Navigation.PathUnit", "interface_kunnymann_1_1_navigation_1_1_path_unit.html", [
-      [ "Kunnymann.Navigation.ILink", "interface_kunnymann_1_1_navigation_1_1_i_link.html", null ],
-      [ "Kunnymann.Navigation.INode", "interface_kunnymann_1_1_navigation_1_1_i_node.html", [
+    [ "Kunnymann.Navigation.Data.PathUnit", "interface_kunnymann_1_1_navigation_1_1_data_1_1_path_unit.html", [
+      [ "Kunnymann.Navigation.Data.ILink", "interface_kunnymann_1_1_navigation_1_1_data_1_1_i_link.html", null ],
+      [ "Kunnymann.Navigation.Data.INode", "interface_kunnymann_1_1_navigation_1_1_data_1_1_i_node.html", [
         [ "Kunnymann.Navigation.CurrentPoint", "class_kunnymann_1_1_navigation_1_1_current_point.html", null ]
       ] ]
     ] ],
-    [ "Kunnymann.Base.POIFeatureData", "class_kunnymann_1_1_base_1_1_p_o_i_feature_data.html", null ],
+    [ "Kunnymann.Base.Data.POIFeatureData", "class_kunnymann_1_1_base_1_1_data_1_1_p_o_i_feature_data.html", null ],
     [ "Kunnymann.UI.Popup.PopupUtility", "class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_utility.html", null ],
     [ "ScriptableObject", null, [
       [ "Kunnymann.Base.BaseScriptableObject", "class_kunnymann_1_1_base_1_1_base_scriptable_object.html", null ],
       [ "Kunnymann.Navigation.NavigationConfig", "class_kunnymann_1_1_navigation_1_1_navigation_config.html", null ],
       [ "Kunnymann.Utility.SingletonScripatableObject< T >", "class_kunnymann_1_1_utility_1_1_singleton_scripatable_object-1-g.html", [
-        [ "Kunnymann.Base.Debugger.DebuggerConfig", "class_kunnymann_1_1_base_1_1_debugger_1_1_debugger_config.html", null ]
+        [ "Kunnymann.Debugger.DebuggerConfig", "class_kunnymann_1_1_debugger_1_1_debugger_config.html", null ]
       ] ]
     ] ],
     [ "Kunnymann.Navigation.Vector3Utility", "class_kunnymann_1_1_navigation_1_1_vector3_utility.html", null ]

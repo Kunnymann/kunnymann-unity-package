@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Kunnymann unity package: KunnymannUnityPackage</title>
+<title>Kunnymann unity package: Quick start</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -98,12 +98,44 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">KunnymannUnityPackage </div></div>
+  <div class="headertitle"><div class="title">Quick start </div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md__docs_m_d_2_main"></a></p>
-<p>This is a personal space where I collect frequently used Unity packages.</p>
-<p>Various feedback is always welcome! </p>
+<p>개인적으로 작업한 Unity 패키지 공간이며, 다양한 기능을 이용해 손 쉽게 콘텐츠를 제작할 수 있습니다.</p>
+<p>주로, 아래와 같은 플랫폼 기반 콘텐츠 제작을 타겟으로 하고 있습니다.</p>
+<ul>
+<li>모바일 콘텐츠</li>
+<li>XR 콘텐츠</li>
+<li>에디터 기능</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md6"></a>
+Environment</h1>
+<p>기본적으로 <b>Unity package manager</b> 포멧을 기반으로 하고 있으며, <b>Scoped registries</b> 를 사용하시길 권장드립니다.</p>
+<ul>
+<li>Unity 2022.3 LTS</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md7"></a>
+Installation</h1>
+<ol type="1">
+<li><code>Edit / Project Settings / Package Manager</code>에서 <b>Scoped Registries</b> 를 등록합니다.</li>
+<li>URL 필드에 <b><a href="http://ec2-43-200-170-179.ap-northeast-2.compute.amazonaws.com:4873/">http://ec2-43-200-170-179.ap-northeast-2.compute.amazonaws.com:4873/</a></b> 를 입력한 후, 해당 사이트에서 원하는 패키지들의 Scope를 확인하여 필드에 값을 채워넣습니다.</li>
+<li>Registry를 등록한 후, Unity package manager에서 <b>Add package by name</b> 을 눌러, <code>com.kunnymann.[PACKAGE_NAME]</code>을 입력하여 패키지를 다운로드 받습니다.</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md8"></a>
+Content</h1>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">package   </th><th class="markdownTableHeadNone">namespace   </th><th class="markdownTableHeadNone">설명    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Base   </td><td class="markdownTableBodyNone">com.kunnymann.base   </td><td class="markdownTableBodyNone">Module 동작을 지원하는 Core package    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Navigation   </td><td class="markdownTableBodyNone">com.kunnymann.navigation   </td><td class="markdownTableBodyNone">Navigation 기능을 지원하는 Module package    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Debugger   </td><td class="markdownTableBodyNone">com.kunnymann.debugger   </td><td class="markdownTableBodyNone">Debugger 기능과 ErrorListener 기능을 지원하는 Package    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">UI Navigation   </td><td class="markdownTableBodyNone">com.kunnymann.ui   </td><td class="markdownTableBodyNone">UI 기능을 지원하는 Package   </td></tr>
+</table>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->

@@ -10,5 +10,5 @@ var searchData=
   ['moduleterminate_7',['ModuleTerminate',['../class_kunnymann_1_1_base_1_1_module_base.html#a1517e32dfd2f60d38a852be4d39f4bf1',1,'Kunnymann::Base::ModuleBase']]],
   ['moduleupdate_8',['ModuleUpdate',['../class_kunnymann_1_1_base_1_1_module_base.html#ac9cbd017bd669386373e4a924a05f6a0',1,'Kunnymann::Base::ModuleBase']]],
   ['monobehavioursingleton_2d1_2dg_9',['MonoBehaviourSingleton-1-g',['../class_kunnymann_1_1_base_1_1_utility_1_1_mono_behaviour_singleton-1-g.html',1,'Kunnymann::Base::Utility']]],
-  ['movingwalkway_10',['MovingWalkway',['../namespace_kunnymann_1_1_navigation.html#a26afc2d677d4f4e4aeba7d3bb25147caabd2717e412be5471501883b70962e793',1,'Kunnymann::Navigation']]]
+  ['movingwalkway_10',['MovingWalkway',['../namespace_kunnymann_1_1_navigation_1_1_data.html#a749ed5299c6995373f6f100c6a9d5ea8abd2717e412be5471501883b70962e793',1,'Kunnymann::Navigation::Data']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['poseupdated_0',['PoseUpdated',['../class_kunnymann_1_1_base_1_1_v_l_module_base.html#a1af4f1512a1a99d97d20bc0bb18ef590',1,'Kunnymann::Base::VLModuleBase']]]
+  ['poseupdated_0',['PoseUpdated',['../class_kunnymann_1_1_base_1_1_d_i_1_1_v_l_module_base.html#adb782fbcbe49ee3264432772497945f0',1,'Kunnymann::Base::DI::VLModuleBase']]]
 ];

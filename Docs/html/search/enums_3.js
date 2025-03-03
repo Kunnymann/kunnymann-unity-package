@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['navigationstate_0',['NavigationState',['../namespace_kunnymann_1_1_navigation.html#aa680eb42246bd5fdb3284061510a3e8a',1,'Kunnymann::Navigation']]]
+  ['navigationstate_0',['NavigationState',['../namespace_kunnymann_1_1_navigation_1_1_data.html#aa599903885bdb85b7e97270e3f89d19e',1,'Kunnymann::Navigation::Data']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['log_0',['Log',['../class_kunnymann_1_1_base_1_1_debugger_1_1_log_helper.html#ac0d966f77fa64f6c20406e5cd34778b5',1,'Kunnymann::Base::Debugger::LogHelper']]]
+  ['killanim_0',['KillAnim',['../class_kunnymann_1_1_u_i_1_1_u_i_transition_base.html#a2b56db63bd2534dd17dc9072ce63eeee',1,'Kunnymann::UI::UITransitionBase']]]
 ];

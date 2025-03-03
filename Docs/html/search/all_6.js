@@ -1,7 +1,7 @@
 var searchData=
 [
   ['g_0',['G',['../class_kunnymann_1_1_navigation_1_1_a_star_node.html#a3e28b2e253b7799ea8e372eb3be801b3',1,'Kunnymann::Navigation::AStarNode']]],
-  ['geocoordupdated_1',['GeoCoordUpdated',['../class_kunnymann_1_1_base_1_1_v_l_module_base.html#a827706d5ee061ee011c266f19bc53d5d',1,'Kunnymann::Base::VLModuleBase']]],
+  ['geocoordupdated_1',['GeoCoordUpdated',['../class_kunnymann_1_1_base_1_1_d_i_1_1_v_l_module_base.html#a51e1633d4a12c192a3df2d210bf3ad87',1,'Kunnymann::Base::DI::VLModuleBase']]],
   ['getenumerator_2',['GetEnumerator',['../class_kunnymann_1_1_navigation_1_1_path.html#aa155a738d7df97c9251dfaaf519c5789',1,'Kunnymann::Navigation::Path']]],
   ['getlinkcontainer_3',['GetLinkContainer',['../class_kunnymann_1_1_navigation_1_1_navigation_config.html#a93cb89622cdb98673dd6b5caa2ec0426',1,'Kunnymann::Navigation::NavigationConfig']]],
   ['getlinkfromcurrenttoend_4',['GetLinkFromCurrentToEnd',['../class_kunnymann_1_1_navigation_1_1_path.html#a1541898ce7c92adcaaf3f9949e8714a5',1,'Kunnymann::Navigation::Path']]],

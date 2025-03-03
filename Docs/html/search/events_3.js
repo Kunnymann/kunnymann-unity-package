@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['statechanged_0',['StateChanged',['../class_kunnymann_1_1_base_1_1_v_l_module_base.html#a55ba382eac6e93dd73d5ef94c57b2ff8',1,'Kunnymann::Base::VLModuleBase']]],
-  ['successposeupdated_1',['SuccessPoseUpdated',['../class_kunnymann_1_1_base_1_1_v_l_module_base.html#a60cf77d3ab0e6d571d977586c5f3e18d',1,'Kunnymann::Base::VLModuleBase']]]
+  ['statechanged_0',['StateChanged',['../class_kunnymann_1_1_base_1_1_d_i_1_1_v_l_module_base.html#adab335781bb7db25be07245e497bb177',1,'Kunnymann::Base::DI::VLModuleBase']]],
+  ['successposeupdated_1',['SuccessPoseUpdated',['../class_kunnymann_1_1_base_1_1_d_i_1_1_v_l_module_base.html#adb53326d2c717420bdf784b4271518a6',1,'Kunnymann::Base::DI::VLModuleBase']]]
 ];

@@ -101,7 +101,54 @@ $(function(){initNavTree('md__docs_m_d_2_base.html',''); initResizable(true); })
   <div class="headertitle"><div class="title">Base</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a></p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md1"></a></p>
+<p>Module 형식의 패키지를 지원하기 위한 Core 패키지입니다. 기본적인 모듈 동작을 지원하며, 이들을 관리할 수 있는 매니저를 제공합니다.</p>
+<p>또한, 해당 패키지를 통해 직접 모듈을 제작하는 확장성 또한 지원합니다.</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+How to use</h1>
+<p><img src="./Images/img_base_modulelifecycle.png" alt="img_base_modulelifecycle" class="inline"/></p>
+<p>패키지에서 동작하는 모든 Module들은 <b>ModuleBase</b> 를 상속받은 형태로 구현되었습니다. 위 도식은 Unity 이벤트 사이클에 맞게 동작하는 ModuleBase의 State machine을 보여주고 있습니다.</p>
+<p>각 Module들은 독립적인 <b>Main thread concurrent queue</b> 를 소유하고 있어, Unity 이벤트에 맞게 이벤트를 발행합니다.</p>
+<p>아래는 <b>ModuleManager</b> 를 통해, 현재 구현된 모듈들을 모두 로드하고 제작할 서비스에 맞게 선택하여 사용하는 예제입니다.</p>
+<p><img src="./Images/img_base_howtouse01.png" alt="img_base_howtouse01" class="inline"/></p>
+<p>Scene에서 빈 오브젝트를 생성한 후, <code>ModuleManager</code> 컴포넌트를 할당합니다. 그리고, 현재 사용 중인 모듈들을 수집하기 위해서 <b>Reload modules</b> 을 누릅니다.</p>
+<p><img src="./Images/img_base_howtouse02.png" alt="img_base_howtouse02" class="inline"/></p>
+<p>해당 프로젝트에서는 1개의 모듈만 사용하고 있습니다. 따라서, Scene에는 1개의 모듈만 직렬화됩니다.</p>
+<dl class="section remark"><dt>Remarks</dt><dd>사용을 원치 않는 모듈에 대해서는 Module List에서 삭제할 수 있습니다.</dd></dl>
+<p>이제, 모듈을 직접 만들어 봅시다.</p>
+<div class="fragment"><div class="line"><span class="keyword">using </span><a class="code hl_namespace" href="namespace_kunnymann_1_1_base.html">Kunnymann.Base</a>;</div>
+<div class="line"><span class="keyword">using </span>System;</div>
+<div class="line"><span class="keyword">using </span>UnityEngine;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">namespace </span>Sample.Base</div>
+<div class="line">{</div>
+<div class="line">    [Serializable]</div>
+<div class="line">    <span class="keyword">public</span> <span class="keyword">class </span>MyCustomModule : <a class="code hl_class" href="class_kunnymann_1_1_base_1_1_module_base.html">ModuleBase</a></div>
+<div class="line">    {</div>
+<div class="line">        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> ModuleInitialize()</div>
+<div class="line">        {</div>
+<div class="line">            base.<a class="code hl_function" href="class_kunnymann_1_1_base_1_1_module_base.html#a1bcfd02ddeaeb2305215ed6db62de3ca">ModuleInitialize</a>();</div>
+<div class="line">            Debug.Log(<span class="stringliteral">&quot;MyCustomModule is initialized&quot;</span>);</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> ModuleUpdate()</div>
+<div class="line">        {</div>
+<div class="line">            base.ModuleUpdate();</div>
+<div class="line"> </div>
+<div class="line">            Debug.Log(<span class="stringliteral">&quot;MyCustomModule is updated&quot;</span>);</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="ttc" id="aclass_kunnymann_1_1_base_1_1_module_base_html"><div class="ttname"><a href="class_kunnymann_1_1_base_1_1_module_base.html">Kunnymann.Base.ModuleBase</a></div><div class="ttdoc">모듈의 공통 베이스</div><div class="ttdef"><b>Definition</b> ModuleBase.cs:12</div></div>
+<div class="ttc" id="aclass_kunnymann_1_1_base_1_1_module_base_html_a1bcfd02ddeaeb2305215ed6db62de3ca"><div class="ttname"><a href="class_kunnymann_1_1_base_1_1_module_base.html#a1bcfd02ddeaeb2305215ed6db62de3ca">Kunnymann.Base.ModuleBase.ModuleInitialize</a></div><div class="ttdeci">virtual void ModuleInitialize()</div><div class="ttdoc">모듈의 초기화 사이클</div><div class="ttdef"><b>Definition</b> ModuleBase.cs:109</div></div>
+<div class="ttc" id="anamespace_kunnymann_1_1_base_html"><div class="ttname"><a href="namespace_kunnymann_1_1_base.html">Kunnymann.Base</a></div><div class="ttdef"><b>Definition</b> ModuleManagerEditor.cs:7</div></div>
+</div><!-- fragment --><dl class="section important"><dt>Important</dt><dd>Serializable attribute는 필수적입니다.</dd></dl>
+<p>Unity 이벤트 사이클에서 호출되는 ModuleInitialize, ModuleUpdate가 정상적으로 호출되는지 확인합니다.</p>
+<p><img src="./Images/img_base_howtouse03.png" alt="img_base_howtouse03" class="inline"/></p>
+<p>에디터 모드에서도 모듈이 초기화되면, <code>ModuleInitialize</code> 이벤트는 호출됩니다.</p>
+<p><img src="./Images/img_base_howtouse04.png" alt="img_base_howtouse04" class="inline"/></p>
+<p>플레이 모드에서도 모듈 이벤트가 정상적으로 호출되는 것을 확인할 수 있습니다.</p>
+<dl class="section warning"><dt>Warning</dt><dd>ModuleBase는 ScriptableObject를 상속받아 구현되었고, 생성자에서 초기화 명령을 수행합니다. 따라서, Unity가 컴파일 과정 이후 여러번 초기화 명령을 수행할 수 있습니다. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

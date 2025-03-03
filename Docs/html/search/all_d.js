@@ -18,5 +18,5 @@ var searchData=
   ['onviewchanged_15',['OnViewChanged',['../class_kunnymann_1_1_u_i_1_1_navigation_1_1_u_i_navigation.html#add6b7ded5c1f43059e0471e9458582b5',1,'Kunnymann::UI::Navigation::UINavigation']]],
   ['onviewvisiblestatechanged_16',['OnViewVisibleStateChanged',['../class_kunnymann_1_1_u_i_1_1_popup_1_1_popup_unit.html#ac6ab21b212749c1a48557a1adb8306e1',1,'Kunnymann::UI::Popup::PopupUnit']]],
   ['order_17',['Order',['../class_kunnymann_1_1_base_1_1_script_excution_order.html#a5aca73e94a617cec4ec2ecaa0533535b',1,'Kunnymann::Base::ScriptExcutionOrder']]],
-  ['outofservice_18',['OutofService',['../namespace_kunnymann_1_1_base.html#a23a5f8e6be05d5150cf8f9ef97a1d60daf63a325c7f0ff7171e92e3ae958b9d1d',1,'Kunnymann::Base']]]
+  ['outofservice_18',['OutofService',['../namespace_kunnymann_1_1_base_1_1_data.html#ae8345c54e1f452d5ca43e469bc86beb1af63a325c7f0ff7171e92e3ae958b9d1d',1,'Kunnymann::Base::Data']]]
 ];

@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['navigationbehaviour_0',['NavigationBehaviour',['../class_kunnymann_1_1_navigation_1_1_navigation_behaviour.html',1,'Kunnymann::Navigation']]],
-  ['navigationconfig_1',['NavigationConfig',['../class_kunnymann_1_1_navigation_1_1_navigation_config.html',1,'Kunnymann::Navigation']]],
-  ['navigationconst_2',['NavigationConst',['../class_kunnymann_1_1_navigation_1_1_navigation_const.html',1,'Kunnymann::Navigation']]],
-  ['navigationmodule_3',['NavigationModule',['../class_kunnymann_1_1_navigation_1_1_navigation_module.html',1,'Kunnymann::Navigation']]],
-  ['navigationmodulebase_4',['NavigationModuleBase',['../class_kunnymann_1_1_base_1_1_navigation_module_base.html',1,'Kunnymann::Base']]]
+  ['managerinitutility_0',['ManagerInitUtility',['../class_kunnymann_1_1_base_1_1_utility_1_1_manager_init_utility.html',1,'Kunnymann::Base::Utility']]],
+  ['modulebase_1',['ModuleBase',['../class_kunnymann_1_1_base_1_1_module_base.html',1,'Kunnymann::Base']]],
+  ['modulemanager_2',['ModuleManager',['../class_kunnymann_1_1_base_1_1_module_manager.html',1,'Kunnymann::Base']]],
+  ['monobehavioursingleton_2d1_2dg_3',['MonoBehaviourSingleton-1-g',['../class_kunnymann_1_1_base_1_1_utility_1_1_mono_behaviour_singleton-1-g.html',1,'Kunnymann::Base::Utility']]]
 ];

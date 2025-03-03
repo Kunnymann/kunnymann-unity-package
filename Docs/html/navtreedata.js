@@ -25,10 +25,12 @@
 var NAVTREE =
 [
   [ "Kunnymann unity package", "index.html", [
-    [ "KunnymannUnityPackage", "index.html", null ],
-    [ "Base", "md__docs_m_d_2_base.html", null ],
-    [ "Navigation", "md__docs_m_d_2_navigation.html", null ],
-    [ "UI Navigation", "md__docs_m_d_2_u_i.html", null ],
+    [ "Quick start", "index.html", "index" ],
+    [ "Base", "md__assets_2_packages_2_base_2_documentation_2_base.html", [
+      [ "How to use", "md__assets_2_packages_2_base_2_documentation_2_base.html#autotoc_md1", null ]
+    ] ],
+    [ "Navigation", "md__assets_2_packages_2_navigation_2_documentation_2_navigation.html", null ],
+    [ "UI Navigation", "md__assets_2_packages_2_u_i_2_documentation_2_u_i.html", null ],
     [ "Packages", "namespaces.html", [
       [ "Package List", "namespaces.html", "namespaces_dup" ],
       [ "Package Members", "namespacemembers.html", [
@@ -55,8 +57,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"class_kunnymann_1_1_navigation_1_1_navigation_module.html#a1868e33b4eacefbb395e1988fe217783",
-"functions_k.html"
+"class_kunnymann_1_1_navigation_1_1_navigation_const.html#a2edf75a06636cb0cfed2e4a8287a85b1",
+"class_kunnymann_1_1_utility_1_1_singleton_scripatable_object-1-g.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
