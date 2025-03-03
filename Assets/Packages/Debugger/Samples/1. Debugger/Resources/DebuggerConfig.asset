@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a183c4e728fa5b48b94ff753ea43dcc, type: 3}
   m_Name: DebuggerConfig
   m_EditorClassIdentifier: 
-  LogLevel: 1
+  LogLevel: 2

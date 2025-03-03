@@ -1,8 +1,14 @@
-using System;
 using UnityEngine;
 
 namespace Kunnymann.Debugger.Sample
 {
+    public enum SampleError
+    {
+        NullReference,
+        InvalidOperation,
+        ArgumentOutOfRange
+    }
+
     public class DebuggerSample : MonoBehaviour
     {
         private void Start()
@@ -13,7 +19,7 @@ namespace Kunnymann.Debugger.Sample
             Debugger.Error("Hello World!");
             Debugger.Fatal("Hello World!");
 
-            ErrorListener.Check(new NullReferenceException(), "Invoke error handling", true, false);
+            ErrorListener.Check(SampleError.NullReference, "Invoke error handling", true, false);
         }
     }
 }
