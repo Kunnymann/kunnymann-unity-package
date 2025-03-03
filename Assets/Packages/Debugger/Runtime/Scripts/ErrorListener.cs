@@ -15,11 +15,11 @@ namespace Kunnymann.Debugger
         /// <param name="description">설명</param>
         /// <param name="needthrowerror">Throw 여부</param>
         /// <param name="stackSize">stack 사이즈, 기본 값은 2레벨 까지</param>
-        public static void Check(Exception error, string description = "", bool needthrowerror = false, bool report = true)
+        public static void Check<T>(T error, string description = "", bool needthrowerror = false, bool report = true) where T : Enum
         {
             StackTrace stackedFrame = new StackTrace(true);
 
-            string query = string.Format("{0} {1} {2} {3}", error.GetType(), description, Environment.NewLine, GetStackTraceInfo(stackedFrame));
+            string query = string.Format("{0} {1} {2} {3}", error, description, Environment.NewLine, GetStackTraceInfo(stackedFrame));
 
             // 여기에 에러 리포트하는 로직 추가
 
