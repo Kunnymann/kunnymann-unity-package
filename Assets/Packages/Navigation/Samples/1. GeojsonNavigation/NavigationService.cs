@@ -17,10 +17,8 @@ namespace Kunnymann.Navigation.Sample
 
         private void Start()
         {
-            NavigationModule _navigationModule = ModuleManager.Instance.GetModule<NavigationModule>();
-            _navigationModule.RegisterBehavour(this);
-            
-            Navigation = _navigationModule;
+            Navigation = ModuleManager.Instance.GetModule<NavigationModule>();
+            Navigation.RegisterBehavour(this);
             Navigation.Ready(_sampleConfig, Camera.main.transform);
             DrawNavigationConfig();
         }
