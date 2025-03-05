@@ -179,3 +179,10 @@ Unity 컴포넌트로 사용할 수 있는 동시에, 네비게이션 이벤트�
 ![Navigation Sample 테스트 2](./Images/img_navigation_howtouse06.png)
 
 동시에, 재탐색 이벤트가 발생하면서 여러분이 구현한 NavigationBehaviour가 `OnRecoveryPath` 를 구현했다면, 해당 순간에 이벤트가 호출될 것입니다.
+
+## 포함된 라이브러리
+
+| Name           | License | Copyright |
+|----------------|---------|-----------|
+| Kunnymann Base |         |           |
+| UniRx          |         |           |

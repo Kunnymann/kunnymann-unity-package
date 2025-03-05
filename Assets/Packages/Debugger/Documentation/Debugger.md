@@ -78,3 +78,9 @@ namespace Sample.Base
 
 > [!NOTE]
 > Log Package는 아직 미구현된 패키지 입니다 (25.03.04).
+
+## 포함된 라이브러리
+
+| Name           | License | Copyright |
+|----------------|---------|-----------|
+| Kunnymann Base |         |           |
