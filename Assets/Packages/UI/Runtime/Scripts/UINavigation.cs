@@ -45,7 +45,13 @@ namespace Kunnymann.UI.Navigation
         private void Awake()
         {
             _viewUnits.AddRange(GetComponentsInChildren<ViewUnit>());
+        }
 
+        /// <summary>
+        /// View들의 애니메이션 Queue를 초기화합니다
+        /// </summary>
+        private void Start()
+        {
             // 초기화된 ViewUnit이 있다면, 첫 화면으로 바로 렌더링
             if (_initializedView != null && _initializedView.transform.IsChildOf(this.transform))
             {
@@ -55,13 +61,7 @@ namespace Kunnymann.UI.Navigation
                 _viewStack.Push(firstView);
                 _currentViewUnit = firstView;
             }
-        }
 
-        /// <summary>
-        /// View들의 애니메이션 Queue를 초기화합니다
-        /// </summary>
-        private void Start()
-        {
             Observable.EveryUpdate().Where(x => _viewTransitionQueue.Count > 0)
                 .Subscribe(y =>
                 {

@@ -1,0 +1,19 @@
+{
+    "name": "Kunnymann.UI",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:25caddc5597c7484da625069d2d6b48d",
+        "GUID:560b04d1a97f54a4e82edc0cbbb69285",
+        "GUID:12bdff38667677c48923de3b6d321031"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
