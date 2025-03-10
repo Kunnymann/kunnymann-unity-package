@@ -1,4 +1,4 @@
-name: Verdaccio Publishing
+name: Verdaccio Unpublishing
 
 # 패키지 명을 입력 받는다
 on:
