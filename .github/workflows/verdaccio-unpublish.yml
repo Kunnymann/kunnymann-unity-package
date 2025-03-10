@@ -12,7 +12,7 @@ on:
         required: true
 
 jobs:
-  validate-and-publish:
+  validate-and-unpublish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -40,7 +40,7 @@ jobs:
           echo "package_path=$PACKAGE_PATH" >> $GITHUB_OUTPUT
 
       # 패키지 언퍼블리싱 수행
-      - name: Publish to Verdaccio
+      - name: Unpublish to Verdaccio
         run: |
           cd Assets/Packages/${{ github.event.inputs.package }}
           npm unpublish ${{ github.event.inputs.package }}@${{ github.event.inputs.version }} --force
