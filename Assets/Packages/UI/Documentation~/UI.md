@@ -172,9 +172,9 @@ Popup 역시, View와 유사하게 `UITransitionBase` 를 사용할 수 있습�
 
 ## 포함된 라이브러리
 
-| Name           | License | Copyright |
-|----------------|---------|-----------|
-| Kunnymann Base |         |           |
-| UniRx          |         |           |
-| UniTask        |         |           |
-| DOTween        |         |           |
+| Name               | License                                                                |
+|--------------------|------------------------------------------------------------------------|
+| com.kunnymann.base | MIT                                                                    |
+| UniRx              | [MIT](https://github.com/neuecc/UniRx?tab=MIT-1-ov-file#readme)        |
+| UniTask            | [MIT](https://github.com/Cysharp/UniTask?tab=MIT-1-ov-file#readme)     |
+| DOTween            | [DOTween](https://dotween.demigiant.com/license.php)                   |

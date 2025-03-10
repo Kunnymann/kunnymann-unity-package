@@ -1,0 +1,46 @@
+{
+    "name": "com.kunnymann.ui",
+    "displayName": "Kunnymann UI Package",
+    "version": "1.0.0",
+    "unity": "2022.3",
+    "author": {
+      "name": "Kunnymann",
+      "email": "dev.keonhee@gmail.com",
+      "url": "https://github.com/Kunnymann"
+    },
+    "description": "This is common ui package with UI navigation",
+    "keywords": [
+      "kunnymann",
+      "ui",
+      "ui navigation",
+      "view",
+      "popup"
+    ],
+    "dependencies": {
+      "com.kunnymann.base": "1.0.0",
+      "com.neuecc.unirx": "7.1.0",
+      "com.cysharp.unitask": "2.5.10"
+    },
+    "scopedRegistries": [
+      {
+        "name": "package.openupm.com",
+        "url": "https://package.openupm.com",
+        "scopes": [
+          "com.neuecc.unirx",
+          "com.cysharp.unitask"
+        ]
+      }
+    ],
+    "samples": [
+      {
+        "displayName": "UI Navigation Example",
+        "description": "This Example is sample of how to use UI Navigation.",
+        "path": "Samples/1. UINavigation"
+      },
+      {
+        "displayName": "Popup Example",
+        "description": "This Example is sample of how to use Popup system.",
+        "path": "Samples/2. Popup"
+      }
+    ]
+}
