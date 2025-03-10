@@ -1,0 +1,19 @@
+{
+    "name": "com.kunnymann.helloworld",
+    "displayName": "Kunnymann Test Package",
+    "version": "1.0.0",
+    "unity": "2022.3",
+    "description": "This is test package for validating private package hosting.",
+    "keywords": [
+      "kunnymann",
+      "test",
+      "private package server"
+    ],
+    "samples": [
+      {
+        "displayName": "Hello World",
+        "description": "This is test bed for containing sample.",
+        "path": "Samples/1. HelloWorld"
+      }
+    ]
+}
