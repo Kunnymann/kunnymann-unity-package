@@ -1,0 +1,25 @@
+{
+    "name": "com.kunnymann.base",
+    "displayName": "Kunnymann Base Package",
+    "version": "1.0.0",
+    "unity": "2022.3",
+    "author": {
+      "name": "Kunnymann",
+      "email": "dev.keonhee@gmail.com",
+      "url": "https://github.com/Kunnymann"
+    },
+    "description": "This is core package for Kunnymann Unity module.",
+    "keywords": [
+      "kunnymann",
+      "core",
+      "module",
+      "utility"
+    ],
+    "samples": [
+      {
+        "displayName": "Init Module Example",
+        "description": "This Example is sample of how to initialize a module.",
+        "path": "Samples/1. Init Module"
+      }
+    ]
+}
