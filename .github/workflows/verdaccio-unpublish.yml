@@ -26,7 +26,6 @@ jobs:
       # 패키지 언퍼블리싱 수행
       - name: Unpublish to Verdaccio
         run: |
-          cd Assets/Packages/${{ github.event.inputs.package }}
           npm unpublish ${{ github.event.inputs.package }}@${{ github.event.inputs.version }} --force
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NODE_TOKEN }}
