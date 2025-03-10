@@ -182,7 +182,7 @@ Unity 컴포넌트로 사용할 수 있는 동시에, 네비게이션 이벤트�
 
 ## 포함된 라이브러리
 
-| Name           | License | Copyright |
-|----------------|---------|-----------|
-| Kunnymann Base |         |           |
-| UniRx          |         |           |
+| Name               | License                                                                |
+|--------------------|------------------------------------------------------------------------|
+| com.kunnymann.base | MIT                                                                    |
+| UniRx              | [MIT](https://github.com/neuecc/UniRx?tab=MIT-1-ov-file#readme)        |

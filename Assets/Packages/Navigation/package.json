@@ -1,0 +1,38 @@
+{
+    "name": "com.kunnymann.navigation",
+    "displayName": "Kunnymann Navigation Package",
+    "version": "1.0.0",
+    "unity": "2022.3",
+    "author": {
+      "name": "Kunnymann",
+      "email": "dev.keonhee@gmail.com",
+      "url": "https://github.com/Kunnymann"
+    },
+    "description": "This is navigation engine package that uses the A* algorithm.",
+    "keywords": [
+      "kunnymann",
+      "navigation",
+      "pathfinder",
+      "a*"
+    ],
+    "dependencies": {
+      "com.kunnymann.base": "1.0.0",
+      "com.neuecc.unirx": "7.1.0"
+    },
+    "scopedRegistries": [
+      {
+        "name": "package.openupm.com",
+        "url": "https://package.openupm.com",
+        "scopes": [
+          "com.neuecc.unirx"
+        ]
+      }
+    ],
+    "samples": [
+      {
+        "displayName": "Navigation Example based Geojson",
+        "description": "This Example is sample of how to use navigation with Geojson.",
+        "path": "Samples/1. GeojsonNavigation"
+      }
+    ]
+}
