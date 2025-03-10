@@ -81,6 +81,6 @@ namespace Sample.Base
 
 ## 포함된 라이브러리
 
-| Name           | License | Copyright |
-|----------------|---------|-----------|
-| Kunnymann Base |         |           |
+| Name               | License                                                                |
+|--------------------|------------------------------------------------------------------------|
+| com.kunnymann.base | MIT                                                                    |
